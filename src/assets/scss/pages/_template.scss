@@ -1,0 +1,453 @@
+.template {
+  @include flex;
+  // sidebar
+  &-sidebar {
+    position: fixed;
+    background: #ffffff;
+    color: #ffffff;
+    width: 220px;
+    height: 100%;
+    overflow-y: auto;
+    @include box-shadow(-2px, 0px, 7px ,#000000);
+    h4 {
+      text-align: center;
+      font-weight: bold;
+      padding: 15px 0px;
+      background: #C80009;
+    }
+    ul {
+      padding: 20px;
+      li {
+        list-style: none;
+        margin-bottom: 15px;
+        a {
+          color: #333333;
+          font-weight: bold;
+          &:hover {
+            color: #C80009;
+          }
+          &.active {
+            color: #C80009;
+          }
+        }
+      }
+    }
+  }
+
+  // content template
+  &-content {
+    width: calc(100% - 220px);
+    margin-left: 220px;
+    background: #E0E0E0;
+  }
+
+  // Container section
+  &-container {
+    background: #ffffff;
+    margin: 15px;
+    padding: 15px;
+    // title template
+    .title-template {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 25px;
+      color: #C80009;
+      border-bottom: 3px solid ;
+      margin-bottom: 20px;
+    }
+    &-item {
+      margin-bottom: 40px;
+      // sub title template
+      .sub-title-template {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      // List color
+      ul {
+        background: #f1f1f1;
+        padding: 15px;
+        @include flex;
+        flex-wrap: wrap;
+        li {
+          @include flex;
+          align-items: center;
+          list-style: none;
+          width: 50%;
+          margin: 5px 0px;
+          p {
+            padding-left: 7px;
+          }
+          .bg {
+            width: 100px;
+            height: 30px;
+            @include border-radius(4px);
+            &-01 {
+              background: $color-blue-light;
+            }
+            &-02 {
+              background: $color-blue-medium;
+            }
+            &-03 {
+              background: $color-grey-light;
+            }
+            &-04 {
+              background: $color-grey-medium;
+            }
+            &-05 {
+              background: $color-grey-dark;
+            }
+            &-06 {
+              background: $color-black;
+            }
+            &-07 {
+              background: $color-white;
+            }
+            &-08 {
+              background: $color-red;
+            }
+          }
+        }
+      }
+
+      // Fonts
+      .fonts {
+        background: #f1f1f1;
+        padding: 15px;
+        p {
+          font-size: 20px;
+          color: #333333;
+        }
+      }
+
+      // Typoraphy
+      .typoraphy {
+        background: #f1f1f1;
+        padding: 15px;
+      }
+    }
+  }
+}
+.bg-grey {
+  background: #f1f1f1;
+  padding: 15px;
+}
+//----------- Common component template------------
+// Title
+.title-white {
+  color: $color-white;
+  font-size: 32px;
+}
+.title-grey-medium {
+  color: $color-black;
+  font-size: 26px;
+}
+.title-grey-dark {
+  color: $color-black;
+  font-size: 20px;
+}
+
+// Paragraph
+.paragraph-grey-light {
+  color: $color-black;
+  font-size: 18px;
+  width: 100%;
+  min-height: 200px;
+  background: #F4F4F4;
+  padding: 23px 20px;
+  border: 1px solid #E0E0E0;
+  @include border-radius(15px);
+}
+.paragraph-default {
+  color: $color-black;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 6px;
+}
+.paragraph-red {
+  color: $color-red;
+  font-size: 14px;
+}
+
+// Buttons
+.button-custom {
+  margin-bottom: 30px;
+  width: 270px;
+}
+.btn-set-width {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  @include border-radius(50px);
+  &:hover {
+    color: #ffffff;
+  }
+  &.btn-grey {
+    background: #BBBBBB;
+  }
+  &.btn-red {
+    background: $color-red;
+  }
+}
+.button-custom-padding {
+  margin-bottom: 30px;
+}
+.btn-common {
+  display: inline-block;
+  padding: 7px 23px;
+  @include border-radius(50px);
+  font-weight: 600;
+  &.btn-red {
+    background: $color-red;
+    color: $color-white;
+  }
+  &.btn-blue {
+    background: $color-blue-light;
+    color: $color-white;
+  }
+  &.btn-blue-disable {
+    background: $color-blue-light;
+    color: $color-white;
+    opacity: 0.4;
+
+  }
+  &.btn-grey {
+    background: #BBBBBB;
+    color: $color-white;
+  }
+  &.btn-grey-disable {
+    background: $color-grey-light;
+    color: $color-white;
+  }
+  &.btn-white-blue {
+    background: $color-white;
+    color: $color-blue-light;
+  }
+  &.btn-white-red{
+    background: $color-white;
+    color: $color-red;
+  }
+  &.btn-blue-long {
+    background: $color-blue-light;
+    color: $color-white;
+    padding: 7px 44px;
+  }
+  &.btn-blue-longdisable {
+    background: $color-blue-light;
+    color: $color-white;
+    padding: 7px 44px;
+    opacity: 0.4;
+  }
+}
+
+//Form Input
+.form-group {
+  .form-control {
+    width: 100%;
+    height: auto;
+    background: #F4F4F4;
+    border: 1px solid $color-grey-light;
+    box-shadow: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 18px;
+    @include border-radius(50px);
+    &-large {
+      background: #F4F4F4;
+      width: 320px;
+      height: 38px;
+    }
+    &-medium {
+      background: #F4F4F4;
+      width: 200px;
+      height: 38px;
+    }
+    &-small {
+      background: #F4F4F4;
+      width: 140px;
+      height: 38px;
+    }
+    &.white {
+      background: #ffffff;
+    }
+    &.form-height-md {
+      width: 270px;
+      height: 48px;
+      font-weight: 600;
+    }
+  }
+  .form-check {
+    @include flex;
+    align-items: center;
+    margin-right: 45px;
+    label {
+      width: unset;
+      margin-left: 5px;
+      color: #999999;
+    }
+    input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #E0E0E0;
+      margin-top: 0px;
+      box-shadow: none;
+      outline: none;
+      @include border-radius(2px);
+      &:checked {
+        background: url(../images/checkbox-select.png) no-repeat;
+        background-size: cover;
+        border: none;
+        opacity: 0.4;
+        & + label {
+          color: $color-black;
+        }
+      }
+    }
+    &-bold {
+      input {
+        &:checked {
+          opacity: 1;
+        }
+      }
+      label {
+        color: $color-black;
+      }
+    }
+  }
+  // form select
+  select {
+    &.form-control {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-size: 16px;
+      background: url(../images/arrow-down.png) 93% / 12px no-repeat #F4F4F4 !important;
+    }
+    &.white {
+      background: url(../images/arrow-down.png) 93%/12px no-repeat #FFFFFF !important;
+    }
+    &.text-red {
+      color: #C80009;
+      background: url(../images/arrow-down-red.png) 93%/12px no-repeat #FFFFFF !important;
+    }
+  }
+}
+.form-item {
+  @include flex;
+  align-items: center;
+  margin-bottom: 20px;
+  // form title
+  .form-title {
+    font-size: 18px;
+    color: $color-grey-medium;
+    width: 134px;
+    margin-bottom: 0px;
+  }
+  // form group
+  .form-group {
+    @include flex;
+    flex-wrap: wrap;
+    margin-left: 18px;
+    margin-bottom: 0px;
+    width: 100%;
+    .form-control {
+      width: 320px;
+      height: 38px;
+      background: #F4F4F4;
+      border: 1px solid $color-grey-light;
+      box-shadow: none;
+      outline: none;
+      @include border-radius(50px);
+      margin-right: 20px;
+      padding-left: 18px;
+      &-short {
+        width: 140px;
+      }
+      &-medium {
+        width: 200px;
+      }
+      &:last-child {
+        margin: 0px;
+      }
+    }
+
+    // form checkbox
+    .form-check {
+      @include flex;
+      align-items: center;
+      margin-right: 45px;
+      label {
+        width: unset;
+        margin-left: 5px;
+        color: #999999;
+      }
+      input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #E0E0E0;
+        margin-top: 0px;
+        box-shadow: none;
+        outline: none;
+        @include border-radius(2px);
+        &:checked {
+          background: url(../images/checkbox-select.png) no-repeat;
+          background-size: cover;
+          border: none;
+          opacity: 0.4;
+          & + label {
+            color: $color-black;
+          }
+        }
+      }
+    }
+
+    // form select
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url(../images/arrow-down.png) 93% / 12px no-repeat #F4F4F4 !important;
+    }
+
+    // button
+    button {
+      box-shadow: none;
+      outline: none;
+      border: none;
+      &.btn-camera {
+        line-height: 1;
+        height: 38px;
+      }
+    }
+
+    // textarea
+    textarea {
+      width: 450px;
+      height: 120px;
+      background: #F4F4F4;
+      border: 1px solid $color-grey-light;
+      box-shadow: none;
+      outline: none;
+      resize: none;
+      padding: 10px;
+      @include border-radius(15px);
+    }
+  }
+  &.form-textarea {
+    align-items: start;
+    p {
+      padding-top: 5px;
+    }
+  }
+}
