@@ -1,0 +1,42 @@
+.form-check {
+  @include flex;
+  align-items: center;
+  margin-right: 45px;
+  label {
+    width: unset;
+    margin-left: 5px;
+    color: #999999;
+    user-select: none;
+  }
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #E0E0E0;
+    margin-top: 0px;
+    box-shadow: none;
+    outline: none;
+    @include border-radius(2px);
+    &:checked {
+      background: url(../images/checkbox-select.png) no-repeat;
+      background-size: cover;
+      border: none;
+      opacity: 0.4;
+      & + label {
+        color: #333333;
+      }
+    }
+  }
+  &-bold {
+    input {
+      &:checked {
+        opacity: 1;
+      }
+    }
+    label {
+      color: #333333;
+    }
+  }
+}

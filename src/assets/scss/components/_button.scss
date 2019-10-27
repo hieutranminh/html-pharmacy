@@ -1,0 +1,85 @@
+// Buttons
+.btn-large {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0px;
+  text-align: center;
+  @include border-radius(50px);
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+  &.btn-grey-100 {
+    background: #BBBBBB;
+    width: 100%;
+    color: #ffffff;
+  }
+  &.btn-red-100 {
+    background: #C80009;
+    width: 100%;
+    color: #ffffff;
+  }
+  &.btn-grey-width {
+    width: 280px;
+    background: #BBBBBB;
+    color: #ffffff;
+  }
+  &.btn-red-width {
+    width: 280px;
+    background: #C80009;
+    color: #ffffff;
+  }
+}
+
+
+.btn-normal {
+  display: inline-block;
+  padding: 7px 23px;
+  font-weight: 600;
+  color: #FFFFFF;
+  @include border-radius(50px);
+  &:hover {
+    color: #ffffff;
+  }
+  &.btn-red {
+    background: #C80009;
+  }
+  &.btn-blue {
+    background: #6BC4EA;
+    &.pd-medium {
+      padding: 7px 44px;
+    }
+  }
+  &.btn-blue-disable {
+    background: #6BC4EA;
+    opacity: 0.4;
+    &.pd-medium {
+      padding: 7px 44px;
+    }
+  }
+  &.btn-grey {
+    background: #BBBBBB;
+  }
+  &.btn-grey-disable {
+    background: #E0E0E0;
+  }
+  &.btn-white {
+    background: #FFFFFF;
+    &.text-blue {
+      color: #6BC4EA;
+    }
+    &.text-red {
+      color: #C80009;
+    }
+  }
+  &.btn-blue-long {
+    background: #6BC4EA;
+
+  }
+  &.btn-blue-longdisable {
+    background: #6BC4EA;
+    padding: 7px 44px;
+    opacity: 0.4;
+  }
+}

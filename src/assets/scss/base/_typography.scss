@@ -3,3 +3,42 @@ html, body {
   font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+// Title
+.title-white {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+.title-black {
+  color: #333333;
+  font-size: 26px;
+}
+.title-black-small {
+  color: #333333;
+  font-size: 20px;
+}
+.title-label {
+  font-size: 18px;
+  color: #999999;
+  margin-bottom: 0px;
+}
+// Paragraph
+.paragraph-black-bg {
+  color: #333333;
+  font-size: 18px;
+  width: 100%;
+  min-height: 200px;
+  background: #F4F4F4;
+  padding: 23px 20px;
+  border: 1px solid #E0E0E0;
+  @include border-radius(15px);
+}
+.paragraph-black-default {
+  color: #333333;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 6px;
+}
+.paragraph-red {
+  color: #C80009;
+  font-size: 14px;
+}

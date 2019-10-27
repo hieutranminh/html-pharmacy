@@ -106,8 +106,9 @@
                 <h5 class="sub-title-template">Title and sub title</h5>
                 <div class="typoraphy">
                     <h3 class="title-white">Title 32px color white</h3>
-                    <h3 class="title-grey-medium">Title 26px color grey medium</h3>
-                    <h3 class="title-grey-dark">Title 20px color grey dark</h3>
+                    <h3 class="title-black">Title 26px color grey medium</h3>
+                    <h3 class="title-black-small">Title 20px color grey dark</h3>
+                    <label for="#" class="title-label">Title label form input</label>
                 </div>
             </div>
 
@@ -115,8 +116,8 @@
             <div class="template-container-item">
                 <h5 class="sub-title-template">Text paragraph</h5>
                 <div class="typoraphy">
-                    <p class="paragraph-grey-light">Text paragraph 18px color grey dark and background grey</p>
-                    <p class="paragraph-default">Text paragraph 16px color grey dark</p>
+                    <p class="paragraph-black-bg">Text paragraph 18px color grey dark and background grey</p>
+                    <p class="paragraph-black-default">Text paragraph 16px color grey dark</p>
                     <p class="paragraph-red">Text paragraph 14px color red</p>
                 </div>
             </div>
@@ -129,21 +130,49 @@
             <!--Button style-->
             <div class="template-container-item">
                 <h5 class="sub-title-template">Buttons set width for div parent</h5>
-                <div class="button-custom">
-                    <a href="#" class="btn-set-width btn-grey">Button</a>
-                    <a href="#" class="btn-set-width btn-red">Button</a>
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <a href="#" class="btn-large btn-grey-100">Button width (width 100%)</a>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <a href="#" class="btn-large btn-red-100">Button width (width 100%)</a>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <a href="#" class="btn-large btn-grey-width">Button set width</a>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <a href="#" class="btn-large btn-red-width">Button set width</a>
+                    </div>
                 </div>
                 <h5 class="sub-title-template">Buttons set padding & margin</h5>
-                <div class="button-custom-padding">
-                    <a href="#" class="btn-common btn-red">Button</a>
-                    <a href="#" class="btn-common btn-blue">Button</a>
-                    <a href="#" class="btn-common btn-blue-disable">Button</a>
-                    <a href="#" class="btn-common btn-grey">Button</a>
-                    <a href="#" class="btn-common btn-grey-disable">Button</a>
-                    <a href="#" class="btn-common btn-white-blue">Button</a>
-                    <a href="#" class="btn-common btn-white-red">Button</a>
-                    <a href="#" class="btn-common btn-blue-long">Button</a>
-                    <a href="#" class="btn-common btn-blue-longdisable">Button</a>
+                <div class="row">
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-red">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-blue">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-blue-disable">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-grey">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-grey-disable">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-white text-blue">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-white text-red">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-blue pd-medium">Button</a>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <a href="#" class="btn-normal btn-blue-disable pd-medium">Button</a>
+                    </div>
                 </div>
             </div>
 
@@ -156,73 +185,145 @@
             <!--Input-->
             <div class="template-container-item">
                 <h5 class="sub-title-template">Input</h5>
-                <div class="bg-grey">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="full 100">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-large" placeholder="large">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-medium" placeholder="medium">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-small" placeholder="small">
-                            </div>
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="check01">
-                                    <label class="form-check-label" for="check01">
-                                        Checkbox
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control form-control-large">
-                                    <option>Default select</option>
-                                    <option>Default select</option>
-                                </select>
-                            </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-100" placeholder="full (width 100%)">
                         </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control white" placeholder="full 100">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-large white" placeholder="large">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-medium white" placeholder="medium">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-small white" placeholder="small">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-height-md white" placeholder="white">
-                            </div>
-                            <div class="form-group">
-                                <div class="form-check form-check-bold">
-                                    <input class="form-check-input" type="checkbox" value="" id="check02">
-                                    <label class="form-check-label" for="check02">
-                                        Checkbox Bold
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control form-control-large white">
-                                    <option>Default select</option>
-                                    <option>Default select</option>
-                                </select>
-                            </div>
-                          <div class="form-group">
-                            <select class="form-control form-height-md white text-red">
-                              <option>Default select</option>
-                              <option>Default select</option>
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-large" placeholder="large">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-medium" placeholder="medium">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-small" placeholder="small">
+                        </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-100">
+                                <option>select full (width 100%)</option>
                             </select>
-                          </div>
                         </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-large">
+                                <option>select large</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="check01">
+                                <label class="form-check-label" for="check01">
+                                    Checkbox
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check form-check-bold">
+                                <input class="form-check-input" type="checkbox" value="" id="check02">
+                                <label class="form-check-label" for="check02">
+                                    Checkbox Bold
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-100 red">
+                                <option>select background red (width 100%)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-large red">
+                                <option>select background red</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-100 white" placeholder="full (width 100%)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-large white" placeholder="large">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-medium white" placeholder="medium">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="control-common control-common-small white" placeholder="small">
+                        </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-100 white">
+                                <option>select bgwhite (width 100%)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-large white">
+                                <option>select bgwhite large</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-100 text-red">
+                                <option>select text red (width 100%)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="control-common control-common-large text-red">
+                                <option>select text red</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-search">
+                                <input type="input" class="search-control" placeholder="検索">
+                                <a href="#"><img src="./assets/images/icon-search.png" alt="search"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Tables-->
+        <div class="template-container">
+            <h3 class="title-template">Tables</h3>
+
+            <!--Input-->
+            <div class="template-container-item">
+                <h5 class="sub-title-template">Custom tr - th - td</h5>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table-custom">
+                            <thead>
+                                <tr>
+                                    <th width="20%">No</th>
+                                    <th width="25%">Title 01</th>
+                                    <th width="30%">Title 02</th>
+                                    <th width="15%">Title 03</th>
+                                    <th width="10%"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>example 01</td>
+                                    <td>example 02</td>
+                                    <td>20</td>
+                                    <td>
+                                        <button class="btn-add">
+                                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>example 01</td>
+                                    <td>example 02</td>
+                                    <td>20</td>
+                                    <td>
+                                        <button class="btn-add">
+                                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

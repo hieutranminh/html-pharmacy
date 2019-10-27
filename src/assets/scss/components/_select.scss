@@ -1,0 +1,19 @@
+// form select
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  background: url(../images/arrow-down.png) 93% / 12px no-repeat #F4F4F4 !important;
+  &.white {
+    background: url(../images/arrow-down.png) 93%/12px no-repeat #FFFFFF !important;
+  }
+  &.red {
+    color: #ffffff;
+    background: url(../images/arrow-down-white.png) 93%/12px no-repeat #C80009 !important;
+  }
+  &.text-red {
+    color: #C80009;
+    background: url(../images/arrow-down-red.png) 93%/12px no-repeat #FFFFFF !important;
+  }
+}
