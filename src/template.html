@@ -30,21 +30,19 @@
     <div class="template-sidebar">
         <h4>Pharmacy</h4>
         <ul>
-            <li><a class="active" href="#">Style Guide</a></li>
-            <li><a href="#">Typography</a></li>
-            <li><a href="#">Buttons</a></li>
-            <li><a href="#">Inputs</a></li>
-            <li><a href="#">Table</a></li>
-            <li><a href="#">Datepicker</a></li>
-            <li><a href="#">Card</a></li>
-            <li><a href="#">Layout Default</a></li>
+            <li><a class="active" href="#style-guide">Style Guide</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#inputs">Inputs</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#cards">Cards</a></li>
         </ul>
     </div>
 
     <!--Content-->
     <div class="template-content">
         <!--Main style guide-->
-        <div class="template-container">
+        <div id="style-guide" class="template-container">
             <h3 class="title-template">Main Style Guide</h3>
 
             <!--Color style-->
@@ -98,7 +96,7 @@
         </div>
 
         <!--Text - Typoraphy-->
-        <div class="template-container">
+        <div id="typography" class="template-container">
             <h3 class="title-template">Text - Typography</h3>
 
             <!--Title - Subtitle-->
@@ -108,7 +106,7 @@
                     <h3 class="title-white">Title 32px color white</h3>
                     <h3 class="title-black">Title 26px color grey medium</h3>
                     <h3 class="title-black-small">Title 20px color grey dark</h3>
-                    <label for="#" class="title-label">Title label form input</label>
+                    <label class="title-label">Title label form input</label>
                 </div>
             </div>
 
@@ -124,7 +122,7 @@
         </div>
 
         <!--Buttons-->
-        <div class="template-container">
+        <div id="buttons" class="template-container">
             <h3 class="title-template">Buttons</h3>
 
             <!--Button style-->
@@ -179,7 +177,7 @@
         </div>
 
         <!--Inputs-->
-        <div class="template-container">
+        <div id="inputs" class="template-container">
             <h3 class="title-template">Inputs</h3>
 
             <!--Input-->
@@ -199,13 +197,13 @@
                         <div class="form-group">
                             <input type="text" class="control-common control-common-small" placeholder="small">
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-100">
+                        <div class="form-group form-select form-select-100">
+                            <select class="control-common">
                                 <option>select full (width 100%)</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-large">
+                        <div class="form-group form-select form-select-large">
+                            <select class="control-common">
                                 <option>select large</option>
                             </select>
                         </div>
@@ -225,13 +223,13 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-100 red">
+                        <div class="form-group form-select arrow-white form-select-100">
+                            <select class="control-common red">
                                 <option>select background red (width 100%)</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-large red">
+                        <div class="form-group form-select arrow-white form-select-large">
+                            <select class="control-common red">
                                 <option>select background red</option>
                             </select>
                         </div>
@@ -249,23 +247,23 @@
                         <div class="form-group">
                             <input type="text" class="control-common control-common-small white" placeholder="small">
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-100 white">
+                        <div class="form-group form-select form-select-100">
+                            <select class="control-common white">
                                 <option>select bgwhite (width 100%)</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-large white">
+                        <div class="form-group form-select form-select-large">
+                            <select class="control-common white">
                                 <option>select bgwhite large</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-100 text-red">
+                        <div class="form-group form-select arrow-red form-select-100">
+                            <select class="control-common text-red">
                                 <option>select text red (width 100%)</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <select class="control-common control-common-large text-red">
+                        <div class="form-group form-select arrow-red form-select-large">
+                            <select class="control-common text-red">
                                 <option>select text red</option>
                             </select>
                         </div>
@@ -275,28 +273,33 @@
                                 <a href="#"><img src="./assets/images/icon-search.png" alt="search"></a>
                             </div>
                         </div>
+                      <div class="form-group">
+                        <div class="form-note">
+                          <input type="input" class="note-control" placeholder="メモ…">
+                          <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!--Tables-->
-        <div class="template-container">
+        <div id="table" class="template-container">
             <h3 class="title-template">Tables</h3>
-
-            <!--Input-->
+            <!--Tables basic-->
             <div class="template-container-item">
                 <h5 class="sub-title-template">Custom tr - th - td</h5>
                 <div class="row">
                     <div class="col-lg-12">
-                        <table class="table-custom">
+                        <table class="table-custom table-responsive-sm">
                             <thead>
                                 <tr>
                                     <th width="20%">No</th>
                                     <th width="25%">Title 01</th>
                                     <th width="30%">Title 02</th>
                                     <th width="15%">Title 03</th>
-                                    <th width="10%"></th>
+                                    <th width="10%">01</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -327,114 +330,392 @@
                     </div>
                 </div>
             </div>
+
+            <!--Tables check-->
+            <div class="template-container-item">
+                <h5 class="sub-title-template">Table check</h5>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table-check table-responsive-sm">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>11</th>
+                                    <th>12</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  <td>メーク落とし</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                  <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                  <td></td>
+                                  <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                <td>レジャーUV対策</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>ファンデーション</td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Cards-->
+        <div id="cards" class="template-container">
+            <h3 class="title-template">Cards</h3>
+
+            <!--Card component-->
+            <div class="template-container-item">
+                <h5 class="sub-title-template">Card component</h5>
+                <div class="row">
+                  <div class="col-lg-4">
+                      <p class="component">Component 01</p>
+                      <div class="card-01">
+                          <p>Doloribus imperdiet! Corporis deserunt est scelerisque, elit, quae netus occaecati ducimus dolorem ultricies laudantium! Suscipit, nemo. Lacus! Numquam nonummy inceptos</p>
+                          <span>2018/08/13</span>
+                      </div>
+                  </div>
+                    <div class="col-lg-4">
+                        <p class="component">Component 02</p>
+                        <div class="card-02">
+                            <div class="content">
+                                <p>Lorem ipsum</p>
+                                <span>Lorem ipsum</span>
+                            </div>
+                            <a href="#">
+                                <img src="./assets/images/icon-note-grey.png" alt="note">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="component">Component 03</p>
+                        <div class="card-03">
+                            <a href="#">
+                                <img src="./assets/images/icon-remove.png" alt="remove">
+                            </a>
+                            <div class="content">
+                                <p>Lorem ipsum</p>
+                                <span>Lorem ipsum</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="component">Component 04</p>
+                        <div class="card-01">
+                            <p>Doloribus imperdiet! Corporis deserunt est scelerisque</p>
+                            <span>
+                                2018/08/13
+                                <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="component">Component 05</p>
+                        <div class="card-05">
+                            <div class="content">
+                                <p class="date">2018/08/03</p>
+                                <p class="shop-name">前畑店</p>
+                            </div>
+                            <p class="product-code">SK-Ⅱ</p>
+                            <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <span>1234567890123</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="component">Component 06</p>
+                        <div class="card-06">
+                            <div class="content">
+                                <p class="product-code">SK-Ⅱ</p>
+                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                <span>1234567890123</span>
+                            </div>
+                            <div class="image">
+                                <img src="./assets/images/img-product.png" alt="product">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="component">Component 07</p>
+                        <div class="card-07">
+                            <div class="content-head">
+                                <div class="left">
+                                    <p class="date">2018/08/03</p>
+                                    <p class="shop-name">前畑店</p>
+                                </div>
+                                <a href="#">お薦め</a>
+                            </div>
+                            <div class="content-body">
+                                <div class="left">
+                                    <a href="#"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
+                                </div>
+                                <div class="right">
+                                    <p class="product-code">SK-Ⅱ</p>
+                                    <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                    <span>1234567890123</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-07">
+                            <div class="content-head">
+                                <div class="left">
+                                    <p class="date">2018/08/03</p>
+                                    <p class="shop-name">前畑店</p>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <div class="left">
+                                    <a href="#"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
+                                </div>
+                                <div class="right">
+                                    <p class="product-code">SK-Ⅱ</p>
+                                    <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                    <span>1234567890123</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="component">Component 08</p>
+                        <div class="card-07 card-08">
+                            <div class="content-head">
+                                <div class="left">
+                                    <p class="date">2018/08/03</p>
+                                    <p class="shop-name">前畑店</p>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <div class="left">
+                                    <a href="#"><img src="./assets/images/checkbox-select.png" alt="check"></a>
+                                </div>
+                                <div class="right">
+                                    <p class="product-code">SK-Ⅱ</p>
+                                    <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                    <span>1234567890123</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-07 card-08">
+                            <div class="content-head">
+                                <div class="left">
+                                    <p class="date">2018/08/03</p>
+                                    <p class="shop-name">前畑店</p>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <div class="left">
+                                    <a href="#" class="disable"><img src="./assets/images/checkbox-select.png" alt="check"></a>
+                                </div>
+                                <div class="right">
+                                    <p class="product-code">SK-Ⅱ</p>
+                                    <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                    <span>1234567890123</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="component">Component 09</p>
+                        <div class="card-09">
+                            <div class="image">
+                                <img src="./assets/images/img-product.png" alt="product">
+                            </div>
+                            <div class="content">
+                                <p class="product-code">DECENCIA</p>
+                                <p class="product-name">アヤナス ローション コンセントレート</p>
+                                <span>1234567890123</span>
+                                <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                                <p class="product-price">4,860円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="component">Component item</p>
+                        <div class="item-01">
+                            <p>2018/08/03</p>
+                            <span>前畑店</span>
+                        </div>
+                        <div class="item-02">
+                            <div class="image">
+                                <img src="./assets/images/icon-add-grey.png" alt="add">
+                            </div>
+                            <p>お客様の悩み</p>
+                        </div>
+                        <div class="item-02">
+                            <div class="image">
+                                <img src="./assets/images/icon-remove.png" alt="remove">
+                            </div>
+                            <p>お客様の悩み</p>
+                        </div>
+                        <div class="item-02 item-04">
+                            <div class="image">
+                                <img src="./assets/images/icon-check-grey.png" alt="check">
+                            </div>
+                            <p>お客様の悩み</p>
+                        </div>
+                      <div class="item-02 item-04">
+                        <div class="image">
+                          <img src="./assets/images/icon-check-red.png" alt="check">
+                        </div>
+                        <p>お客様の悩み</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--Forms Input-->
-        <div class="template-container">
-            <h3 class="title-template">Template</h3>
+<!--        <div class="template-container">-->
+<!--            <h3 class="title-template">Template</h3>-->
 
-            <!--Input-->
-            <div class="template-container-item">
-                <h5 class="sub-title-template">Form</h5>
-                <form action="#">
-                    <div class="form-item">
-                        <p class="form-title">初回来店日</p>
-                        <div class="form-group">
-                            <input type="date" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">顧客 No</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">お名前</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">性別</p>
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="">
-                                <label class="form-check-label">
-                                    男性
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" checked>
-                                <label class="form-check-label">
-                                    女性
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">生年月日</p>
-                        <div class="form-group">
-                            <input type="date" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">電話番号</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">郵便番号</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-short">
-                            <button class="btn-common btn-blue-disable">自動入力</button>
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">住所</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-short">
-                            <input type="text" class="form-control">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">職業</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">ルビットカード</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-medium">
-                            <input type="text" class="form-control form-control-medium">
-                            <input type="text" class="form-control form-control-medium">
-                            <button class="btn-common btn-blue-disable btn-camera">
-                                <img src="./assets/images/camera-icon.png" alt="camera">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="form-item">
-                        <p class="form-title">DM</p>
-                        <div class="form-group">
-                            <select class="form-control" id="dm">
-                                <option>Default select</option>
-                                <option>Default select</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-item form-textarea">
-                        <p class="form-title">備考</p>
-                        <div class="form-group">
-                            <textarea name="" id=""></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+<!--            &lt;!&ndash;Input&ndash;&gt;-->
+<!--            <div class="template-container-item">-->
+<!--                <h5 class="sub-title-template">Form</h5>-->
+<!--                <form action="#">-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">初回来店日</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="date" class="form-control">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">顧客 No</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">お名前</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control">-->
+<!--                            <input type="text" class="form-control">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">性別</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <div class="form-check">-->
+<!--                                <input class="form-check-input" type="checkbox" value="">-->
+<!--                                <label class="form-check-label">-->
+<!--                                    男性-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                            <div class="form-check">-->
+<!--                                <input class="form-check-input" type="checkbox" value="" checked>-->
+<!--                                <label class="form-check-label">-->
+<!--                                    女性-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">生年月日</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="date" class="form-control">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">電話番号</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">郵便番号</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control form-control-short">-->
+<!--                            <button class="btn-common btn-blue-disable">自動入力</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">住所</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control form-control-short">-->
+<!--                            <input type="text" class="form-control">-->
+<!--                            <input type="text" class="form-control">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">職業</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">ルビットカード</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <input type="text" class="form-control form-control-medium">-->
+<!--                            <input type="text" class="form-control form-control-medium">-->
+<!--                            <input type="text" class="form-control form-control-medium">-->
+<!--                            <button class="btn-common btn-blue-disable btn-camera">-->
+<!--                                <img src="./assets/images/camera-icon.png" alt="camera">-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item">-->
+<!--                        <p class="form-title">DM</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <select class="form-control" id="dm">-->
+<!--                                <option>Default select</option>-->
+<!--                                <option>Default select</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-item form-textarea">-->
+<!--                        <p class="form-title">備考</p>-->
+<!--                        <div class="form-group">-->
+<!--                            <textarea name="" id=""></textarea>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 

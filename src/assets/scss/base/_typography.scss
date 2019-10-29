@@ -2,29 +2,37 @@ html, body {
   font-size: 16px;
   font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
   -webkit-font-smoothing: antialiased;
+  @media #{$info-ipad} {
+    font-size: 15px;
+  }
+  @media #{$info-phone-normal} {
+    font-size: 13px;
+  }
 }
+
 // Title
 .title-white {
   color: #FFFFFF;
-  font-size: 32px;
+  font-size: 2rem;
 }
 .title-black {
   color: #333333;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 .title-black-small {
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: normal;
 }
 .title-label {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #999999;
   margin-bottom: 0px;
 }
 // Paragraph
 .paragraph-black-bg {
   color: #333333;
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 100%;
   min-height: 200px;
   background: #F4F4F4;
@@ -34,11 +42,11 @@ html, body {
 }
 .paragraph-black-default {
   color: #333333;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
   margin-bottom: 6px;
 }
 .paragraph-red {
   color: #C80009;
-  font-size: 14px;
+  font-size: 0.875rem;
 }

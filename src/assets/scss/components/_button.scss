@@ -1,7 +1,7 @@
 // Buttons
 .btn-large {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   padding: 10px 0px;
   text-align: center;
@@ -38,6 +38,7 @@
   padding: 7px 23px;
   font-weight: 600;
   color: #FFFFFF;
+  font-size: 1rem;
   @include border-radius(50px);
   &:hover {
     color: #ffffff;
