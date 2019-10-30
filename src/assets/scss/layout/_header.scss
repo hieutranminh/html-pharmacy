@@ -1,18 +1,71 @@
 .header {
   @include flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../images/bg-header.jpg") no-repeat;
+  background-size: cover;
+  padding: 00px 20px;
+  height: 88px;
+  //left
   &-left {
+    width: 40%;
     .form-select {
-
+      width: 204px;
+      select {
+        width: 100%;
+        padding: 11px 20px;
+        border: 1px solid #C80009;
+      }
+    }
+    .back {
+      @include flex;
+      align-items: center;
+      .content {
+        @include flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #ffffff;
+        margin-left: 21px;
+        p {
+          font-size: 1.625rem;
+          line-height: 26px;
+          margin-bottom: 4px;
+        }
+        span {
+          font-size: 0.875rem;
+        }
+      }
     }
   }
-  &-right {
-    .btn-red {
 
+  //right
+  &-right {
+    width: 60%;
+    @include flex;
+    align-items: center;
+    justify-content: flex-end;
+    .btn-red {
+      margin-right: 28px;
     }
     ul {
+      margin-right: 36px;
       li {
+        @include flex;
+        list-style: none;
+        line-height: 1;
+        font-size: 1.07rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 11px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        p {
+          opacity: 0.8;
+        }
         span {
-
+          opacity: 1;
+          margin-left: 10px;
         }
       }
     }
@@ -25,6 +78,8 @@
         width: 44px;
         height: 44px;
         background: #2B9BCB;
+        margin-left: 15px;
+        @include border-radius(50%);
       }
       &-setting {
 
@@ -32,6 +87,66 @@
       &-question-mark {
 
       }
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .header {
+    height: 88px;
+    //left
+    &-left {
+      .form-select {
+        width: 160px;
+        select {
+          padding: 9px 20px;
+        }
+      }
+    }
+
+    //right
+    &-right {
+      width: 70%;
+      .btn-red {
+        margin-right: 18px;
+      }
+      ul {
+        margin-right: 0px;
+      }
+      .icon {
+        a {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-phone-normal} {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    //left
+    &-left {
+      width: 100%;
+      .form-select {
+        width: 100%;
+        margin-bottom: 15px;
+        select {
+          padding: 9px 20px;
+        }
+      }
+      .back {
+        margin-bottom: 15px;
+      }
+    }
+
+    //right
+    &-right {
+      width: 100%;
+      justify-content: space-between;
     }
   }
 }

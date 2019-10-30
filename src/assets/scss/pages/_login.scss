@@ -42,5 +42,8 @@
   .login {
     height: auto;
     padding: 50px 0px;
+    &-form {
+      margin-bottom: 50px;
+    }
   }
 }

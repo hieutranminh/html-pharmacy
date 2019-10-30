@@ -85,22 +85,129 @@ img {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex; }
-  .header-right .icon {
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; }
-    .header-right .icon a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../images/bg-header.jpg") no-repeat;
+  background-size: cover;
+  padding: 00px 20px;
+  height: 88px; }
+  .header-left {
+    width: 40%; }
+    .header-left .form-select {
+      width: 204px; }
+      .header-left .form-select select {
+        width: 100%;
+        padding: 11px 20px;
+        border: 1px solid #C80009; }
+    .header-left .back {
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 44px;
-      height: 44px;
-      background: #2B9BCB; }
+      align-items: center; }
+      .header-left .back .content {
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #ffffff;
+        margin-left: 21px; }
+        .header-left .back .content p {
+          font-size: 1.625rem;
+          line-height: 26px;
+          margin-bottom: 4px; }
+        .header-left .back .content span {
+          font-size: 0.875rem; }
+  .header-right {
+    width: 60%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .header-right .btn-red {
+      margin-right: 28px; }
+    .header-right ul {
+      margin-right: 36px; }
+      .header-right ul li {
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        list-style: none;
+        line-height: 1;
+        font-size: 1.07rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 11px; }
+        .header-right ul li:last-child {
+          margin-bottom: 0px; }
+        .header-right ul li p {
+          opacity: 0.8; }
+        .header-right ul li span {
+          opacity: 1;
+          margin-left: 10px; }
+    .header-right .icon {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+      .header-right .icon a {
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background: #2B9BCB;
+        margin-left: 15px;
+        -webkit-border-radius: 50%;
+        -khtml-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%; }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 88px; }
+    .header-left .form-select {
+      width: 160px; }
+      .header-left .form-select select {
+        padding: 9px 20px; }
+    .header-right {
+      width: 70%; }
+      .header-right .btn-red {
+        margin-right: 18px; }
+      .header-right ul {
+        margin-right: 0px; }
+      .header-right .icon a {
+        width: 40px;
+        height: 40px; } }
+
+@media only screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px; }
+    .header-left {
+      width: 100%; }
+      .header-left .form-select {
+        width: 100%;
+        margin-bottom: 15px; }
+        .header-left .form-select select {
+          padding: 9px 20px; }
+      .header-left .back {
+        margin-bottom: 15px; }
+    .header-right {
+      width: 100%;
+      justify-content: space-between; } }
 
 .card-01 {
   padding: 0px 11px 19px;
@@ -963,4 +1070,6 @@ img {
 @media only screen and (max-width: 576px) {
   .login {
     height: auto;
-    padding: 50px 0px; } }
+    padding: 50px 0px; }
+    .login-form {
+      margin-bottom: 50px; } }
