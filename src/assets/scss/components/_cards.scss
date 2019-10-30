@@ -15,7 +15,7 @@
       align-items: center;
       line-height: 1;
       font-size: 0.875rem;
-      color: #666666;
+      color: #999999;
       a {
         margin-left: 15px;
       }
@@ -26,8 +26,8 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E0E0E0;
-    padding: 0px 11px 13px;
-    margin-bottom: 15px;
+    padding: 0px 11px 15px;
+    margin-bottom: 11px;
     .content {
       p {
         font-size: 1.125rem;
@@ -295,5 +295,13 @@
         vertical-align: unset;
       }
     }
+  }
+  &-05 {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 11px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid #E0E0E0;
   }
 }

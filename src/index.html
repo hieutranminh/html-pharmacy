@@ -15,7 +15,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!--font google-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
     <!--bootstrap-->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <!--animate css-->
@@ -32,22 +33,29 @@
 
 <!---------HEADER-------->
 <header id="header" class="header">
+
+    <!--Header left-->
     <div class="header-left">
-      <div class="form-select arrow-white form-select-large">
-        <select class="control-common red">
-            <option>美容カルテ</option>
-        </select>
-      </div>
-<!--        <div class="back">-->
-<!--            <a href="#">-->
-<!--                <img src="./assets/images/icon-btn-back.png" alt="back">-->
-<!--            </a>-->
-<!--            <div class="content">-->
-<!--                <p>アヤナス ローション コ…</p>-->
-<!--                <span>2019/08/13 12:05:10</span>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--component input select-->
+        <div class="form-select arrow-white form-select-large">
+            <select class="control-common red">
+                <option>美容カルテ</option>
+            </select>
+        </div>
+        <!--component back (remove class d-none)-->
+        <div class="back d-none">
+            <a href="#">
+                <img src="./assets/images/icon-btn-back.png" alt="back">
+            </a>
+            <div class="content">
+                <p>アヤナス ローション コ…</p>
+                <span>2019/08/13 12:05:10</span>
+            </div>
+        </div>
     </div>
+
+
+    <!--Header right-->
     <div class="header-right">
         <a href="#" class="btn-normal btn-red">新規登録</a>
         <ul>
@@ -63,14 +71,256 @@
             </a>
         </div>
     </div>
+
 </header>
 
 
 <!---------HOME PAGE-------->
-<section id="home-page" class="home-page">
-    Home page
-</section>
+<section id="home" class="home layout">
 
+    <!--layout left-->
+    <div class="layout-left">
+        <!--Home top-->
+        <div class="home-top">
+            <h3 class="title-black">顧客一覧</h3>
+            <div class="form-search">
+                <input type="input" class="search-control" placeholder="検索">
+                <a href="#"><img src="./assets/images/icon-search.png" alt="search"></a>
+            </div>
+        </div>
+        <!--Home table-->
+        <div class="home-table">
+            <table class="table-custom table-responsive-sm">
+                <thead>
+                <tr>
+                    <th width="20%">No</th>
+                    <th width="25%">氏名</th>
+                    <th width="30%">フリガナ</th>
+                    <th width="15%">年齢</th>
+                    <th width="10%">01</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0123456789</td>
+                    <td>窪田 成子</td>
+                    <td>クボタ セイコ</td>
+                    <td>21</td>
+                    <td>
+                        <button class="btn-add">
+                            <img src="./assets/images/icon-add-grey.png" alt="add">
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!--layout sidebar-->
+    <div class="sidebar layout-sidebar ">
+
+        <!--calendar-->
+        <div class="sidebar-calendar">
+            <p>Calendar here ! remember remove css</p>
+        </div>
+
+        <!--sidebar edit-->
+        <div class="sidebar-edit">
+            <div class="item-05">
+                <p>2019年8月13日の予定</p>
+                <a href="#" class="btn-normal btn-blue">戻る</a>
+            </div>
+            <!--list add-->
+            <div class="list">
+                <div class="card-02">
+                    <div class="content">
+                        <p>Lorem ipsum</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                    <a href="#">
+                        <img src="./assets/images/icon-note-grey.png" alt="note">
+                    </a>
+                </div>
+                <div class="card-02">
+                    <div class="content">
+                        <p>Lorem ipsum</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                    <a href="#">
+                        <img src="./assets/images/icon-note-grey.png" alt="note">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--sidebar back (remove class d-none)-->
+        <div class="sidebar-back d-none">
+            <div class="item-05">
+                <p>2019年8月13日の予定</p>
+                <a href="#" class="btn-normal btn-grey">戻る</a>
+            </div>
+            <!--list remove-->
+            <div class="list">
+                <div class="card-03">
+                    <a href="#">
+                        <img src="./assets/images/icon-remove.png" alt="remove">
+                    </a>
+                    <div class="content">
+                        <p>Lorem ipsum</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+                <div class="card-03">
+                    <a href="#">
+                        <img src="./assets/images/icon-remove.png" alt="remove">
+                    </a>
+                    <div class="content">
+                        <p>Lorem ipsum</p>
+                        <span>Lorem ipsum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--layout sidebar-->
+    <div class="sidebar-note layout-sidebar d-none">
+
+        <div class="item-05">
+            <p>窪田さんのメモ</p>
+            <a href="#" class="btn-normal btn-grey">閉じる</a>
+        </div>
+
+        <!--list note-->
+        <div class="list">
+            <div class="card-01">
+                <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
+                <span>
+                    2018/08/13
+                    <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
+                </span>
+            </div>
+            <div class="card-01">
+                <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
+                <span>
+                    2018/08/13
+                    <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
+                </span>
+            </div>
+            <div class="card-01">
+                <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
+                <span>
+                    2018/08/13
+                    <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 
 <!--[if lt IE 8]>

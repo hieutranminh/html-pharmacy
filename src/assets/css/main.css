@@ -81,6 +81,48 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%; }
 
+.layout {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .layout-left {
+    width: calc(100% - 368px);
+    min-height: 680px; }
+  .layout-sidebar {
+    width: 368px;
+    border: 1px solid #E0E0E0;
+    -webkit-box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.16); }
+
+.sidebar-calendar {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 20px;
+  border-bottom: 1px solid #E0E0E0; }
+  .sidebar-calendar p {
+    background: #F4F4F4;
+    width: 100%;
+    height: 360px;
+    text-align: center; }
+
+.sidebar-edit {
+  padding: 0px 20px; }
+
+.sidebar-back {
+  padding: 0px 20px; }
+
+.sidebar-note .item-05 {
+  padding: 25px 30px; }
+
+.sidebar-note .list {
+  padding: 0px 20px; }
+
 .header {
   display: -moz-box;
   display: -ms-flexbox;
@@ -227,7 +269,7 @@ img {
     align-items: center;
     line-height: 1;
     font-size: 0.875rem;
-    color: #666666; }
+    color: #999999; }
     .card-01 span a {
       margin-left: 15px; }
 
@@ -239,8 +281,8 @@ img {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #E0E0E0;
-  padding: 0px 11px 13px;
-  margin-bottom: 15px; }
+  padding: 0px 11px 15px;
+  margin-bottom: 11px; }
   .card-02 .content p {
     font-size: 1.125rem;
     color: #333333; }
@@ -478,11 +520,25 @@ img {
   .item-04 .image img {
     vertical-align: unset; }
 
+.item-05 {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 11px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #E0E0E0; }
+
 .form-search {
   position: relative;
   width: 270px;
   height: 38px; }
   .form-search .search-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     padding-left: 20px;
     width: 100%;
     height: 100%;
@@ -1073,3 +1129,15 @@ img {
     padding: 50px 0px; }
     .login-form {
       margin-bottom: 50px; } }
+
+.home-top {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F4F4F4;
+  padding: 1.875rem; }
+  .home-top h3 {
+    font-weight: 300; }

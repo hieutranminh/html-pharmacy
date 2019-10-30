@@ -24,3 +24,16 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%;
 }
+//layout common
+.layout {
+  @include flex;
+  &-left {
+    width: calc(100% - 368px);
+    min-height: 680px;
+  }
+  &-sidebar {
+    width: 368px;
+    border: 1px solid #E0E0E0;
+    @include box-shadow(-1px, 0px, 6px, rgba(0, 0, 0, .16));
+  }
+}
