@@ -1,0 +1,36 @@
+html, body {
+  max-width: 1920px;
+  margin: auto;
+  font-size: 16px;
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  @mixin info-ipad {
+    font-size: 15px;
+  }
+  @mixin info-phone-normal {
+    font-size: 13px;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul, ol, p {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}

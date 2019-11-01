@@ -27,6 +27,7 @@ img {
 //layout common
 .layout {
   @include flex;
+  margin-top: 88px;
   &-left {
     width: calc(100% - 368px);
     min-height: 680px;
@@ -36,4 +37,14 @@ img {
     border: 1px solid #E0E0E0;
     @include box-shadow(-1px, 0px, 6px, rgba(0, 0, 0, .16));
   }
+}
+@media #{$info-phone-normal} {
+  .layout {
+    margin-top: 134px;
+  }
+}
+.testpost {
+  display: flex;
+  border-radius: 50%;
+  transform: translateX(30px);
 }

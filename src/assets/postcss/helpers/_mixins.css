@@ -1,0 +1,46 @@
+/* responsive */
+@define-mixin info-desktop {
+  @media only screen and (max-width : 1920px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-laptop-medium {
+  @media only screen and (max-width : 1440px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-laptop-normal {
+  @media only screen and (max-width : 1368px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-laptop-small {
+  @media only screen and (max-width : 1280px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-laptop-smallest {
+  @media only screen and (max-width : 1200px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-ipad-pro {
+  @media only screen and (max-width : 1024px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-ipad {
+  @media only screen and (max-width : 768px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-phone-normal {
+  @media only screen and (max-width : 576px) {
+    @mixin-content;
+  }
+}
+@define-mixin info-phone-small {
+  @media only screen and (max-width : 341px) {
+    @mixin-content;
+  }
+}
