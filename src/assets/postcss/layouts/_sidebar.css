@@ -1,7 +1,7 @@
 .sidebar {
-  // remove class calendar when use vue calendar
+  /* remove class calendar when use vue calendar */
   &-calendar {
-    @include flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 9px 20px;
@@ -14,12 +14,12 @@
     }
   }
 
-  // component edit
+  /* component edit */
   &-edit {
     padding: 0px 20px;
   }
 
-  // component back
+  /* component back */
   &-back {
     padding: 0px 20px;
   }

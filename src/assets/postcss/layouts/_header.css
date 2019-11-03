@@ -4,14 +4,14 @@
   top: 0;
   left: 0;
   z-index: 100;
-  @include flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background: url("../images/bg-header.jpg") no-repeat;
   background-size: cover;
   padding: 00px 20px;
   height: 88px;
-  //left
+  /* Left */
   &-left {
     width: 40%;
     .form-select {
@@ -22,13 +22,15 @@
         border: 1px solid #C80009;
       }
     }
+    .back .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
     .back {
-      @include flex;
+      display: flex;
       align-items: center;
       .content {
-        @include flex;
-        justify-content: center;
-        flex-direction: column;
         color: #ffffff;
         margin-left: 21px;
         p {
@@ -43,10 +45,10 @@
     }
   }
 
-  //right
+  /* Right */
   &-right {
     width: 60%;
-    @include flex;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
     .btn-red {
@@ -55,7 +57,7 @@
     ul {
       margin-right: 36px;
       li {
-        @include flex;
+        display: flex;
         list-style: none;
         line-height: 1;
         font-size: 1.07rem;
@@ -74,32 +76,28 @@
         }
       }
     }
+    .icon a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .icon {
-      @include flex;
+      display: flex;
       a {
-        @include flex;
-        justify-content: center;
-        align-items: center;
         width: 44px;
         height: 44px;
         background: #2B9BCB;
         margin-left: 15px;
-        @include border-radius(50%);
-      }
-      &-setting {
-
-      }
-      &-question-mark {
-
+        border-radius: 50%;
       }
     }
   }
 }
 
-@media #{$info-ipad} {
+@mixin info-ipad {
   .header {
     height: 88px;
-    //left
+    /* Left */
     &-left {
       .form-select {
         width: 160px;
@@ -109,7 +107,7 @@
       }
     }
 
-    //right
+    /* Right */
     &-right {
       width: 70%;
       .btn-red {
@@ -128,12 +126,12 @@
   }
 }
 
-@media #{$info-phone-normal} {
+@mixin info-phone-normal {
   .header {
     flex-direction: column;
     height: auto;
     padding: 20px;
-    //left
+    /* Left */
     &-left {
       width: 100%;
       .form-select {
@@ -148,7 +146,7 @@
       }
     }
 
-    //right
+    /* Right */
     &-right {
       width: 100%;
       justify-content: space-between;
