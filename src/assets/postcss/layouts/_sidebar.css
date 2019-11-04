@@ -26,11 +26,18 @@
 }
 
 .sidebar-note {
-  .item-05 {
+  .item-comp05 {
     padding: 25px 30px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.06);
   }
   .list {
     padding: 0px 20px;
+    margin-bottom: 160px;
+  }
+  .form-group {
+    padding: 20px 30px;
+    margin-bottom: 0px;
+    border-top: 1px solid #E0E0E0;
   }
 }
 

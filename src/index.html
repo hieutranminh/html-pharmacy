@@ -38,6 +38,8 @@
         <div class="form-select arrow-white form-select-large">
             <select class="control-common red">
                 <option>美容カルテ</option>
+                <option>育児相談</option>
+                <option>健康指導</option>
             </select>
         </div>
         <!--component back (remove class d-none)-->
@@ -74,7 +76,7 @@
 
 
 <!---------HOME PAGE-------->
-<section id="home" class="home layout">
+<section id="home" class="home layout layout-bg">
     <!--layout left-->
     <div class="layout-left">
         <!--Home top-->
@@ -215,7 +217,7 @@
 
 
     <!--layout sidebar-->
-    <div class="sidebar layout-sidebar ">
+    <div class="sidebar layout-sidebar d-none">
 
         <!--calendar-->
         <div class="sidebar-calendar">
@@ -284,7 +286,7 @@
 
 
     <!--layout sidebar-->
-    <div class="sidebar-note layout-sidebar d-none">
+    <div class="sidebar-note layout-sidebar">
 
         <div class="item-comp05">
             <p>窪田さんのメモ</p>
@@ -313,6 +315,13 @@
                     2018/08/13
                     <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
                 </span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-note">
+                <input type="input" class="note-control" placeholder="メモ…">
+                <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
             </div>
         </div>
     </div>

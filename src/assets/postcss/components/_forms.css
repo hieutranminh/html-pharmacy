@@ -14,7 +14,7 @@
   &-large {
     background: #F4F4F4;
     color: #333333;
-    width: 320px;
+    width: 315px;
     font-size: 1.125rem;
   }
   &-medium {
@@ -70,7 +70,7 @@
   .form-title {
     font-size: 1.125rem;
     color: var(--color-grey-medium);
-    width: 134px;
+    width: 135px;
     margin-bottom: 0px;
   }
   /* form group */
@@ -79,78 +79,18 @@
     flex-wrap: wrap;
     margin-left: 18px;
     margin-bottom: 0px;
-    width: 100%;
-    .form-control {
-      width: 320px;
-      height: 38px;
-      background: #F4F4F4;
-      border: 1px solid var(--color-grey-light);
-      box-shadow: none;
-      outline: none;
-      border-radius: 50px;
+    width: calc(100% - 135px);
+    .control-common {
       margin-right: 20px;
-      padding-left: 18px;
-      &-short {
-        width: 140px;
-      }
-      &-medium {
-        width: 200px;
-      }
       &:last-child {
         margin: 0px;
       }
     }
 
-    /* form checkbox */
-    .form-check {
+    /* button */
+    a {
       display: flex;
       align-items: center;
-      margin-right: 45px;
-      label {
-        width: unset;
-        margin-left: 5px;
-        color: #999999;
-      }
-      input {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        width: 18px;
-        height: 18px;
-        border: 2px solid #E0E0E0;
-        margin-top: 0px;
-        box-shadow: none;
-        outline: none;
-        border-radius: 2px;
-        &:checked {
-          background: url(../images/checkbox-select.png) no-repeat;
-          background-size: cover;
-          border: none;
-          opacity: 0.4;
-          & + label {
-            color: var(--color-black);
-          }
-        }
-      }
-    }
-
-    /* form select */
-    select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background: url(../images/arrow-down.png) 93% / 12px no-repeat #F4F4F4 !important;
-    }
-
-    /* button */
-    button {
-      box-shadow: none;
-      outline: none;
-      border: none;
-      &.btn-camera {
-        line-height: 1;
-        height: 38px;
-      }
     }
 
     /* textarea */
@@ -168,6 +108,7 @@
   }
   &.form-textarea {
     align-items: start;
+    margin-bottom: 0px;
     p {
       padding-top: 5px;
     }

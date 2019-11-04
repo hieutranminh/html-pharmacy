@@ -143,7 +143,7 @@
 @mixin info-ipad-pro {
   .template {
 
-    &-sidebar { 
+    &-sidebar {
       transform: translateX(-100%);
       transition: all 0.3s;
     }

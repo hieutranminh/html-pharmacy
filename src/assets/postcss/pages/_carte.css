@@ -1,0 +1,82 @@
+.carte {
+  margin-top: 88px;
+
+  /* Carte profile */
+  &-profile {
+    padding: 30px;
+  }
+
+  /* Carte checklist */
+  &-checklist {
+    .layout {
+      &-left {
+        padding: 30px;
+        .form-item {
+          align-items: flex-start;
+          margin-bottom: 12px;
+          .form-group {
+            display: flex;
+            align-items: center;
+            .form-check {
+              margin-right: 30px;
+              margin-bottom: 14px;
+            }
+            p {
+              margin-bottom: 14px;
+            }
+            .form-radio {
+              margin-left: 30px;
+              margin-bottom: 14px;
+            }
+          }
+        }
+      }
+      &-sidebar {
+        .item-comp05 {
+          padding: 28px;
+        }
+        .sidebar-list {
+          padding: 0px 18px;
+        }
+      }
+    }
+  }
+
+  /* Carte counseling */
+  &-counseling {
+    .layout {
+
+      /* left */
+      &-left {
+        padding: 30px;
+        .time {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &-date {
+            display: flex;
+            align-items: center;
+            img {
+
+            }
+            p {
+
+            }
+          }
+          .btn-normal {
+
+          }
+        }
+        .content {
+
+        }
+      }
+
+      /* sidebar */
+      &-sidebar {
+
+      }
+    }
+  }
+}
+

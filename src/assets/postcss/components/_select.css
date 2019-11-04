@@ -18,7 +18,7 @@
     width: 100%;
   }
   &-large {
-    width: 320px;
+    width: 315px!important;
   }
   &.arrow-white {
     &:after {
