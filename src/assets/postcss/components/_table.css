@@ -71,6 +71,7 @@
           color: #333333;
           font-size: .875rem;
           white-space: nowrap;
+          width: calc(100% - 480px);
         }
         &:last-child {
           border-right: none;

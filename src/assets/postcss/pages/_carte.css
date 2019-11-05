@@ -48,27 +48,230 @@
 
       /* left */
       &-left {
-        padding: 30px;
-        .time {
+
+        .box-head {
+          padding: 25px 30px;
+          /* time top */
+          .time {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            &-date {
+              display: flex;
+              align-items: center;
+              a {
+                width: 11px;
+                height: 16px;
+                line-height: 1;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  vertical-align: unset;
+                }
+              }
+              p {
+                color: #333333;
+                font-weight: normal;
+                font-size: 26px;
+                margin: 0px 25px;
+              }
+            }
+          }
+        }
+
+        /* tab comment */
+        .tab-comment {
+          background: #F4F4F4;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          &-date {
-            display: flex;
-            align-items: center;
-            img {
-
-            }
-            p {
-
-            }
+          padding: 0px 30px;
+          p {
+            color: #555555;
+            font-size: 20px;
+            font-weight: normal;
           }
-          .btn-normal {
-
+          ul {
+            position: relative;
+            &:before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              background: #D5D5D5;
+            }
+            li {
+              display: inline-block;
+              list-style: none;
+              a {
+                display: inline-block;
+                font-size: 18px;
+                font-weight: normal;
+                padding: 25px 20px;
+                color: #999999;
+              }
+              &.active {
+                a {
+                  position: relative;
+                  color:  #C80009;
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background:  #C80009;
+                  }
+                }
+              }
+            }
           }
         }
-        .content {
 
+        /* list */
+        .list {
+          padding: 30px;
+          .item-comp02 {
+            .image-blur {
+              opacity: 0.4;
+            }
+          }
+          .form-group {
+            margin: 30px 0px 0px;
+          }
+        }
+      }
+
+      /* sidebar */
+      &-sidebar {
+        h3 {
+          padding: 30px 30px 24px;
+        }
+        .card-comp06 {
+          margin-bottom: 0px;
+        }
+        .sidebar-tab {
+          margin-bottom: 20px;
+          border-bottom: 1px solid #e0e0e0;
+          ul {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 30px;
+            &:before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              background: #D5D5D5;
+            }
+            li {
+              width: 50%;
+              list-style: none;
+              a {
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                font-weight: normal;
+                color: #999999;
+                padding: 25px 0px;
+              }
+              &.active {
+                a {
+                  position: relative;
+                  color: #C80009;
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: #C80009;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .sidebar-list {
+          padding: 0px 19px;
+          .image-blur {
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+
+  /* Carte status */
+  &-status {
+    .layout {
+
+      /* left */
+      &-left {
+        .select-year {
+          padding: 0px 30px;
+          .form-group {
+            margin-bottom: 0px;
+            width: 130px;
+            transform: translateY(20px);
+          }
+        }
+      }
+
+      /* sidebar */
+      &-sidebar {
+        .item-comp05 {
+          padding: 25px 30px;
+        }
+        .sidebar-list {
+          padding: 0px 19px;
+        }
+      }
+    }
+  }
+
+  /* Carte recommend */
+  &-recommend {
+    .layout {
+
+      /* left */
+      &-left {
+
+        /* search */
+        .search-box {
+          display: flex;
+          padding: 25px 30px;
+          border-bottom: 1px solid #E0E0E0;
+          .form-group {
+            margin-bottom: 0px;
+            margin-right: 15px;
+            &:last-child {
+              margin-right: 0px;
+            }
+            select {
+              color: #999999;
+            }
+          }
+        }
+
+        /* product list */
+        .product-list {
+          padding: 20px 30px;
+          .card-comp09 {
+            margin-bottom: 20px;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
         }
       }
 
@@ -76,6 +279,7 @@
       &-sidebar {
 
       }
+
     }
   }
 }

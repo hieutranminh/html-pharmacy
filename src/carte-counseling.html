@@ -98,24 +98,33 @@
         <div class="layout">
             <!--layout left-->
             <div class="layout-left">
-                <!--time top-->
-                <div class="time">
-                    <div class="time-date">
-                        <img src="./assets/images/arrow-left-grey.png" alt="arrow">
-                        <p>2018年8月13日</p>
-                        <img src="./assets/images/arrow-right-grey.png" alt="arrow">
+                <div class="box-head">
+                    <!--time top-->
+                    <div class="time">
+                        <div class="time-date">
+                            <a href="#">
+                                <img src="./assets/images/arrow-left-grey.png" alt="arrow">
+                            </a>
+                            <p>2018年8月13日</p>
+                            <a href="#">
+                                <img src="./assets/images/arrow-right-grey.png" alt="arrow">
+
+                            </a>
+                        </div>
+                        <a href="#" class="btn-normal btn-blue pd-medium">日付を選択</a>
                     </div>
-                    <a href="#" class="btn-normal btn-blue pd-medium">日付を選択</a>
+
+                    <!--content-->
+                    <div class="content">
+                        <p class="paragraph-black-bg bg-grey">ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。</p>
+                    </div>
                 </div>
-                <!--content-->
-                <div class="content">
-                    <p class="paragraph-black-bg">ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。</p>
-                </div>
-                <!--navtabs comment-->
+
+                <!--tabs comment-->
                 <div class="tab-comment">
                     <p>コメントテンプレート</p>
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="#">共有</a>
                         </li>
                         <li>
@@ -127,98 +136,160 @@
                     </ul>
                     <a href="#" class="btn-normal btn-blue">編集</a>
                 </div>
+
                 <!--list-->
                 <div class="list">
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>お客様の悩み</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>要望（こんな肌になりたい・お手入れ方法の要望）</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>現在のお手入れ</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>お客様の肌悩みや要望を考慮した上の提案内容</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>水分チェッカーの数値</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>タッチアップしたアイテム</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>デモしたアイテム</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>サンプリングした商品</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image">
+                        <a href="#" class="image image-blur">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>次回のご来店で必ずお伺いする質問事項</p>
                     </div>
-                </div>
-                <!--form add comment-->
-                <div class="form-group">
-                    <div class="form-note">
-                        <input type="text" class="note-control" placeholder="コメント登録">
-                        <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+                    <!--form add comment-->
+                    <div class="form-group">
+                        <div class="form-note">
+                            <input type="text" class="note-control" placeholder="コメント登録">
+                            <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
 
             <!--layout sidebar-->
             <div class="sidebar layout-sidebar">
+                <h3 class="title-black-small">お薦め商品</h3>
                 <!--sidebar top-->
-                <div class="item-comp05">
-                    <p>予約商品</p>
-                </div>
-                <!--sidebar list-->
-                <div class="sidebar-list">
-                    <div class="card-comp05">
-                        <div class="content">
-                            <p class="date">2018/08/03</p>
-                            <p class="shop-name">前畑店</p>
-                        </div>
-                        <p class="product-code">SK-Ⅱ</p>
+                <div class="card-comp06">
+                    <div class="content">
+                        <p class="product-code">DECENCIA</p>
                         <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
                         <span>1234567890123</span>
                     </div>
-                    <div class="card-comp05">
-                        <div class="content">
-                            <p class="date">2018/08/03</p>
-                            <p class="shop-name">前畑店</p>
+                    <div class="image">
+                        <img src="./assets/images/img-product.png" alt="product">
+                    </div>
+                </div>
+
+                <!--sidebar tabs-->
+                <div class="sidebar-tab">
+                    <ul>
+                        <li class="active">
+                            <a href="#">購入履歴</a>
+                        </li>
+                        <li>
+                            <a href="#">相談履歴</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--sidebar list-->
+                <div class="sidebar-list">
+                    <div class="card-comp07">
+                        <div class="content-head">
+                            <div class="left">
+                                <p class="date">2018/08/03</p>
+                                <p class="shop-name">前畑店</p>
+                            </div>
+                            <a href="#">お薦め</a>
                         </div>
-                        <p class="product-code">SK-Ⅱ</p>
-                        <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
-                        <span>1234567890123</span>
+                        <div class="content-body">
+                            <div class="left">
+                                <a href="#" class="image-blur"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
+                            </div>
+                            <div class="right">
+                                <p class="product-code">SK-Ⅱ</p>
+                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                <span>1234567890123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-comp07">
+                        <div class="content-head">
+                            <div class="left">
+                                <p class="date">2018/08/03</p>
+                                <p class="shop-name">前畑店</p>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="left">
+                                <a href="#" class="image-blur"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
+                            </div>
+                            <div class="right">
+                                <p class="product-code">SK-Ⅱ</p>
+                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                <span>1234567890123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--sidebar list-->
+                <div class="sidebar-list history d-none">
+                    <div class="item-comp01">
+                        <p>2018/08/03</p>
+                        <span>前畑店</span>
+                    </div>
+                    <div class="item-comp01">
+                        <p>2018/08/03</p>
+                        <span>前畑店</span>
+                    </div>
+                    <div class="item-comp01">
+                        <p>2018/08/03</p>
+                        <span>前畑店</span>
+                    </div>
+                    <div class="item-comp01">
+                        <p>2018/08/03</p>
+                        <span>前畑店</span>
                     </div>
                 </div>
 

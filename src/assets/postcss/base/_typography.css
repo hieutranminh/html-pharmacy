@@ -27,10 +27,13 @@
     font-size: 1.125rem;
     width: 100%;
     min-height: 200px;
-    background: #F4F4F4;
+    background: #FFFFFF;
     padding: 23px 20px;
     border: 1px solid #E0E0E0;
     border-radius: 15px;
+    &.bg-grey {
+      background: #F4F4F4;
+    }
   }
   &-black-default {
     color: #333333;
