@@ -1,0 +1,43 @@
+.modal-menu {
+    position: relative;
+    &:before {
+        content: '';
+        background: #000;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .modal-menu-content {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        padding: 25px 20px 290px;
+        background: url(../images/bg-menu.png) no-repeat;
+        background-size: cover;
+        a {
+            padding: 7px 29px;
+            margin-bottom: 25px;
+            float: right;
+        }
+        .list-menu {
+            list-style: none;
+            border-top: 1px solid #9BD5ED;
+            border-bottom: 1px solid #9BD5ED;
+            &-item {
+                font-size: 1.125rem;
+                font-weight: bold;
+                color: #FFFFFF;
+                border-bottom: 1px solid #9BD5ED;
+                padding: 25px 0 25px 10px;
+            }
+            &-item:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

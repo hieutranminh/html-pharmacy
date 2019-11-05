@@ -13,6 +13,9 @@
 @import "layouts/_header.css";
 @import "layouts/_footer.css";
 @import "layouts/_loading.css";
+@import "layouts/_menu.css";
+@import "layouts/_modal.css";
+@import "layouts/_camera.css";
 
 /* Components */
 @import "components/_bar.css";
