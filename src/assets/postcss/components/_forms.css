@@ -87,6 +87,9 @@
       }
     }
 
+    &.form-select-large {
+      width: 315px;
+    }
     /* button */
     a {
       display: flex;
