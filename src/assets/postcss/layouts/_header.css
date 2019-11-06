@@ -6,7 +6,7 @@
   z-index: 100;
   .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     background: url("../images/bg-header.jpg") no-repeat;
     background-size: cover;
@@ -55,6 +55,9 @@
       justify-content: flex-end;
       .btn-red {
         margin-right: 28px;
+      }
+      .btn-white {
+        margin-right: 15px;
       }
       ul {
         margin-right: 36px;

@@ -5,7 +5,7 @@
   label {
     width: unset;
     margin-left: 5px;
-    color: #999999;
+    color: #333333;
     user-select: none;
   }
   input {
@@ -23,20 +23,9 @@
       background: url(../images/checkbox-select.png) no-repeat;
       background-size: cover;
       border: none;
-      opacity: 0.4;
       & + label {
         color: #333333;
       }
-    }
-  }
-  &-bold {
-    input {
-      &:checked {
-        opacity: 1;
-      }
-    }
-    label {
-      color: #333333;
     }
   }
 }

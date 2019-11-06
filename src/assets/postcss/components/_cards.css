@@ -297,12 +297,6 @@
       img {
         vertical-align: unset;
       }
-      &.image-blur {
-        opacity: 0.4;
-      }
-    }
-    .text-grey {
-      color: #999999;
     }
   }
   &-comp05 {

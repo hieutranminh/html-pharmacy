@@ -16,7 +16,6 @@
       background: url("../images/check-radio.png") no-repeat;
       background-size: cover;
       border: none;
-      opacity: 0.4;
       & + label {
         color: #333333;
       }
@@ -24,8 +23,8 @@
   }
   label {
     margin-bottom: 0px;
-    padding-left: 25px;
-    color: #999999;
+    margin-left: 30px;
+    color: #333333;
     font-size: 18px;
     font-weight: normal;
   }

@@ -5,32 +5,34 @@
   outline: none;
   padding: 4px 20px;
   border-radius: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   &-w100 {
-    background: #F4F4F4;
     color: #333333;
     width: 100%;
     font-size: 1.125rem;
   }
   &-large {
-    background: #F4F4F4;
     color: #333333;
     width: 315px;
     font-size: 1.125rem;
   }
   &-medium {
-    background: #F4F4F4;
     color: #333333;
     width: 200px;
     font-size: 1.125rem;
   }
   &-small {
-    background: #F4F4F4;
     color: #333333;
     width: 140px;
     font-size: 1.125rem;
   }
   &.white {
     background: #ffffff;
+  }
+  &.grey {
+    background: #F4F4F4;
   }
 }
 
@@ -87,9 +89,6 @@
       }
     }
 
-    &.form-select-large {
-      width: 315px;
-    }
     /* button */
     a {
       display: flex;
@@ -100,13 +99,15 @@
     textarea {
       width: 450px;
       height: 120px;
-      background: #F4F4F4;
       border: 1px solid var(--color-grey-light);;
       box-shadow: none;
       outline: none;
       resize: none;
       padding: 10px;
       border-radius: 15px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
     }
   }
   &.form-textarea {
