@@ -2,7 +2,8 @@
     position: relative;
     &:before {
         content: '';
-        background: #000;
+        background: #111111;
+        opacity: .9;
         position: fixed;
         z-index: 1;
         left: 0;
