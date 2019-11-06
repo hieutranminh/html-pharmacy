@@ -268,6 +268,7 @@
           padding: 20px 30px;
           .card-comp09 {
             margin-bottom: 20px;
+            background: #ffffff;
             &:last-child {
               margin-bottom: 0px;
             }
@@ -277,7 +278,23 @@
 
       /* sidebar */
       &-sidebar {
-
+        .sidebar-content {
+          border-bottom: 1px solid #E0E0E0;
+          padding: 26px 28px;
+          .item-comp05 {
+            padding: 0px;
+            margin-bottom: 25px;
+            border-bottom: none;
+          }
+          .item-comp02 {
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
       }
 
     }
