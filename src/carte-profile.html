@@ -59,6 +59,7 @@
 
         <!--Header right-->
         <div class="header-content-right">
+            <a href="#" class="btn-normal btn-white text-red">中断する</a>
             <a href="#" class="btn-normal btn-red">新規登録</a>
             <ul>
                 <li><p>店舗</p><span>前畑店</span></li>
@@ -92,13 +93,13 @@
 
 <!---------CARTE-------->
 <section id="carte" class="carte layout-bg">
-    <!--Carte Profile-->
-    <div class="carte-profile">
+    <!--Carte Profile - remove class carte-profile-disable when edit-->
+    <div class="carte-profile carte-profile-disable">
         <form action="#">
             <div class="form-item">
                 <p class="form-title">初回来店日</p>
                 <div class="form-group">
-                    <input type="date" class="control-common control-common-large">
+                    <input type="date" value="2019-01-01" class="control-common control-common-large">
                 </div>
             </div>
             <div class="form-item">
@@ -134,7 +135,7 @@
             <div class="form-item">
                 <p class="form-title">生年月日</p>
                 <div class="form-group">
-                    <input type="date" class="control-common control-common-large">
+                    <input type="date" value="2019-01-01" class="control-common control-common-large">
                 </div>
             </div>
             <div class="form-item">
@@ -147,7 +148,7 @@
                 <p class="form-title">郵便番号</p>
                 <div class="form-group">
                     <input type="text" class="control-common control-common-small">
-                    <a href="#" class="btn-normal btn-blue-disable">自動入力</a>
+                    <a href="#" class="btn-normal btn-blue">自動入力</a>
                 </div>
             </div>
             <div class="form-item">
@@ -170,23 +171,25 @@
                     <input type="text" class="control-common control-common-medium" placeholder="">
                     <input type="text" class="control-common control-common-medium" placeholder="">
                     <input type="text" class="control-common control-common-medium" placeholder="">
-                    <a href="#" class="btn-normal btn-blue-disable">
+                    <a href="#" class="btn-normal btn-blue">
                         <img src="./assets/images/icon-camera.png" alt="camera">
                     </a>
                 </div>
             </div>
             <div class="form-item">
                 <p class="form-title">DM</p>
-                <div class="form-group form-select form-select-large">
-                    <select class="control-common">
-                        <option></option>
-                    </select>
+                <div class="form-group ">
+                    <div class="form-select form-select-large">
+                        <select class="control-common">
+                            <option></option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="form-item form-textarea">
                 <p class="form-title">備考</p>
                 <div class="form-group">
-                    <textarea name="" id=""></textarea>
+                    <textarea name="" id="" class="control-common"></textarea>
                 </div>
             </div>
         </form>

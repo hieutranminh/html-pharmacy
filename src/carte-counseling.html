@@ -59,6 +59,7 @@
 
         <!--Header right-->
         <div class="header-content-right">
+            <a href="#" class="btn-normal btn-white text-red">中断する</a>
             <a href="#" class="btn-normal btn-red">新規登録</a>
             <ul>
                 <li><p>店舗</p><span>前畑店</span></li>
@@ -93,8 +94,8 @@
 <!---------CARTE-------->
 <section id="carte" class="carte ">
 
-    <!--Carte Counseling-->
-    <div class="carte-counseling">
+    <!--Carte Counseling - remove carte-counseling-disable when edit-->
+    <div class="carte-counseling carte-counseling-disable">
         <div class="layout">
             <!--layout left-->
             <div class="layout-left">
@@ -116,7 +117,7 @@
 
                     <!--content-->
                     <div class="content">
-                        <p class="paragraph-black-bg bg-grey">ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。</p>
+                        <p class="paragraph-black-bg">ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。</p>
                     </div>
                 </div>
 
@@ -135,60 +136,62 @@
                         </li>
                     </ul>
                     <a href="#" class="btn-normal btn-blue">編集</a>
+                    <!--remove d-none when click edit-->
+                    <a href="#" class="btn-normal btn-grey d-none">戻る</a>
                 </div>
 
                 <!--list-->
-                <div class="list">
+                <div class="list ">
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>お客様の悩み</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>要望（こんな肌になりたい・お手入れ方法の要望）</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>現在のお手入れ</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>お客様の肌悩みや要望を考慮した上の提案内容</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>水分チェッカーの数値</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>タッチアップしたアイテム</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>デモしたアイテム</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>サンプリングした商品</p>
                     </div>
                     <div class="item-comp02">
-                        <a href="#" class="image image-blur">
+                        <a href="#" class="image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         <p>次回のご来店で必ずお伺いする質問事項</p>
@@ -199,6 +202,64 @@
                             <input type="text" class="note-control" placeholder="コメント登録">
                             <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
                         </div>
+                    </div>
+                </div>
+
+                <!--list remove-->
+                <div class="list d-none">
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>お客様の悩み</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>要望（こんな肌になりたい・お手入れ方法の要望）</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>現在のお手入れ</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>お客様の肌悩みや要望を考慮した上の提案内容</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>水分チェッカーの数値</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>タッチアップしたアイテム</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>デモしたアイテム</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>サンプリングした商品</p>
+                    </div>
+                    <div class="item-comp02">
+                        <a href="#" class="image">
+                            <img src="./assets/images/icon-remove.png" alt="remove">
+                        </a>
+                        <p>次回のご来店で必ずお伺いする質問事項</p>
                     </div>
                 </div>
 
@@ -244,7 +305,7 @@
                         </div>
                         <div class="content-body">
                             <div class="left">
-                                <a href="#" class="image-blur"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
+                                <a href="#"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
                             </div>
                             <div class="right">
                                 <p class="product-code">SK-Ⅱ</p>
@@ -262,7 +323,7 @@
                         </div>
                         <div class="content-body">
                             <div class="left">
-                                <a href="#" class="image-blur"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
+                                <a href="#"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
                             </div>
                             <div class="right">
                                 <p class="product-code">SK-Ⅱ</p>

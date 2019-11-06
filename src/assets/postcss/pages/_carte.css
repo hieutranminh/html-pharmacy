@@ -4,6 +4,31 @@
   /* Carte profile */
   &-profile {
     padding: 30px;
+
+    /* Carte profile disable*/
+    &-disable {
+      .form-group {
+        .control-common {
+          background: #F4F4F4;
+        }
+        .btn-blue {
+          opacity: 0.4;
+        }
+        .form-check {
+          input {
+            opacity: 0.4;
+            &:checked {
+              & + label {
+                opacity: 1;
+              }
+            }
+          }
+          label {
+            opacity: 0.4;
+          }
+        }
+      }
+    }
   }
 
   /* Carte checklist */
@@ -37,6 +62,38 @@
         }
         .sidebar-list {
           padding: 0px 18px;
+        }
+      }
+    }
+
+    /* Carte checklist disable */
+    &-disable {
+      .form-group {
+        .form-check {
+          input {
+            opacity: 0.4;
+            &:checked {
+              & + label {
+                opacity: 1;
+              }
+            }
+          }
+          label {
+            opacity: 0.4;
+          }
+        }
+        .form-radio {
+          input {
+            opacity: 0.4;
+            &:checked {
+              & + label {
+                opacity: 1;
+              }
+            }
+          }
+          label {
+            opacity: 0.4;
+          }
         }
       }
     }
@@ -135,11 +192,6 @@
         /* list */
         .list {
           padding: 30px;
-          .item-comp02 {
-            .image-blur {
-              opacity: 0.4;
-            }
-          }
           .form-group {
             margin: 30px 0px 0px;
           }
@@ -203,8 +255,38 @@
         }
         .sidebar-list {
           padding: 0px 19px;
-          .image-blur {
-            opacity: 0.4;
+        }
+      }
+    }
+
+    /* Carte counseling disable */
+    &-disable {
+      .layout-left {
+        .box-head {
+          .content {
+            .paragraph-black-bg {
+              background: #F4F4F4;
+            }
+          }
+        }
+        .list {
+          .item-comp02 {
+            a {
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+      .layout-sidebar {
+        .sidebar-list {
+          .card-comp07 {
+            .content-body {
+              .left {
+                a {
+                  opacity: 0.4;
+                }
+              }
+            }
           }
         }
       }
@@ -234,6 +316,28 @@
         }
         .sidebar-list {
           padding: 0px 19px;
+        }
+      }
+    }
+
+    /* Carte status disable */
+    &-disable {
+      .layout-sidebar {
+        .item-comp05 {
+          .btn-blue {
+            opacity: 0.4;
+          }
+        }
+        .sidebar-list {
+          .card-comp08 {
+            .content-body {
+              .left {
+                a {
+                  opacity: 0.4;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -297,6 +401,27 @@
         }
       }
 
+    }
+
+    /* Carte recommend disable */
+    &-disable {
+      .layout-sidebar {
+        .sidebar-content {
+          .item-comp05 {
+            .btn-grey {
+              opacity: 0.4;
+            }
+          }
+          .item-comp02 {
+            .image {
+              opacity: 0.4;
+            }
+            .text-grey {
+              opacity: 0.4;
+            }
+          }
+        }
+      }
     }
   }
 }
