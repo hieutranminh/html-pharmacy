@@ -1,0 +1,44 @@
+.camera-shooting {
+    .btn-normal {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background: transparent;
+        border: 2px solid #FFFFFF;
+    }
+    .common-modal-content {
+        .camera-shooting-screen {
+            position: relative;
+            height: 358px;
+            background: #fff;
+            margin-top: 35px;
+            margin-bottom: 50px;
+            .icon {
+                position: absolute;
+                display: block;
+                width: 36px;
+                height: 36px;
+            }
+            .icon-upper-left {
+                top: -8px;
+                left: -8px;
+                background: url("../images/icon-upper-left-frame.png") no-repeat;
+            }
+            .icon-upper-right {
+                top: -8px;
+                right: -8px;
+                background: url("../images/icon-upper-right-frame.png") no-repeat;
+            }
+            .icon-lower-left {
+                bottom: -8px;
+                left: -8px;
+                background: url("../images/icon-lower-left-frame.png") no-repeat;
+            }
+            .icon-lower-right {
+                bottom: -8px;
+                right: -8px;
+                background: url("../images/icon-lower-right-frame.png") no-repeat;
+            }
+        }
+    }
+}

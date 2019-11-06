@@ -15,9 +15,15 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!--font google-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
   <!--bootstrap-->
   <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+  <!--animate css-->
+  <link rel="stylesheet" href="assets/css/vendor/animate.css">
+  <!--slick slider-->
+  <link rel="stylesheet" href="assets/css/vendor/slick.css">
+  <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
   <!--main css-->
   <link rel="stylesheet" href="assets/css/main.css">
 
@@ -25,39 +31,30 @@
 <body>
 
 
-<section id="common-modal" class="common-modal">
-  <!---------MODAL BEFORE SAVING-------->
-  <div class="common-modal-content d-none">
-    <p class="qes mb-90 fs-26">編集した内容が保存されていません
-      保存をして戻りますか？</p>
-    <div class="sl-option text-center">
-      <a href="#" class="btn-large btn-grey-width mr-35">保存しない</a>
-      <a href="#" class="btn-large btn-red-width">保存する</a>
-    </div>
-  </div>
-  <!---------LOGOUT MODAL-------->
-  <div class="common-modal-content d-none">
-    <p class="qes mb-90 fs-26">ログアウトしても
-      よろしいですか？</p>
-    <div class="sl-option text-center">
-      <a href="#" class="btn-large btn-grey-width mr-35">保存しない</a>
-      <a href="#" class="btn-large btn-red-width">ログアウトする</a>
-    </div>
-  </div>
-  <!---------SUSPENDED MODAL-------->
+<section id="camera-shooting" class="common-modal camera-shooting">
+  <a href="#" class="btn-normal">キャンセル</a>
+  <!---------CAMERA SHOOTING-------->
   <div class="common-modal-content">
-    <p class="qes mb-90 fs-26">作業を中断して
-      ログインに戻りますか？</p>
+    <div class="camera-shooting-screen">
+      <i class="icon icon-upper-left"></i>
+      <i class="icon icon-upper-right"></i>
+      <i class="icon icon-lower-left"></i>
+      <i class="icon icon-lower-right"></i>
+    </div>
+    <p class="qes mb-40 fs-20">カメラにカードをかざして
+      ピントがあったら撮影してください</p>
     <div class="sl-option text-center">
-      <a href="#" class="btn-large btn-grey-width mr-35">保存しない</a>
-      <a href="#" class="btn-large btn-red-width">中断する</a>
+      <a href="#" class="btn-large btn-red-width">撮影する</a>
     </div>
   </div>
-  <!---------PASSWORD CHANGE MODAL-------->
+  <!---------CAMERA SHOOTING CONFIRM-------->
   <div class="common-modal-content d-none">
-    <p class="qes mb-90 fs-26 text-center">パスワードを変更しました。</p>
+    <div class="camera-shooting-screen"></div>
+    <p class="qes mb-40 fs-20">撮影した内容がよろしければ
+      完了ボタンを押してください</p>
     <div class="sl-option text-center">
-      <a href="#" class="btn-large btn-red-width">戻る</a>
+      <a href="#" class="btn-large btn-grey-width mr-35">もう一度撮影する</a>
+      <a href="#" class="btn-large btn-red-width">撮影を完了する</a>
     </div>
   </div>
 </section>
@@ -70,6 +67,8 @@
 
 <script src="./assets/js/vendor/jquery-3.4.1.min.js"></script>
 <script src="./assets/js/vendor/bootstrap.min.js"></script>
+<script src="./assets/js/vendor/slick.min.js"></script>
+<script src="./assets/js/vendor/wow.min.js"></script>
 <!-- Main Script -->
 <script src="./assets/js/common.js"></script>
 <script src="./assets/js/home.js"></script>
