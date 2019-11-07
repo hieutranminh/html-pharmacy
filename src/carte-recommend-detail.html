@@ -82,7 +82,7 @@
 <section id="carte" class="carte layout-bg">
 
     <!--Carte Recommend Detail -->
-    <div class="carte-recommend-detail">
+    <div class="carte-recommend-detail carte-recommend-detail-disable">
         <!--Detail top-->
         <div class="detail-top">
             <div class="left">
@@ -149,34 +149,96 @@
                         </div>
                     </li>
                 </ul>
-                <h4>4,860円</h4>
-                <p>濃密なうるおいが、深く広がる悦びを。<br>とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション。濃密なうるおいが、肌になじんだ途端、すーっと浸透。芯からしなやかで、ふっくらとハリのある肌へ導きます。</p>
+                <h4 class="price">4,860円</h4>
+                <p class="des">濃密なうるおいが、深く広がる悦びを。<br>とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション。濃密なうるおいが、肌になじんだ途端、すーっと浸透。芯からしなやかで、ふっくらとハリのある肌へ導きます。</p>
                 <ul class="list-parameter">
                     <li>
                         <span>容量</span>
-                        <p>125mL</p>
+                        <p class="param-des">125mL</p>
                     </li>
                     <li>
                         <span>使用期間</span>
-                        <p>約1.5ヵ月 ※ご使用方法にそった使い方での目安</p>
+                        <p class="param-des">約1.5ヵ月 ※ご使用方法にそった使い方での目安</p>
                     </li>
                     <li>
                         <span>リフィル</span>
-                        <p>使い終わった後はお求めやすい『アヤナス ローションコンセントレート リフィル』をセットしてご使用いただけます。容器のみの販売はございません。</p>
+                        <p class="param-des">使い終わった後はお求めやすい『アヤナス ローションコンセントレート リフィル』をセットしてご使用いただけます。容器のみの販売はございません。</p>
                     </li>
                     <li>
                         <span>その他</span>
-                        <p>アレルギーテスト済み(全ての方にアレルギーが起こらないというわけではありません) / 合成香料不使用 / 無着色</p>
+                        <p class="param-des">アレルギーテスト済み(全ての方にアレルギーが起こらないというわけではありません) / 合成香料不使用 / 無着色</p>
                     </li>
                     <li>
                         <span>受賞歴</span>
-                        <div class="list-sub">
+                        <div class="param-des">
                             <p>・MORE 化粧水ベストコスメ2019 敏感肌ケア部門賞</p>
                             <p>・美的 美的読者が選ぶ2018年ベストコスメ スキンケア部門敏感なときにも安心ランキング第1位</p>
                             <p>・All About ベストコスメ大賞 2016 通販ベストコスメ敏感肌部門大賞</p>
                         </div>
                     </li>
                 </ul>
+            </div>
+        </div>
+
+        <!--layout sidebar-->
+        <div class="sidebar layout-sidebar d-none">
+            <div class="item-comp05">
+                <p>商品レビュー</p>
+                <a href="#" class="btn-normal btn-grey">閉じる</a>
+            </div>
+            <div class="sidebar-list">
+                <div class="card-comp01">
+                    <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
+                    <div class="bottom">
+                        <div class="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-grey.png" alt="star">
+                            <img src="./assets/images/icon-star-grey.png" alt="star">
+                        </div>
+                        <span>2018/08/13</span>
+                    </div>
+                </div>
+                <div class="card-comp01">
+                    <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
+                    <div class="bottom">
+                        <div class="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-grey.png" alt="star">
+                            <img src="./assets/images/icon-star-grey.png" alt="star">
+                        </div>
+                        <span>2018/08/13</span>
+                    </div>
+                </div>
+                <div class="card-comp01">
+                    <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
+                    <div class="bottom">
+                        <div class="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-red.png" alt="star">
+                            <img src="./assets/images/icon-star-grey.png" alt="star">
+                            <img src="./assets/images/icon-star-grey.png" alt="star">
+                        </div>
+                        <span>2018/08/13</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-add-rating">
+                <div class="rating">
+                    <input type="radio" name="star" value="5">
+                    <input type="radio" name="star" value="4">
+                    <input type="radio" name="star" value="3">
+                    <input type="radio" name="star" value="2">
+                    <input type="radio" name="star" value="1">
+                </div>
+                <div class="form-note">
+                    <input type="input" class="note-control" placeholder="メモ…">
+                    <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -195,6 +257,5 @@
 <!-- Main Script -->
 <script src="./assets/js/common.js"></script>
 <script src="./assets/js/home.js"></script>
-
 </body>
 </html>
