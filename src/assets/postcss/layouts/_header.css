@@ -6,7 +6,7 @@
   z-index: 100;
   .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     background: url("../images/bg-header.jpg") no-repeat;
     background-size: cover;

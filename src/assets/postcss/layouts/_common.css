@@ -25,6 +25,10 @@
   }
 }
 
+.clearfix {
+  clear: both;
+}
+
 /* Reponsive */
 @mixin info-phone-normal {
   .layout {

@@ -34,3 +34,23 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%;
 }
+
+.mr-35 {
+  margin-right: 35px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.fs-26 {
+  font-size: 1.625rem;
+}

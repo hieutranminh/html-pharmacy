@@ -1,0 +1,27 @@
+.common-modal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: .9;
+    .common-modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 580px;
+        .qes {
+            color: #fff;
+            white-space: pre-line;
+            text-align: center;
+        }
+        .sl-option {
+            a {
+                width: 270px;
+            }
+        }
+    }
+}
