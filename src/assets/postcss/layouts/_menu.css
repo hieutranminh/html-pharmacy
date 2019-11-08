@@ -6,6 +6,10 @@
     width: 100%;
     height: 100%;
     background: #111111;
+    transition: all 0.4s;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
     .modal-menu-content {
         position: absolute;
         z-index: 2;
@@ -35,5 +39,10 @@
                 border-bottom: none;
             }
         }
+    }
+    &-open {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
     }
 }

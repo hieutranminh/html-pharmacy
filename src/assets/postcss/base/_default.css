@@ -11,9 +11,10 @@ html, body {
     font-size: 13px;
   }
 }
-
+ 
 * {
   margin: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
