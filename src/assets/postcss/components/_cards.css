@@ -66,18 +66,19 @@
   }
   &-comp05 {
     border-bottom: 1px solid #E0E0E0;
-    padding: 0px 11px 15px;
+    padding: 0px 10px 15px;
     margin-bottom: 15px;
     .content {
       display: flex;
       align-items: center;
       margin-bottom: 4px;
-      p {
-        font-size: 1rem;
+      font-size: 1rem;
+      color: #333333;
+      .date {
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: normal;
         color: #333333;
-        &.shop-name {
-          margin-left: 20px;
-        }
       }
     }
     .product-code {
@@ -132,7 +133,7 @@
   }
   &-comp07 {
     border-bottom: 1px solid #E0E0E0;
-    padding: 0px 11px 15px;
+    padding: 0px 10px 15px;
     margin-bottom: 15px;
     .content-head {
       display: flex;
@@ -141,19 +142,17 @@
       margin-bottom: 5px;
       .left {
         display: flex;
-        p {
-          font-size: 1rem;
-          color: #333333;
-          &.shop-name {
-            margin-left: 20px;
-          }
+        color: #333333;
+        font-size: 1rem;
+        .date {
+          margin-right: 20px;
         }
       }
-      a {
-        background: #C80009;
-        font-size: 0.875rem;
+      .tag {
+        background: #c80009;
+        font-size: .875rem;
         font-weight: 600;
-        color: #ffffff;
+        color: #fff;
         line-height: 1;
         padding: 2px 8px;
       }
@@ -260,33 +259,27 @@
     border-bottom: 1px solid #E0E0E0;
     padding: 0px 11px 15px;
     margin-bottom: 15px;
-    p {
-      font-size: 1rem;
-      color: #333333;
-    }
     span {
       font-size: 1rem;
       color: #333333;
-      margin-left: 20px;
+      margin-right: 20px;
     }
   }
   &-comp02 {
     display: flex;
     align-items: center;
     margin-bottom: 18px;
+    font-size: 1.125rem;
+    color: #333333;
     .image {
       width: 22px;
       height: 22px;
       line-height: 1;
+      margin-right: 12px;
       img {
         width: 100%;
         height: 100%;
       }
-    }
-    p {
-      font-size: 1rem;
-      padding-left: 13px;
-      color: #333333;
     }
   }
   &-comp04 {
@@ -303,7 +296,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 11px;
+    font-size: 1.25rem;
+    color: #333333;
+    padding: 25px 10px;
     margin-bottom: 13px;
     border-bottom: 1px solid #E0E0E0;
   }

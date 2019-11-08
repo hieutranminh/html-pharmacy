@@ -3,45 +3,177 @@
   width: 368px;
   border: 1px solid #E0E0E0;
   box-shadow: -1px 0px 6px rgba(0, 0, 0, .16);
-  /* remove class calendar when use vue calendar */
-  &-calendar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 9px 20px;
-    border-bottom: 1px solid #E0E0E0;
-    p {
+
+  /* sidebar home */
+  &-home {
+    position: fixed;
+    top: 88px;
+    right: 0px;
+    height: calc(100% - 88px);
+
+    /* remove css calendar when use library calendar */
+    .calendar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 9px 20px;
+      border-bottom: 1px solid #E0E0E0;
       background: #F4F4F4;
       width: 100%;
       height: 360px;
-      text-align: center;
+    }
+
+    /* item padding */
+    .item-pd {
+      padding: 25px 30px;
+    }
+
+    /* list edit */
+    .edit {
+      padding: 0px 20px;
+    }
+
+    /* list remove */
+    .remove {
+      padding: 0px 20px;
+    }
+
+    /* list note */
+    .note {
+      padding: 0px 20px;
+    }
+
+    /* comment note */
+    .form-group {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      padding: 20px 30px;
+      margin-bottom: 0px;
+      border-top: 1px solid #e0e0e0;
     }
   }
 
-  /* component edit */
-  &-edit {
-    padding: 0px 20px;
+  /* sidebar carte common */
+  &-carte {
+
   }
 
-  /* component back */
-  &-back {
-    padding: 0px 20px;
+  /* sidebar carte checklist */
+  &-checklist {
+    .item-comp05 {
+      padding: 30px;
+      font-size: 1.25rem;
+      color: #333333;
+    }
+    .list {
+      padding: 0px 20px;
+    }
+  }
+
+  /* sidebar carte counseling */
+  &-counseling {
+    .item-comp05 {
+      padding: 30px 30px 26px;
+      font-size: 1.25rem;
+      color: #333333;
+      border-bottom: none;
+      margin-bottom: 0px;
+    }
+    .card-comp06 {
+      margin-bottom: 0px;
+    }
+    .tab {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+      ul {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 30px;
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: #D5D5D5;
+        }
+        li {
+          width: 50%;
+          list-style: none;
+          a {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            color: #999999;
+            padding: 25px 0px;
+          }
+          &.active {
+            a {
+              position: relative;
+              color: #C80009;
+              &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: #C80009;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list {
+      padding: 0px 20px;
+    }
+  }
+
+  /* sidebar carte status */
+  &-status {
+    .item-comp05 {
+      padding: 30px;
+      font-size: 1.25rem;
+      color: #333333;
+    }
+    .list {
+      padding: 0px 20px;
+    }
+  }
+
+  /* sidebar carte recommend */
+  &-recommend {
+    .content {
+      border-bottom: 1px solid #E0E0E0;
+      padding: 26px 28px;
+      .item-comp05 {
+        padding: 0px;
+        margin-bottom: 25px;
+        border-bottom: none;
+      }
+      .item-comp02 {
+        font-size: 1rem;
+        img {
+          width: 17px;
+          height: 13px;
+        }
+        p {
+          margin-left: 12px;
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 }
-
-.sidebar-note {
-  .item-comp05 {
-    padding: 25px 30px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.06);
-  }
-  .list {
-    padding: 0px 20px;
-    margin-bottom: 160px;
-  }
-  .form-group {
-    padding: 20px 30px;
-    margin-bottom: 0px;
-    border-top: 1px solid #E0E0E0;
-  }
-}
-

@@ -6,7 +6,7 @@
   z-index: 100;
   .header-content {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     background: url("../images/bg-header.jpg") no-repeat;
     background-size: cover;
@@ -35,11 +35,7 @@
         .content {
           color: #ffffff;
           margin-left: 21px;
-          p {
-            font-size: 1.625rem;
-            line-height: 26px;
-            margin-bottom: 4px;
-          }
+          font-size: 1.625rem;
           span {
             font-size: 0.875rem;
           }
@@ -67,17 +63,14 @@
           line-height: 1;
           font-size: 1.07rem;
           font-weight: 600;
-          color: #ffffff;
+          color: #E1F3FB;
           margin-bottom: 11px;
           &:last-child {
             margin-bottom: 0px;
           }
-          p {
-            opacity: 0.8;
-          }
           span {
-            opacity: 1;
             margin-left: 10px;
+            color: #FFFFFF;
           }
         }
       }

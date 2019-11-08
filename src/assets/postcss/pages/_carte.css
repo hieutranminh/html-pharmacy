@@ -57,14 +57,6 @@
           }
         }
       }
-      &-sidebar {
-        .item-comp05 {
-          padding: 28px;
-        }
-        .sidebar-list {
-          padding: 0px 18px;
-        }
-      }
     }
 
     /* Carte checklist disable */
@@ -95,6 +87,9 @@
           label {
             opacity: 0.4;
           }
+        }
+        .control-common {
+          background: #F4F4F4;
         }
       }
     }
@@ -199,66 +194,6 @@
           }
         }
       }
-
-      /* sidebar */
-      &-sidebar {
-        h3 {
-          padding: 30px 30px 24px;
-        }
-        .card-comp06 {
-          margin-bottom: 0px;
-        }
-        .sidebar-tab {
-          margin-bottom: 20px;
-          border-bottom: 1px solid #e0e0e0;
-          ul {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0px 30px;
-            &:before {
-              content: '';
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 3px;
-              background: #D5D5D5;
-            }
-            li {
-              width: 50%;
-              list-style: none;
-              a {
-                display: block;
-                text-align: center;
-                font-size: 18px;
-                font-weight: normal;
-                color: #999999;
-                padding: 25px 0px;
-              }
-              &.active {
-                a {
-                  position: relative;
-                  color: #C80009;
-                  &:before {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 4px;
-                    background: #C80009;
-                  }
-                }
-              }
-            }
-          }
-        }
-        .sidebar-list {
-          padding: 0px 19px;
-        }
-      }
     }
 
     /* Carte counseling disable */
@@ -280,7 +215,7 @@
         }
       }
       .layout-sidebar {
-        .sidebar-list {
+        .list {
           .card-comp07 {
             .content-body {
               .left {
@@ -311,16 +246,6 @@
           }
         }
       }
-
-      /* sidebar */
-      &-sidebar {
-        .item-comp05 {
-          padding: 25px 30px;
-        }
-        .sidebar-list {
-          padding: 0px 19px;
-        }
-      }
     }
 
     /* Carte status disable */
@@ -331,7 +256,7 @@
             opacity: 0.4;
           }
         }
-        .sidebar-list {
+        .list {
           .card-comp08 {
             .content-body {
               .left {
@@ -377,30 +302,10 @@
           .card-comp09 {
             margin-bottom: 20px;
             background: #ffffff;
+            box-shadow: 0px 3px 6px rgba(0,0,0,.1);
             &:last-child {
               margin-bottom: 0px;
             }
-          }
-        }
-      }
-
-      /* sidebar */
-      &-sidebar {
-        .sidebar-content {
-          border-bottom: 1px solid #E0E0E0;
-          padding: 26px 28px;
-          .item-comp05 {
-            padding: 0px;
-            margin-bottom: 25px;
-            border-bottom: none;
-          }
-          .item-comp02 {
-            &:last-child {
-              margin-bottom: 0px;
-            }
-          }
-          &:last-child {
-            border-bottom: none;
           }
         }
       }
@@ -410,14 +315,14 @@
     /* Carte recommend disable */
     &-disable {
       .layout-sidebar {
-        .sidebar-content {
+        .content {
           .item-comp05 {
             .btn-grey {
               opacity: 0.4;
             }
           }
           .item-comp02 {
-            .image {
+            img {
               opacity: 0.4;
             }
             .text-grey {
@@ -503,7 +408,11 @@
             }
             .item-comp02 {
               margin-bottom: 0px;
-              margin-left: 15px;
+              margin-left: 17px;
+              img {
+                width: 18px;
+                height: 14px;
+              }
               p {
                 padding-left: 5px;
               }
@@ -519,7 +428,8 @@
         .price {
           font-size: 24px;
           font-weight: 400;
-          margin: 22px 0;
+          margin: 28px 0;
+          line-height: 1;
         }
         .des {
           font-size: 18px;
@@ -559,7 +469,7 @@
       position: fixed;
       right: 0;
       top: 88px;
-      height: 100%;
+      height: calc(100% - 88px);
       .item-comp05 {
         padding: 25px 30px;
       }
@@ -587,6 +497,10 @@
       }
 
       &-add-rating {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
         padding: 20px 30px;
         .rating {
           display: flex;
