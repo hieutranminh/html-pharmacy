@@ -31,16 +31,28 @@
     /* list edit */
     .edit {
       padding: 0px 20px;
+      height: 310px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
     }
 
     /* list remove */
     .remove {
       padding: 0px 20px;
+      height: 310px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
     }
 
     /* list note */
     .note {
       padding: 0px 20px;
+      height: 400px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
     }
 
     /* comment note */
@@ -53,11 +65,27 @@
       margin-bottom: 0px;
       border-top: 1px solid #e0e0e0;
     }
+
+    /* default memo hide */
+    &.memo {
+      transition: all 0.3s;
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    /* add class show memo */
+    &.show-memo {
+      transform: translateX(0%);
+      opacity: 1;
+    }
   }
 
   /* sidebar carte common */
   &-carte {
-
+    position: fixed;
+    top: 154px;
+    right: 0;
+    height: calc(100% - 154px);
   }
 
   /* sidebar carte checklist */
@@ -66,9 +94,14 @@
       padding: 30px;
       font-size: 1.25rem;
       color: #333333;
+      margin-bottom: 0px;
     }
     .list {
-      padding: 0px 20px;
+      padding: 15px 20px;
+      height: 480px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
     }
   }
 
@@ -133,6 +166,10 @@
     }
     .list {
       padding: 0px 20px;
+      height: 270px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
     }
   }
 
@@ -145,11 +182,16 @@
     }
     .list {
       padding: 0px 20px;
+      height: 500px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
     }
   }
 
   /* sidebar carte recommend */
   &-recommend {
+    overflow: auto; 
     .content {
       border-bottom: 1px solid #E0E0E0;
       padding: 26px 28px;

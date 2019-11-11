@@ -42,7 +42,11 @@
   width: 100%;
   height: 38px;
   .note-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     padding-left: 20px;
+    padding-right: 40px;
     width: 100%;
     height: 100%;
     background: #FCFCFC;

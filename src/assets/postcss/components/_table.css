@@ -52,6 +52,7 @@
   width: 100%;
   thead {
     tr {
+      display: block;
       border-bottom: 1px solid #E0E0E0;
       th {
         text-align: center;
@@ -59,10 +60,20 @@
         font-weight: normal;
         color: #999999;
         padding: 10px;
+        width: 40px;
+        &:first-child {
+          width: 180px;
+        }
       }
     }
   }
   tbody {
+    display: block;
+    height: 530px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    background: #ffffff;
     tr {
       td {
         height: 54px;
@@ -78,8 +89,7 @@
           padding:0px 30px;
           color: #333333;
           font-size: .875rem;
-          white-space: nowrap;
-          width: calc(100% - 480px);
+          width: 180px;
         }
         &:last-child {
           border-right: none;
