@@ -104,10 +104,9 @@
             <div class="template-container-item">
                 <h5 class="sub-title-template">Title and sub title</h5>
                 <div class="typoraphy">
-                    <h3 class="title-white">Title 32px color white</h3>
-                    <h3 class="title-black">Title 26px color grey medium</h3>
-                    <h3 class="title-black-small">Title 20px color grey dark</h3>
-                    <label class="title-label">Title label form input</label>
+                    <h3 class="title title--white">Title 32px color white</h3>
+                    <h2 class="title title--black">Title 26px color grey medium</h2>
+                    <h3 class="title title--blacksmall">Title 20px color grey dark</h3>
                 </div>
             </div>
 
@@ -115,9 +114,8 @@
             <div class="template-container-item">
                 <h5 class="sub-title-template">Text paragraph</h5>
                 <div class="typoraphy">
-                    <p class="paragraph-black-bg">Text paragraph 18px color grey dark and background grey</p>
-                    <p class="paragraph-black-default">Text paragraph 16px color grey dark</p>
-                    <p class="paragraph-red">Text paragraph 14px color red</p>
+                    <p class="paragraph paragraph--default">Text paragraph 16px color grey dark</p>
+                    <p class="paragraph paragraph--red">Text paragraph 14px color red</p>
                 </div>
             </div>
         </div>
@@ -131,46 +129,28 @@
                 <h5 class="sub-title-template">Buttons set width for div parent</h5>
                 <div class="row">
                     <div class="col-lg-6 mb-3">
-                        <a href="#" class="btn-large btn-grey-w100">Button width (width 100%)</a>
+                        <a href="#" class="btn btn--w100 btn--grey">Button width (width 100%)</a>
                     </div>
                     <div class="col-lg-6 mb-3">
-                        <a href="#" class="btn-large btn-red-w100">Button width (width 100%)</a>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                        <a href="#" class="btn-large btn-grey-width">Button set width</a>
-                    </div>
-                    <div class="col-lg-6 mb-3">
-                        <a href="#" class="btn-large btn-red-width">Button set width</a>
+                        <a href="#" class="btn btn--w100 btn--red">Button width (width 100%)</a>
                     </div>
                 </div>
                 <h5 class="sub-title-template">Buttons set padding & margin</h5>
                 <div class="row">
                     <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-red">Button</a>
+                        <a href="#" class="btn btn--normal btn--red">Button</a>
                     </div>
                     <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-blue">Button</a>
+                        <a href="#" class="btn btn--normal btn--blue">Button</a>
                     </div>
                     <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-blue-disable">Button</a>
+                        <a href="#" class="btn btn--normal btn--grey">Button</a>
                     </div>
                     <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-grey">Button</a>
+                        <a href="#" class="btn btn--normal btn--white btn--text-blue">Button</a>
                     </div>
                     <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-grey-disable">Button</a>
-                    </div>
-                    <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-white text-blue">Button</a>
-                    </div>
-                    <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-white text-red">Button</a>
-                    </div>
-                    <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-blue pd-medium">Button</a>
-                    </div>
-                    <div class="col-lg-3 mb-3">
-                        <a href="#" class="btn-normal btn-blue-disable pd-medium">Button</a>
+                        <a href="#" class="btn btn--normal btn--white btn--text-red">Button</a>
                     </div>
                 </div>
             </div>
@@ -187,119 +167,99 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-w100 grey"
+                            <input type="text" class="control-common control-common--w100 control-common--grey"
                                    placeholder="full (width 100%)">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-large grey" placeholder="large">
+                            <input type="text" class="control-common control-common--large control-common--grey" placeholder="large">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-medium grey" placeholder="medium">
+                            <input type="text" class="control-common control-common--medium control-common--grey" placeholder="medium">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-small grey" placeholder="small">
+                            <input type="text" class="control-common control-common--small control-common--grey" placeholder="small">
                         </div>
-                        <div class="form-group form-select form-select-w100">
-                            <select class="control-common grey">
+                        <div class="form-select">
+                            <select class="control-common control-common--grey">
                                 <option>select full (width 100%)</option>
                             </select>
                         </div>
-                        <div class="form-group form-select form-select-large">
-                            <select class="control-common grey">
+                        <div class="form-select form-select--large">
+                            <select class="control-common control-common--grey">
                                 <option>select large</option>
+                            </select>
+                        </div>
+                        <div class="form-select form-select--arrowwhite">
+                            <select class="control-common control-common--red control-common--textwhite">
+                                <option>select background red (width 100%)</option>
+                            </select>
+                        </div>
+                        <div class="form-select form-select--large form-select--arrowwhite ">
+                            <select class="control-common control-common--red control-common--textwhite">
+                                <option>select background red</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="check01">
-                                <label class="form-check-label" for="check01">
+                                <input class="form-check__input" type="checkbox" value="" id="check01">
+                                <label class="form-check__label" for="check01">
                                     Checkbox
                                 </label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="form-check form-check-bold">
-                                <input class="form-check-input" type="checkbox" value="" id="check02">
-                                <label class="form-check-label" for="check02">
-                                    Checkbox Bold
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group form-select arrow-white form-select-w100">
-                            <select class="control-common red">
-                                <option>select background red (width 100%)</option>
-                            </select>
-                        </div>
-                        <div class="form-group form-select arrow-white form-select-large">
-                            <select class="control-common red">
-                                <option>select background red</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <div class="form-radio">
-                                <input type="radio" class="form-check-input" id="radio01" name="optradio">
-                                <label for="radio01">Option 1</label>
-                            </div>
-                            <div class="form-radio">
-                                <input type="radio" class="form-check-input" id="radio02" name="optradio">
-                                <label for="radio02">Option 1</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-radio form-radio-bold">
-                                <input type="radio" class="form-check-input" id="radio03" name="optradio">
-                                <label for="radio03">Option 3 Bold</label>
-                            </div>
-                            <div class="form-radio form-radio-bold">
-                                <input type="radio" class="form-check-input" id="radio04" name="optradio">
-                                <label for="radio04">Option 4 Bold</label>
+                                <input type="radio" class="form-radio__input" id="radio01" name="optradio">
+                                <label class="form-radio__label" for="radio01">Option 1</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-w100 white"
+                            <input type="text" class="control-common control-common--w100 control-common--white"
                                    placeholder="full (width 100%)">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-large white" placeholder="large">
+                            <input type="text" class="control-common control-common--large control-common--white" placeholder="large">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-medium white" placeholder="medium">
+                            <input type="text" class="control-common control-common--medium control-common--white" placeholder="medium">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="control-common control-common-small white" placeholder="small">
+                            <input type="text" class="control-common control-common--small control-common--white" placeholder="small">
                         </div>
-                        <div class="form-group form-select form-select-w100">
-                            <select class="control-common white">
+
+                        <div class="form-select">
+                            <select class="control-common control-common--white">
                                 <option>select bgwhite (width 100%)</option>
                             </select>
                         </div>
-                        <div class="form-group form-select form-select-large">
-                            <select class="control-common white">
+                        <div class="form-select form-select--large">
+                            <select class="control-common control-common--white">
                                 <option>select bgwhite large</option>
                             </select>
                         </div>
-                        <div class="form-group form-select arrow-red form-select-w100">
-                            <select class="control-common text-red">
+                        <div class="form-select form-select--arrowred">
+                            <select class="control-common control-common--white control-common--textred">
                                 <option>select text red (width 100%)</option>
                             </select>
                         </div>
-                        <div class="form-group form-select arrow-red form-select-large">
-                            <select class="control-common text-red">
+                        <div class="form-select form-select--large form-select--arrowred">
+                            <select class="control-common control-common--white control-common--textred">
                                 <option>select text red</option>
                             </select>
                         </div>
+
                         <div class="form-group">
                             <div class="form-search">
-                                <input type="input" class="search-control" placeholder="検索">
-                                <a href="#"><img src="./assets/images/icon-search.png" alt="search"></a>
+                                <input type="input" class="form-search__input" placeholder="検索">
+                                <a href="#" class="form-search__btn"><img src="./assets/images/icon-search.png" alt="search"></a>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="form-note">
-                                <input type="input" class="note-control" placeholder="メモ…">
-                                <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+                            <div class="form-add">
+                                <input type="input" class="form-add__input" placeholder="メモ…">
+                                <a href="#" class="form-add__btn"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
                             </div>
                         </div>
                     </div>
@@ -318,31 +278,119 @@
                         <table class="table-custom table-responsive-sm">
                             <thead>
                             <tr>
-                                <th width="20%">No</th>
-                                <th width="25%">Title 01</th>
-                                <th width="30%">Title 02</th>
-                                <th width="15%">Title 03</th>
-                                <th width="10%">01</th>
+                                <th style="width:200px">No</th>
+                                <th style="width:200px">Title 01</th>
+                                <th style="width:200px">Title 02</th>
+                                <th style="width:200px">Title 03</th>
+                                <th style="width:200px">01</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>01</td>
-                                <td>example 01</td>
-                                <td>example 02</td>
-                                <td>20</td>
-                                <td>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
                                     <button class="btn-add">
                                         <img src="./assets/images/icon-add-grey.png" alt="add">
                                     </button>
                                 </td>
                             </tr>
                             <tr>
-                                <td>01</td>
-                                <td>example 01</td>
-                                <td>example 02</td>
-                                <td>20</td>
-                                <td>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
+                                    <button class="btn-add">
+                                        <img src="./assets/images/icon-add-grey.png" alt="add">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px">01</td>
+                                <td style="width: 200px">example 01</td>
+                                <td style="width: 200px">example 02</td>
+                                <td style="width: 200px">20</td>
+                                <td style="width: 200px">
                                     <button class="btn-add">
                                         <img src="./assets/images/icon-add-grey.png" alt="add">
                                     </button>
@@ -423,6 +471,141 @@
                                 <td></td>
                                 <td></td>
                             </tr>
+                            <tr>
+                                <td>メーク落とし</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>レジャーUV対策</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ファンデーション</td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>メーク落とし</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>レジャーUV対策</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ファンデーション</td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>メーク落とし</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>レジャーUV対策</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ファンデーション</td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td><img src="./assets/images/icon-check-red.png" alt="check"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
@@ -440,7 +623,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <p class="component">Component 01</p>
-                        <div class="card-comp01">
+                        <div class="notice">
                             <p>Doloribus imperdiet! Corporis deserunt est scelerisque, elit, quae netus occaecati
                                 ducimus dolorem ultricies laudantium! Suscipit, nemo. Lacus! Numquam nonummy
                                 inceptos</p>
@@ -449,8 +632,8 @@
                     </div>
                     <div class="col-lg-4">
                         <p class="component">Component 02</p>
-                        <div class="card-comp02">
-                            <div class="content">
+                        <div class="customer">
+                            <div class="customer__content">
                                 <p>Lorem ipsum</p>
                                 <span>Lorem ipsum</span>
                             </div>
@@ -461,11 +644,11 @@
                     </div>
                     <div class="col-lg-4">
                         <p class="component">Component 03</p>
-                        <div class="card-comp03">
+                        <div class="customer-remove">
                             <a href="#">
                                 <img src="./assets/images/icon-remove.png" alt="remove">
                             </a>
-                            <div class="content">
+                            <div class="customer-remove__content">
                                 <p>Lorem ipsum</p>
                                 <span>Lorem ipsum</span>
                             </div>
@@ -473,7 +656,7 @@
                     </div>
                     <div class="col-lg-4">
                         <p class="component">Component 04</p>
-                        <div class="card-comp01">
+                        <div class="customer-note">
                             <p>Doloribus imperdiet! Corporis deserunt est scelerisque</p>
                             <span>
                                 2018/08/13
@@ -483,22 +666,22 @@
                     </div>
                     <div class="col-lg-4">
                         <p class="component">Component 05</p>
-                        <div class="card-comp05">
-                            <div class="content">
-                                <p class="date">2018/08/03</p>
-                                <p class="shop-name">前畑店</p>
+                        <div class="product-regist">
+                            <div class="product-regist__content">
+                                <span class="date">2018/08/03</span>
+                                前畑店
                             </div>
-                            <p class="product-code">SK-Ⅱ</p>
-                            <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <p class="product-regist__code">SK-Ⅱ</p>
+                            <p class="product-regist__name">R.N.A.パワーエアリーミルキーローション</p>
                             <span>1234567890123</span>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <p class="component">Component 06</p>
-                        <div class="card-comp06">
+                        <div class="product-recommend">
                             <div class="content">
-                                <p class="product-code">SK-Ⅱ</p>
-                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                <p class="content__code">SK-Ⅱ</p>
+                                <p class="content__name">R.N.A.パワーエアリーミルキーローション</p>
                                 <span>1234567890123</span>
                             </div>
                             <div class="image">
@@ -508,21 +691,21 @@
                     </div>
                     <div class="col-lg-6">
                         <p class="component">Component 07</p>
-                        <div class="card-comp07">
-                            <div class="content-head">
-                                <div class="left">
-                                    <span class="date">2018/08/03</span>
+                        <div class="product-history">
+                            <div class="head">
+                                <div class="head__left">
+                                    <span>2018/08/03</span>
                                     前畑店
                                 </div>
-                                <span class="tag">お薦め</span>
+                                <span class="head__tag">お薦め</span>
                             </div>
-                            <div class="content-body">
-                                <div class="left">
+                            <div class="body">
+                                <div class="body__left">
                                     <a href="#"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
                                 </div>
-                                <div class="right">
-                                    <p class="product-code">SK-Ⅱ</p>
-                                    <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                <div class="body__right">
+                                    <p class="body__right-code">SK-Ⅱ</p>
+                                    <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                     <span>1234567890123</span>
                                 </div>
                             </div>
@@ -530,20 +713,20 @@
                     </div>
                     <div class="col-lg-6">
                         <p class="component">Component 08</p>
-                        <div class="card-comp07 card-comp08">
-                            <div class="content-head">
-                                <div class="left">
-                                    <span class="date">2018/08/03</span>
+                        <div class="product-history">
+                            <div class="head">
+                                <div class="head__left">
+                                    <span>2018/08/03</span>
                                     前畑店
                                 </div>
                             </div>
-                            <div class="content-body">
-                                <div class="left">
-                                    <a href="#"><img src="./assets/images/checkbox-select.png" alt="check"></a>
+                            <div class="body">
+                                <div class="body__left">
+                                    <a href="#" class="icon-check"><img src="./assets/images/checkbox-select.png" alt="add"></a>
                                 </div>
-                                <div class="right">
-                                    <p class="product-code">SK-Ⅱ</p>
-                                    <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                                <div class="body__right">
+                                    <p class="body__right-code">SK-Ⅱ</p>
+                                    <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                     <span>1234567890123</span>
                                 </div>
                             </div>
@@ -551,48 +734,48 @@
                     </div>
                     <div class="col-lg-7">
                         <p class="component">Component 09</p>
-                        <div class="card-comp09">
+                        <div class="product">
                             <div class="image">
                                 <img src="./assets/images/img-product.png" alt="product">
                             </div>
                             <div class="content">
-                                <p class="product-code">DECENCIA</p>
-                                <p class="product-name">アヤナス ローション コンセントレート</p>
+                                <p class="content__code">DECENCIA</p>
+                                <p class="content__name">アヤナス ローション コンセントレート</p>
                                 <span>1234567890123</span>
-                                <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                                <p class="product-price">4,860円</p>
+                                <p class="content__des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                                <p class="content__price">4,860円</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <p class="component">Component item</p>
-                        <div class="item-comp01">
+                        <div class="consultation-history">
                             <span>2018/08/03</span>
                             前畑店
                         </div>
-                        <div class="item-comp02">
-                            <div class="image">
+                        <div class="comment-add">
+                            <a href="#" class="comment-add__image">
                                 <img src="./assets/images/icon-add-grey.png" alt="add">
-                            </div>
-                            <p>お客様の悩み</p>
+                            </a>
+                            お客様の悩み
                         </div>
-                        <div class="item-comp02">
-                            <div class="image">
+                        <div class="comment-remove">
+                            <a href="#" class="comment-remove__image">
                                 <img src="./assets/images/icon-remove.png" alt="remove">
-                            </div>
-                            <p>お客様の悩み</p>
+                            </a>
+                            お客様の悩み
                         </div>
-                        <div class="item-comp02 item-comp04">
-                            <div class="image">
+                        <div class="option">
+                            <div class="option__image">
                                 <img src="./assets/images/icon-check-grey.png" alt="check">
                             </div>
-                            <p>お客様の悩み</p>
+                            お客様の悩み
                         </div>
-                        <div class="item-comp02 item-comp04">
-                            <div class="image">
+                        <div class="option">
+                            <div class="option__image">
                                 <img src="./assets/images/icon-check-red.png" alt="check">
                             </div>
-                            <p>お客様の悩み</p>
+                            お客様の悩み
                         </div>
                         <div class="item-comp05">
                             2019年8月13日の予定
@@ -603,112 +786,6 @@
             </div>
         </div>
 
-        <!--Forms Input-->
-        <!--        <div class="template-container">-->
-        <!--            <h3 class="title-template">Template</h3>-->
-
-        <!--            &lt;!&ndash;Input&ndash;&gt;-->
-        <!--            <div class="template-container-item">-->
-        <!--                <h5 class="sub-title-template">Form</h5>-->
-        <!--                <form action="#">-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">初回来店日</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="date" class="form-control">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">顧客 No</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="text" class="form-control">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">お名前</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="text" class="form-control">-->
-        <!--                            <input type="text" class="form-control">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">性別</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <div class="form-check">-->
-        <!--                                <input class="form-check-input" type="checkbox" value="">-->
-        <!--                                <label class="form-check-label">-->
-        <!--                                    男性-->
-        <!--                                </label>-->
-        <!--                            </div>-->
-        <!--                            <div class="form-check">-->
-        <!--                                <input class="form-check-input" type="checkbox" value="" checked>-->
-        <!--                                <label class="form-check-label">-->
-        <!--                                    女性-->
-        <!--                                </label>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">生年月日</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="date" class="form-control">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">電話番号</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="text" class="form-control">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">郵便番号</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="text" class="form-control form-control-short">-->
-        <!--                            <button class="btn-common btn-blue-disable">自動入力</button>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">住所</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="text" class="form-control form-control-short">-->
-        <!--                            <input type="text" class="form-control">-->
-        <!--                            <input type="text" class="form-control">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">職業</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="text" class="form-control">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">ルビットカード</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <input type="text" class="form-control form-control-medium">-->
-        <!--                            <input type="text" class="form-control form-control-medium">-->
-        <!--                            <input type="text" class="form-control form-control-medium">-->
-        <!--                            <button class="btn-common btn-blue-disable btn-camera">-->
-        <!--                                <img src="./assets/images/camera-icon.png" alt="camera">-->
-        <!--                            </button>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item">-->
-        <!--                        <p class="form-title">DM</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <select class="form-control" id="dm">-->
-        <!--                                <option>Default select</option>-->
-        <!--                                <option>Default select</option>-->
-        <!--                            </select>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="form-item form-textarea">-->
-        <!--                        <p class="form-title">備考</p>-->
-        <!--                        <div class="form-group">-->
-        <!--                            <textarea name="" id=""></textarea>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </form>-->
-        <!--            </div>-->
-        <!--        </div>-->
     </div>
 </section>
 

@@ -2,7 +2,7 @@
   position: relative;
   width: 270px;
   height: 38px;
-  .search-control {
+  &__input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -19,7 +19,7 @@
       color: #999999;
     }
   }
-  a {
+  &__btn {
     position: absolute;
     width: 64px;
     height: 100%;

@@ -1,47 +1,29 @@
 /* Title */
 .title {
-  &-white {
+  color: #000000;
+  &--white {
     color: #FFFFFF;
     font-size: 2rem;
   }
-  &-black {
+  &--black {
     color: #333333;
     font-size: 1.625rem;
   }
-  &-black-small {
+  &--blacksmall {
     color: #333333;
     font-size: 1.25rem;
-    font-weight: normal;
-  }
-  &-label {
-    font-size: 1.125rem;
-    color: #999999;
-    margin-bottom: 0px;
   }
 }
 
 /* Paragraph */
 .paragraph {
-  &-black-bg {
+  font-size: 1rem;
+  &--default {
     color: #333333;
-    font-size: 1.125rem;
-    width: 100%;
-    min-height: 200px;
-    background: #FFFFFF;
-    padding: 23px 20px;
-    border: 1px solid #E0E0E0;
-    border-radius: 15px;
-    &.bg-grey {
-      background: #F4F4F4;
-    }
-  }
-  &-black-default {
-    color: #333333;
-    font-size: 1rem;
     line-height: 26px;
     margin-bottom: 6px;
   }
-  &-red {
+  &--red {
     color: #C80009;
     font-size: 0.875rem;
   }
