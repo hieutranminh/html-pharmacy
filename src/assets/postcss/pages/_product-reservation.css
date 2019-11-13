@@ -1,0 +1,29 @@
+.reservation {
+  margin-top: 88px;
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    background: #f4f4f4;
+    h2 {
+      font-weight: 300;
+    }
+    .search {
+      display: flex;
+      .form-group {
+        margin-bottom: 0px;
+        margin-left: 15px;
+        &:nth-child(2) {
+          width: 260px;
+        }
+        &:nth-child(3) {
+          width: 170px;
+        }
+      }
+    }
+  }
+  &-table {
+
+  }
+}

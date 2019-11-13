@@ -10,9 +10,4 @@
       font-weight: 300;
     }
   }
-  .layout-left {
-    position: fixed;
-    top: 88px;
-    z-index: 10;
-  }
 }

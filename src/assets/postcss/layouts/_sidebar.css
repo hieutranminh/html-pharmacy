@@ -191,7 +191,7 @@
 
   /* sidebar carte recommend */
   &-recommend {
-    overflow: auto; 
+    overflow: auto;
     .content {
       border-bottom: 1px solid #E0E0E0;
       padding: 26px 28px;

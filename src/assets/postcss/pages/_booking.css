@@ -1,0 +1,9 @@
+.booking {
+  .reservation-top {
+    .search {
+      .form-group {
+        width: 170px;
+      }
+    }
+  }
+}
