@@ -1,5 +1,5 @@
 /* form select */
-.form-select {
+.form__select {
   position: relative;
   margin-bottom: 1rem;
   &:after {
@@ -22,6 +22,11 @@
     appearance: none;
     font-size: 1rem;
     padding: 6px 20px;
+  }
+
+  /* set width 100% */
+  &--w100 {
+    width: 100%;
   }
 
   /* set width px */

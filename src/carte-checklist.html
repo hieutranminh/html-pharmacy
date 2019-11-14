@@ -32,13 +32,13 @@
 <!---------HEADER-------->
 <header id="header" class="header">
 
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
             <!--component input select-->
-            <div class="form-select arrow-white form-select-large d-none">
-                <select class="control-common red">
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
                     <option>美容カルテ</option>
                     <option>育児相談</option>
                     <option>健康指導</option>
@@ -49,7 +49,7 @@
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
-                <div class="content">
+                <div class="back__content">
                     窪田 成子
                     <span>2019/08/13 12:05:10</span>
                 </div>
@@ -58,14 +58,14 @@
 
 
         <!--Header right-->
-        <div class="header-content-right">
-            <a href="#" class="btn-normal btn-white text-red">中断する</a>
-            <a href="#" class="btn-normal btn-red">新規登録</a>
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
                 <a href="#" class="icon-setting">
                     <img src="./assets/images/icon-setting-white.png" alt="setting">
                 </a>
@@ -92,250 +92,250 @@
 
 
 <!---------CARTE-------->
-<section id="carte" class="carte layout-bg">
+<section id="carte" class="carte">
 
-    <!--Carte checklist-->
-    <div class="carte-checklist">
+    <!--Carte checklist - add class carte__checklist--disable to disalbe-->
+    <div class="carte__checklist carte__checklist--disable">
         <div class="layout">
-            <!--layout left - remove class carte-checklist-disable when edit-->
-            <div class="layout-left carte-checklist-disable">
+            <!--layout left -->
+            <div class="layout__left">
                 <form action="#">
-                    <div class="form-item">
-                        <p class="form-title">メーカー</p>
+                    <div class="form__item">
+                        <p class="form__item__title">メーカー</p>
                         <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check01" checked>
-                                <label class="form-check-label" for="check01">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check01" checked>
+                                <label class="check__label" for="check01">
                                     資生堂
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check02" >
-                                <label class="form-check-label" for="check02">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check02" >
+                                <label class="check__label" for="check02">
                                     ソフィーナ
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check03" checked>
-                                <label class="form-check-label" for="check03">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check03" checked>
+                                <label class="check__label" for="check03">
                                     コーセー
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check04">
-                                <label class="form-check-label" for="check04">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check04">
+                                <label class="check__label" for="check04">
                                     ウィズアウト
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check05">
-                                <label class="form-check-label" for="check05">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check05">
+                                <label class="check__label" for="check05">
                                     Vコスメ
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check06">
-                                <label class="form-check-label" for="check06">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check06">
+                                <label class="check__label" for="check06">
                                     ソフィーナ
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="form-item">
-                        <p class="form-title">限定品</p>
+                    <div class="form__item">
+                        <p class="form__item__title">限定品</p>
                         <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check07" checked>
-                                <label class="form-check-label" for="check07">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check07" checked>
+                                <label class="check__label" for="check07">
                                     ミラノコレクションボディパウダー
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check08" >
-                                <label class="form-check-label" for="check08">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check08" >
+                                <label class="check__label" for="check08">
                                     ミラノコレクションフェイスパウダー
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check09" >
-                                <label class="form-check-label" for="check09">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check09" >
+                                <label class="check__label" for="check09">
                                     ミラノコレクションパルファム
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="form-item">
-                        <p class="form-title">肌の悩み</p>
+                    <div class="form__item">
+                        <p class="form__item__title">肌の悩み</p>
                         <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check10" checked>
-                                <label class="form-check-label" for="check10">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check10" checked>
+                                <label class="check__label" for="check10">
                                     敏感肌（薬使用中）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check11" >
-                                <label class="form-check-label" for="check11">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check11" >
+                                <label class="check__label" for="check11">
                                     敏感肌
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check12" checked>
-                                <label class="form-check-label" for="check12">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check12" checked>
+                                <label class="check__label" for="check12">
                                     乾燥
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check13" checked>
-                                <label class="form-check-label" for="check13">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check13" checked>
+                                <label class="check__label" for="check13">
                                     しみ、そばかす
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check14">
-                                <label class="form-check-label" for="check14">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check14">
+                                <label class="check__label" for="check14">
                                     くすみ
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check15">
-                                <label class="form-check-label" for="check15">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check15">
+                                <label class="check__label" for="check15">
                                     毛穴の目立ち（開き）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check16">
-                                <label class="form-check-label" for="check16">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check16">
+                                <label class="check__label" for="check16">
                                     毛穴の目立ち（たるみ）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check17">
-                                <label class="form-check-label" for="check17">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check17">
+                                <label class="check__label" for="check17">
                                     毛穴の目立ち（黒ずみ、ザラつき）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check18" checked>
-                                <label class="form-check-label" for="check18">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check18" checked>
+                                <label class="check__label" for="check18">
                                     ニキビ、吹き出物
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check19">
-                                <label class="form-check-label" for="check19">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check19">
+                                <label class="check__label" for="check19">
                                     しわ（部分）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check20">
-                                <label class="form-check-label" for="check20">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check20">
+                                <label class="check__label" for="check20">
                                     たるみ（全体）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check21">
-                                <label class="form-check-label" for="check21">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check21">
+                                <label class="check__label" for="check21">
                                     くま（茶）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check22">
-                                <label class="form-check-label" for="check22">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check22">
+                                <label class="check__label" for="check22">
                                     くま（青）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check23">
-                                <label class="form-check-label" for="check23">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check23">
+                                <label class="check__label" for="check23">
                                     化粧崩れ（皮脂、ベタつき）
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check24">
-                                <label class="form-check-label" for="check24">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check24">
+                                <label class="check__label" for="check24">
                                     その他
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="form-item">
-                        <p class="form-title">使用アイテム</p>
+                    <div class="form__item">
+                        <p class="form__item__title">使用アイテム</p>
                         <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check25" checked>
-                                <label class="form-check-label" for="check25">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check25" checked>
+                                <label class="check__label" for="check25">
                                     メイク落とし
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check26" >
-                                <label class="form-check-label" for="check26">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check26" >
+                                <label class="check__label" for="check26">
                                     洗顔
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check27" checked>
-                                <label class="form-check-label" for="check27">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check27" checked>
+                                <label class="check__label" for="check27">
                                     化粧水
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check28" checked>
-                                <label class="form-check-label" for="check28">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check28" checked>
+                                <label class="check__label" for="check28">
                                     乳液
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check29">
-                                <label class="form-check-label" for="check29">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check29">
+                                <label class="check__label" for="check29">
                                     クリーム
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check30">
-                                <label class="form-check-label" for="check30">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check30">
+                                <label class="check__label" for="check30">
                                     美容液
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check31">
-                                <label class="form-check-label" for="check31">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check31">
+                                <label class="check__label" for="check31">
                                     日焼け止め
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check32">
-                                <label class="form-check-label" for="check32">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check32">
+                                <label class="check__label" for="check32">
                                     サプリメント
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="check33">
-                                <label class="form-check-label" for="check33">
+                            <div class="form__check">
+                                <input class="check__input" type="checkbox" id="check33">
+                                <label class="check__label" for="check33">
                                     その他
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="form-item">
-                        <p class="form-title">お肌の状態</p>
+                    <div class="form__item">
+                        <p class="form__item__title">お肌の状態</p>
                         <div class="form-group">
                             <p>皮膚トラブル</p>
-                            <div class="form-radio">
-                                <input type="radio" id="radio01" class="form-check-input" name="optradio">
-                                <label for="radio01">ある</label>
+                            <div class="form__radio">
+                                <input type="radio" id="radio01" class="radio__input" name="optradio">
+                                <label for="radio01" class="radio__label">ある</label>
                             </div>
-                            <div class="form-radio">
-                                <input type="radio" id="radio02" class="form-check-input" name="optradio" checked>
-                                <label for="radio02">なし</label>
+                            <div class="form__radio">
+                                <input type="radio" id="radio02" class="radio__input" name="optradio" checked>
+                                <label for="radio02" class="radio__label">なし</label>
                             </div>
                         </div>
                     </div>
-                    <div class="form-item form-textarea">
-                        <p class="form-title">特記事項</p>
+                    <div class="form__item form-textarea">
+                        <p class="form__item__title">特記事項</p>
                         <div class="form-group">
-                            <textarea name="" id="" class="control-common"></textarea>
+                            <textarea name="" id="" class="control__common"></textarea>
                         </div>
                     </div>
                 </form>
@@ -343,48 +343,66 @@
 
 
             <!--layout sidebar-->
-            <div class="sidebar sidebar-carte sidebar-checklist layout-sidebar">
-                <!--sidebar top-->
-                <div class="item-comp05">
+            <div class="layout__sidebar sidebar sidebar--carte sidebar--checklist">
+                <!--sidebar action-->
+                <div class="action">
                     予約商品
                 </div>
 
                 <!--sidebar list-->
                 <div class="list">
-                    <div class="card-comp05">
-                        <div class="content">
+                    <div class="product__regist">
+                        <div class="regist__content">
                             <span class="date">2018/08/03</span>
                             前畑店
                         </div>
-                        <p class="product-code">SK-Ⅱ</p>
-                        <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                        <p class="regist__code">SK-Ⅱ</p>
+                        <p class="regist__name">R.N.A.パワーエアリーミルキーローション</p>
                         <span>1234567890123</span>
                     </div>
-                    <div class="card-comp05">
-                        <div class="content">
+                    <div class="product__regist">
+                        <div class="regist__content">
                             <span class="date">2018/08/03</span>
                             前畑店
                         </div>
-                        <p class="product-code">SK-Ⅱ</p>
-                        <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                        <p class="regist__code">SK-Ⅱ</p>
+                        <p class="regist__name">R.N.A.パワーエアリーミルキーローション</p>
                         <span>1234567890123</span>
                     </div>
-                    <div class="card-comp05">
-                        <div class="content">
+                    <div class="product__regist">
+                        <div class="regist__content">
                             <span class="date">2018/08/03</span>
                             前畑店
                         </div>
-                        <p class="product-code">SK-Ⅱ</p>
-                        <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                        <p class="regist__code">SK-Ⅱ</p>
+                        <p class="regist__name">R.N.A.パワーエアリーミルキーローション</p>
                         <span>1234567890123</span>
                     </div>
-                    <div class="card-comp05">
-                        <div class="content">
+                    <div class="product__regist">
+                        <div class="regist__content">
                             <span class="date">2018/08/03</span>
                             前畑店
                         </div>
-                        <p class="product-code">SK-Ⅱ</p>
-                        <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                        <p class="regist__code">SK-Ⅱ</p>
+                        <p class="regist__name">R.N.A.パワーエアリーミルキーローション</p>
+                        <span>1234567890123</span>
+                    </div>
+                    <div class="product__regist">
+                        <div class="regist__content">
+                            <span class="date">2018/08/03</span>
+                            前畑店
+                        </div>
+                        <p class="regist__code">SK-Ⅱ</p>
+                        <p class="regist__name">R.N.A.パワーエアリーミルキーローション</p>
+                        <span>1234567890123</span>
+                    </div>
+                    <div class="product__regist">
+                        <div class="regist__content">
+                            <span class="date">2018/08/03</span>
+                            前畑店
+                        </div>
+                        <p class="regist__code">SK-Ⅱ</p>
+                        <p class="regist__name">R.N.A.パワーエアリーミルキーローション</p>
                         <span>1234567890123</span>
                     </div>
                 </div>

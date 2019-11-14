@@ -31,14 +31,13 @@
 <body>
 <!---------HEADER-------->
 <header id="header" class="header">
-
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
             <!--component input select-->
-            <div class="form-select arrow-white form-select-large d-none">
-                <select class="control-common red">
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
                     <option>美容カルテ</option>
                     <option>育児相談</option>
                     <option>健康指導</option>
@@ -49,7 +48,7 @@
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
-                <div class="content">
+                <div class="back__content">
                     窪田 成子
                     <span>2019/08/13 12:05:10</span>
                 </div>
@@ -58,14 +57,14 @@
 
 
         <!--Header right-->
-        <div class="header-content-right">
-            <a href="#" class="btn-normal btn-white text-red">中断する</a>
-            <a href="#" class="btn-normal btn-red">新規登録</a>
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
                 <a href="#" class="icon-setting">
                     <img src="./assets/images/icon-setting-white.png" alt="setting">
                 </a>
@@ -87,109 +86,108 @@
             <li><a href="carte-recommend.html">お薦め商品</a></li>
         </ul>
     </div>
-
 </header>
 
 
 <!---------CARTE-------->
-<section id="carte" class="carte layout-bg">
-    <!--Carte Profile - remove class carte-profile-disable when edit-->
-    <div class="carte-profile carte-profile-disable">
+<section id="carte" class="carte layout--bg">
+    <!--Carte Profile - add class carte__profile--disable to disable-->
+    <div class="carte__profile carte__profile--disable">
         <form action="#">
-            <div class="form-item">
-                <p class="form-title">初回来店日</p>
+            <div class="form__item">
+                <p class="form__item__title">初回来店日</p>
                 <div class="form-group">
-                    <input type="date" value="2019-01-01" class="control-common control-common-large">
+                    <input type="date" value="2019-01-01" class="control__common control__common--large">
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">顧客 No</p>
+            <div class="form__item">
+                <p class="form__item__title">顧客 No</p>
                 <div class="form-group">
-                    <input type="text" class="control-common control-common-large" placeholder="">
+                    <input type="text" class="control__common control__common--large">
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">お名前</p>
+            <div class="form__item">
+                <p class="form__item__title">お名前</p>
                 <div class="form-group">
-                    <input type="text" class="control-common control-common-large" placeholder="">
-                    <input type="text" class="control-common control-common-large" placeholder="">
+                    <input type="text" class="control__common control__common--large">
+                    <input type="text" class="control__common control__common--large">
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">性別</p>
+            <div class="form__item">
+                <p class="form__item__title">性別</p>
                 <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="check01">
-                        <label class="form-check-label" for="check01">
+                    <div class="form__check">
+                        <input class="check__input" type="checkbox" value="" id="check01">
+                        <label class="check__label" for="check01">
                             男性
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="check02" checked>
-                        <label class="form-check-label" for="check02">
+                    <div class="form__check">
+                        <input class="check__input" type="checkbox" value="" id="check02" checked>
+                        <label class="check__label" for="check02">
                             女性
                         </label>
                     </div>
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">生年月日</p>
+            <div class="form__item">
+                <p class="form__item__title">生年月日</p>
                 <div class="form-group">
-                    <input type="date" value="2019-01-01" class="control-common control-common-large">
+                    <input type="date" value="2019-01-01" class="control__common control__common--large">
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">電話番号</p>
+            <div class="form__item">
+                <p class="form__item__title">電話番号</p>
                 <div class="form-group">
-                    <input type="password" class="control-common control-common-large" placeholder="">
+                    <input type="password" class="control__common control__common--large">
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">郵便番号</p>
+            <div class="form__item">
+                <p class="form__item__title">郵便番号</p>
                 <div class="form-group">
-                    <input type="text" class="control-common control-common-small">
-                    <a href="#" class="btn-normal btn-blue">自動入力</a>
+                    <input type="text" class="control__common control__common--small">
+                    <a href="#" class="btn btn--normal btn--blue">自動入力</a>
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">住所</p>
+            <div class="form__item">
+                <p class="form__item__title">住所</p>
                 <div class="form-group">
-                    <input type="text" class="control-common control-common-small" placeholder="">
-                    <input type="text" class="control-common control-common-large" placeholder="">
-                    <input type="password" class="control-common control-common-large" placeholder="">
+                    <input type="text" class="control__common control__common--small">
+                    <input type="text" class="control__common control__common--large">
+                    <input type="password" class="control__common control__common--large">
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">職業</p>
+            <div class="form__item">
+                <p class="form__item__title">職業</p>
                 <div class="form-group">
-                    <input type="text" class="control-common control-common-large" placeholder="">
+                    <input type="text" class="control__common control__common--large">
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">ルビットカード</p>
+            <div class="form__item">
+                <p class="form__item__title">ルビットカード</p>
                 <div class="form-group">
-                    <input type="text" class="control-common control-common-medium" placeholder="">
-                    <input type="text" class="control-common control-common-medium" placeholder="">
-                    <input type="text" class="control-common control-common-medium" placeholder="">
-                    <a href="camera.html" class="btn-normal btn-blue">
+                    <input type="text" class="control__common control__common--medium">
+                    <input type="text" class="control__common control__common--medium">
+                    <input type="text" class="control__common control__common--medium">
+                    <a href="camera.html" class="btn btn--normal btn--blue">
                         <img src="./assets/images/icon-camera.png" alt="camera">
                     </a>
                 </div>
             </div>
-            <div class="form-item">
-                <p class="form-title">DM</p>
+            <div class="form__item">
+                <p class="form__item__title">DM</p>
                 <div class="form-group ">
-                    <div class="form-select form-select-large">
-                        <select class="control-common">
+                    <div class="form__select form__select--large">
+                        <select class="control__common">
                             <option></option>
                         </select>
                     </div>
                 </div>
             </div>
-            <div class="form-item form-textarea">
-                <p class="form-title">備考</p>
+            <div class="form__item form-textarea">
+                <p class="form__item__title">備考</p>
                 <div class="form-group">
-                    <textarea name="" id="" class="control-common"></textarea>
+                    <textarea name="" id="" class="control__common"></textarea>
                 </div>
             </div>
         </form>

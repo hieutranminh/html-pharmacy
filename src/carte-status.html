@@ -32,13 +32,13 @@
 <!---------HEADER-------->
 <header id="header" class="header">
 
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
             <!--component input select-->
-            <div class="form-select arrow-white form-select-large d-none">
-                <select class="control-common red">
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
                     <option>美容カルテ</option>
                     <option>育児相談</option>
                     <option>健康指導</option>
@@ -49,7 +49,7 @@
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
-                <div class="content">
+                <div class="back__content">
                     窪田 成子
                     <span>2019/08/13 12:05:10</span>
                 </div>
@@ -58,14 +58,14 @@
 
 
         <!--Header right-->
-        <div class="header-content-right">
-            <a href="#" class="btn-normal btn-white text-red">中断する</a>
-            <a href="#" class="btn-normal btn-red">新規登録</a>
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
                 <a href="#" class="icon-setting">
                     <img src="./assets/images/icon-setting-white.png" alt="setting">
                 </a>
@@ -92,21 +92,21 @@
 
 
 <!---------CARTE-------->
-<section id="carte" class="carte layout-bg">
+<section id="carte" class="carte ">
 
-    <!--Carte Status - remove class carte-status-disable when edit-->
-    <div class="carte-status carte-status-disable">
-        <div class="layout">
+    <!--Carte Status - add class carte__status-disable to disable-->
+    <div class="carte__status carte__status-disable">
+        <div class="layout layout--bg">
             <!--layout left-->
-            <div class="layout-left">
-                <div class="select-year">
-                    <div class="form-group form-select form-select-w100">
-                        <select class="control-common white">
+            <div class="layout__left">
+                <div class="select__year">
+                    <div class="form__select">
+                        <select class="control__common control__common--white">
                             <option>2019年</option>
                         </select>
                     </div>
                 </div>
-                <table class="table-check table-responsive-sm">
+                <table class="table__check table-responsive-sm">
                     <thead>
                     <tr>
                         <th></th>
@@ -386,82 +386,83 @@
 
 
             <!--layout sidebar-->
-            <div class="sidebar sidebar-carte sidebar-status layout-sidebar">
-                <div class="item-comp05">
+            <div class="layout__sidebar sidebar sidebar--carte sidebar--status ">
+
+                <div class="action">
                     購入履歴
-                    <a href="#" class="btn-normal btn-blue">お薦めに追加</a>
+                    <a href="#" class="btn btn--normal btn--blue">お薦めに追加</a>
                 </div>
 
                 <!--sidebar list-->
                 <div class="list">
-                    <div class="card-comp07 card-comp08">
-                        <div class="content-head">
-                            <div class="left">
-                                <span class="date">2018/08/03</span>
+                    <div class="product__history">
+                        <div class="head">
+                            <div class="head__left">
+                                <span>2018/08/03</span>
                                 前畑店
                             </div>
                         </div>
-                        <div class="content-body">
-                            <div class="left">
-                                <a href="#"><img src="./assets/images/checkbox-select.png" alt="check"></a>
+                        <div class="body">
+                            <div class="body__left">
+                                <a href="#" class="icon-check"><img src="./assets/images/checkbox-select.png" alt="add"></a>
                             </div>
-                            <div class="right">
-                                <p class="product-code">SK-Ⅱ</p>
-                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <div class="body__right">
+                                <p class="body__right-code">SK-Ⅱ</p>
+                                <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                 <span>1234567890123</span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-comp07 card-comp08">
-                        <div class="content-head">
-                            <div class="left">
-                                <span class="date">2018/08/03</span>
+                    <div class="product__history">
+                        <div class="head">
+                            <div class="head__left">
+                                <span>2018/08/03</span>
                                 前畑店
                             </div>
                         </div>
-                        <div class="content-body">
-                            <div class="left">
-                                <a href="#"><img src="./assets/images/checkbox-select.png" alt="check"></a>
+                        <div class="body">
+                            <div class="body__left">
+                                <a href="#" class="icon-check"><img src="./assets/images/checkbox-select.png" alt="add"></a>
                             </div>
-                            <div class="right">
-                                <p class="product-code">SK-Ⅱ</p>
-                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <div class="body__right">
+                                <p class="body__right-code">SK-Ⅱ</p>
+                                <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                 <span>1234567890123</span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-comp07 card-comp08">
-                        <div class="content-head">
-                            <div class="left">
-                                <span class="date">2018/08/03</span>
+                    <div class="product__history">
+                        <div class="head">
+                            <div class="head__left">
+                                <span>2018/08/03</span>
                                 前畑店
                             </div>
                         </div>
-                        <div class="content-body">
-                            <div class="left">
-                                <a href="#"><img src="./assets/images/checkbox-select.png" alt="check"></a>
+                        <div class="body">
+                            <div class="body__left">
+                                <a href="#" class="icon-check"><img src="./assets/images/checkbox-select.png" alt="add"></a>
                             </div>
-                            <div class="right">
-                                <p class="product-code">SK-Ⅱ</p>
-                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <div class="body__right">
+                                <p class="body__right-code">SK-Ⅱ</p>
+                                <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                 <span>1234567890123</span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-comp07 card-comp08">
-                        <div class="content-head">
-                            <div class="left">
-                                <span class="date">2018/08/03</span>
+                    <div class="product__history">
+                        <div class="head">
+                            <div class="head__left">
+                                <span>2018/08/03</span>
                                 前畑店
                             </div>
                         </div>
-                        <div class="content-body">
-                            <div class="left">
-                                <a href="#"><img src="./assets/images/checkbox-select.png" alt="check"></a>
+                        <div class="body">
+                            <div class="body__left">
+                                <a href="#" class="icon-check"><img src="./assets/images/checkbox-select.png" alt="add"></a>
                             </div>
-                            <div class="right">
-                                <p class="product-code">SK-Ⅱ</p>
-                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <div class="body__right">
+                                <p class="body__right-code">SK-Ⅱ</p>
+                                <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                 <span>1234567890123</span>
                             </div>
                         </div>

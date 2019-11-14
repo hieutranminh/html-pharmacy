@@ -1,6 +1,6 @@
 .home {
   margin-top: 88px;
-  &-top {
+  &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;

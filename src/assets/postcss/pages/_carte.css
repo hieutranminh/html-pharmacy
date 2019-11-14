@@ -1,20 +1,20 @@
 .carte {
 
   /* Carte profile */
-  &-profile {
+  &__profile {
     padding: 30px;
     margin-top: 154px;
 
     /* Carte profile disable*/
-    &-disable {
+    &--disable {
       .form-group {
-        .control-common {
+        .control__common {
           background: #F4F4F4;
         }
-        .btn-blue {
+        .btn--blue {
           opacity: 0.4;
         }
-        .form-check {
+        .form__check {
           input {
             opacity: 0.4;
             &:checked {
@@ -32,25 +32,25 @@
   }
 
   /* Carte checklist */
-  &-checklist {
+  &__checklist {
     margin-top: 154px;
     .layout {
-      &-left {
+      &__left {
         padding: 30px;
-        .form-item {
+        .form__item {
           align-items: flex-start;
           margin-bottom: 12px;
           .form-group {
             display: flex;
             align-items: center;
-            .form-check {
+            .form__check {
               margin-right: 30px;
               margin-bottom: 14px;
             }
             p {
               margin-bottom: 14px;
             }
-            .form-radio {
+            .form__radio {
               margin-left: 30px;
               margin-bottom: 14px;
             }
@@ -60,9 +60,9 @@
     }
 
     /* Carte checklist disable */
-    &-disable {
+    &--disable {
       .form-group {
-        .form-check {
+        .form__check {
           input {
             opacity: 0.4;
             &:checked {
@@ -75,7 +75,7 @@
             opacity: 0.4;
           }
         }
-        .form-radio {
+        .form__radio {
           input {
             opacity: 0.4;
             &:checked {
@@ -88,7 +88,7 @@
             opacity: 0.4;
           }
         }
-        .control-common {
+        .control__common {
           background: #F4F4F4;
         }
       }
@@ -96,14 +96,15 @@
   }
 
   /* Carte counseling */
-  &-counseling {
+  &__counseling {
     margin-top: 154px;
     .layout {
 
       /* left */
-      &-left {
+      &__left {
 
-        .box-head {
+        /* comment slide */
+        .box__head {
           padding: 25px 30px;
           /* time top */
           .time {
@@ -111,7 +112,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
-            &-date {
+            &__date {
               display: flex;
               align-items: center;
               a {
@@ -131,7 +132,11 @@
                 margin: 0px 25px;
               }
             }
+            .btn {
+              padding: 7px 34px;
+            }
           }
+
           .form-group {
             height: 200px;
             margin-bottom: 0px;
@@ -153,7 +158,7 @@
         }
 
         /* tab comment */
-        .tab-comment {
+        .tab__comment {
           background: #F4F4F4;
           display: flex;
           justify-content: space-between;
@@ -218,34 +223,37 @@
             }
           }
         }
+
       }
     }
 
     /* Carte counseling disable */
-    &-disable {
-      .layout-left {
-        .box-head {
-          .form-group {
-            textarea {
-              background: #F4F4F4;
+    &--disable {
+      .layout {
+        &__left {
+          .box__head {
+            .form-group {
+              .control__common {
+                background: #F4F4F4;
+              }
+            }
+          }
+          .list {
+            .comment__add,.comment__remove {
+              a {
+                opacity: 0.4;
+              }
             }
           }
         }
-        .list {
-          .item-comp02 {
-            a {
-              opacity: 0.4;
-            }
-          }
-        }
-      }
-      .layout-sidebar {
-        .list {
-          .card-comp07 {
-            .content-body {
-              .left {
-                a {
-                  opacity: 0.4;
+        &__sidebar {
+          .list {
+            .product__history {
+              .body {
+                &__left {
+                  a {
+                    opacity: 0.4;
+                  }
                 }
               }
             }
@@ -256,15 +264,15 @@
   }
 
   /* Carte status */
-  &-status {
+  &__status {
     margin-top: 154px;
     .layout {
 
       /* left */
-      &-left {
-        .select-year {
+      &__left {
+        .select__year {
           padding: 0px 30px;
-          .form-group {
+          .form__select {
             margin-bottom: 0px;
             width: 130px;
             transform: translateY(20px);
@@ -275,16 +283,16 @@
 
     /* Carte status disable */
     &-disable {
-      .layout-sidebar {
-        .item-comp05 {
-          .btn-blue {
+      .layout__sidebar {
+        .action {
+          .btn--blue {
             opacity: 0.4;
           }
         }
         .list {
-          .card-comp08 {
-            .content-body {
-              .left {
+          .product__history {
+            .body {
+              &__left {
                 a {
                   opacity: 0.4;
                 }
@@ -297,16 +305,17 @@
   }
 
   /* Carte recommend */
-  &-recommend {
+  &__recommend {
     margin-top: 154px;
     .layout {
 
       /* left */
-      &-left {
+      &__left {
 
         /* search */
-        .search-box {
+        .search__box {
           display: flex;
+          justify-content: space-between;
           padding: 25px 30px;
           border-bottom: 1px solid #E0E0E0;
           .form-group {
@@ -319,15 +328,20 @@
               color: #999999;
             }
           }
+          .form__select {
+            margin-bottom: 0px;
+            .control__common {
+              color: #999999;
+            }
+          }
         }
 
         /* product list */
         .product-list {
           padding: 20px 30px;
-          .card-comp09 {
+          .product {
             margin-bottom: 20px;
             background: #ffffff;
-            box-shadow: 0px 3px 6px rgba(0,0,0,.1);
             &:last-child {
               margin-bottom: 0px;
             }
@@ -339,14 +353,14 @@
 
     /* Carte recommend disable */
     &-disable {
-      .layout-sidebar {
+      .layout__sidebar {
         .content {
-          .item-comp05 {
-            .btn-grey {
+          .action {
+            .btn--grey {
               opacity: 0.4;
             }
           }
-          .item-comp02 {
+          .item__check {
             img {
               opacity: 0.4;
             }
@@ -360,16 +374,16 @@
   }
 
   /* Carte recommend detail*/
-  &-recommend-detail {
+  &__recommend__detail {
     margin-top: 88px;
     padding: 30px;
 
     /* detail top */
-    .detail-top {
+    .top {
       display: flex;
       justify-content: space-between;
       margin-bottom: 23px;
-      .left {
+      &__left {
         p {
           font-size: 20px;
           font-weight: normal;
@@ -385,7 +399,7 @@
           color: #999999;
         }
       }
-      .right {
+      &__right {
         a {
           margin-left: 15px;
           width: 150px;
@@ -395,9 +409,9 @@
     }
 
     /* detail body */
-    .detail-body {
+    .body {
       display: flex;
-      .image-detail {
+      &__image {
         width: 240px;
         height: 240px;
         img {
@@ -406,10 +420,10 @@
           object-fit: cover;
         }
       }
-      .content {
+      &__content {
         width: calc(100% - 240px);
         padding-left: 30px;
-        .list-overall {
+        .list__overall {
           li {
             display: flex;
             align-items: center;
@@ -424,22 +438,16 @@
               line-height: 1;
               margin-left: 15px;
             }
-            .btn-normal {
-              color: #333333;
-              font-size: 16px;
+            .btn--normal {
               font-weight: normal;
               border: 1px solid #E0E0E0;
               margin-left: 15px;
             }
-            .item-comp02 {
+            .item__check {
               margin-bottom: 0px;
               margin-left: 17px;
               img {
-                width: 18px;
-                height: 14px;
-              }
-              p {
-                padding-left: 5px;
+                margin-right: 6px;
               }
             }
             &:nth-child(2) {
@@ -450,20 +458,20 @@
             }
           }
         }
-        .price {
+        .content__price {
           font-size: 24px;
           font-weight: 400;
           margin: 28px 0;
           line-height: 1;
         }
-        .des {
+        .content__des {
           font-size: 18px;
           font-weight: normal;
           color: #333333;
           line-height: 28px;
           margin-bottom: 22px;
         }
-        .list-parameter {
+        .content__parameter {
           li {
             list-style: none;
             display: flex;
@@ -495,21 +503,22 @@
       right: 0;
       top: 88px;
       height: calc(100% - 88px);
-      .item-comp05 {
+      .action {
         padding: 25px 30px;
       }
-      &-list {
+
+      .list {
         padding: 0px 20px;
         height: 400px;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
         overflow-scrolling: touch;
-        .card-comp01 {
+        .notice {
           padding-bottom: 13px;
           p {
             margin-bottom: 11px;
           }
-          .bottom {
+          &__bottom {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -524,7 +533,7 @@
         }
       }
 
-      &-add-rating {
+      .rating {
         position: absolute;
         bottom: 0px;
         left: 0px;
@@ -532,7 +541,7 @@
         padding: 20px 30px;
         border-top: 1px solid #E0E0E0;
 
-        .rating {
+        &__star {
           display: flex;
           justify-content: flex-end;
           flex-direction: row-reverse;

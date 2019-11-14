@@ -5,7 +5,7 @@
   box-shadow: -1px 0px 6px rgba(0, 0, 0, .16);
 
   /* sidebar home */
-  &-home {
+  &--home {
     position: fixed;
     top: 88px;
     right: 0px;
@@ -21,11 +21,6 @@
       background: #F4F4F4;
       width: 100%;
       height: 360px;
-    }
-
-    /* item padding */
-    .item-pd {
-      padding: 25px 30px;
     }
 
     /* list edit */
@@ -49,7 +44,7 @@
     /* list note */
     .note {
       padding: 0px 20px;
-      height: 400px;
+      height: 480px;
       overflow: auto;
       -webkit-overflow-scrolling: touch;
       overflow-scrolling: touch;
@@ -71,17 +66,15 @@
       transition: all 0.3s;
       transform: translateX(100%);
       opacity: 0;
-    }
-
-    /* add class show memo */
-    &.show-memo {
-      transform: translateX(0%);
-      opacity: 1;
+      &__show {
+        transform: translateX(0%);
+        opacity: 1;
+      }
     }
   }
 
   /* sidebar carte common */
-  &-carte {
+  &--carte {
     position: fixed;
     top: 154px;
     right: 0;
@@ -89,9 +82,9 @@
   }
 
   /* sidebar carte checklist */
-  &-checklist {
-    .item-comp05 {
-      padding: 30px;
+  &--checklist {
+    .action {
+      padding: 25px 30px;
       font-size: 1.25rem;
       color: #333333;
       margin-bottom: 0px;
@@ -106,19 +99,18 @@
   }
 
   /* sidebar carte counseling */
-  &-counseling {
-    .item-comp05 {
+  &--counseling {
+    .action {
       padding: 30px 30px 26px;
       font-size: 1.25rem;
       color: #333333;
       border-bottom: none;
       margin-bottom: 0px;
     }
-    .card-comp06 {
+    .product__recommend {
       margin-bottom: 0px;
     }
     .tab {
-      margin-bottom: 20px;
       border-bottom: 1px solid #e0e0e0;
       ul {
         position: relative;
@@ -174,11 +166,12 @@
   }
 
   /* sidebar carte status */
-  &-status {
-    .item-comp05 {
-      padding: 30px;
+  &--status {
+    .action {
+      padding: 25px 30px;
       font-size: 1.25rem;
       color: #333333;
+      margin-bottom: 0px;
     }
     .list {
       padding: 0px 20px;
@@ -190,25 +183,18 @@
   }
 
   /* sidebar carte recommend */
-  &-recommend {
+  &--recommend {
     overflow: auto;
     .content {
       border-bottom: 1px solid #E0E0E0;
       padding: 26px 28px;
-      .item-comp05 {
+      .action {
         padding: 0px;
         margin-bottom: 25px;
         border-bottom: none;
       }
-      .item-comp02 {
+      .item__check {
         font-size: 1rem;
-        img {
-          width: 17px;
-          height: 13px;
-        }
-        p {
-          margin-left: 12px;
-        }
         &:last-child {
           margin-bottom: 0px;
         }

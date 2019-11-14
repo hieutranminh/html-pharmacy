@@ -32,13 +32,13 @@
 <!---------HEADER-------->
 <header id="header" class="header">
 
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
             <!--component input select-->
-            <div class="form-select arrow-white form-select-large d-none">
-                <select class="control-common red">
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
                     <option>美容カルテ</option>
                     <option>育児相談</option>
                     <option>健康指導</option>
@@ -49,22 +49,22 @@
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
-                <div class="content">
-                    窪田 成子
-                    <span>2019/08/13 12:05:10</span>
+                <div class="back__content">
+                    アヤナス ローション コ…
                 </div>
             </div>
         </div>
 
 
         <!--Header right-->
-        <div class="header-content-right">
-            <a href="#" class="btn-normal btn-red">新規登録</a>
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
                 <a href="#" class="icon-setting">
                     <img src="./assets/images/icon-setting-white.png" alt="setting">
                 </a>
@@ -91,29 +91,29 @@
 
 
 <!---------CARTE-------->
-<section id="carte" class="carte layout-bg">
+<section id="carte" class="carte ">
 
-    <!--Carte Recommend - remove class carte-recommend-disable when edit-->
-    <div class="carte-recommend carte-recommend-disable">
+    <!--Carte Recommend - add class carte__recommend-disable to disable-->
+    <div class="carte__recommend carte__recommend-disable">
         <div class="layout">
             <!--layout left-->
-            <div class="layout-left">
+            <div class="layout__left">
 
                 <!--Search-->
-                <div class="search-box">
+                <div class="search__box">
                     <div class="form-group">
-                        <div class="form-search">
-                            <input type="text" class="search-control" placeholder="DECENCIA">
-                            <a href="#"><img src="./assets/images/icon-search.png" alt="search"></a>
+                        <div class="form__search">
+                            <input type="input" class="search__input" placeholder="DECENCIA">
+                            <a href="#" class="search__btn"><img src="./assets/images/icon-search.png" alt="search"></a>
                         </div>
                     </div>
-                    <div class="form-group form-select form-select-w100">
-                        <select class="control-common white">
+                    <div class="form-group form__select form__select--w100">
+                        <select class="control__common control__common--white control__common--w100">
                             <option>メーカー</option>
                         </select>
                     </div>
-                    <div class="form-group form-select form-select-w100">
-                        <select class="control-common white">
+                    <div class="form-group form__select form__select--w100">
+                        <select class="control__common control__common--white control__common--w100">
                             <option>価格</option>
                         </select>
                     </div>
@@ -121,88 +121,76 @@
 
                 <!--Product-->
                 <div class="product-list">
-                    <div class="card-comp09">
+                    <div class="product">
                         <div class="image">
                             <img src="./assets/images/img-product.png" alt="product">
                         </div>
                         <div class="content">
-                            <p class="product-code">DECENCIA</p>
-                            <p class="product-name">アヤナス ローション コンセントレート</p>
+                            <p class="content__code">DECENCIA</p>
+                            <p class="content__name">アヤナス ローション コンセントレート</p>
                             <span>1234567890123</span>
-                            <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                            <p class="product-price">4,860円</p>
+                            <p class="content__des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                            <p class="content__price">4,860円</p>
                         </div>
                     </div>
-                    <div class="card-comp09">
+                    <div class="product">
                         <div class="image">
                             <img src="./assets/images/img-product.png" alt="product">
                         </div>
                         <div class="content">
-                            <p class="product-code">DECENCIA</p>
-                            <p class="product-name">アヤナス ローション コンセントレート</p>
+                            <p class="content__code">DECENCIA</p>
+                            <p class="content__name">アヤナス ローション コンセントレート</p>
                             <span>1234567890123</span>
-                            <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                            <p class="product-price">4,860円</p>
+                            <p class="content__des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                            <p class="content__price">4,860円</p>
                         </div>
                     </div>
-                    <div class="card-comp09">
+                    <div class="product">
                         <div class="image">
                             <img src="./assets/images/img-product.png" alt="product">
                         </div>
                         <div class="content">
-                            <p class="product-code">DECENCIA</p>
-                            <p class="product-name">アヤナス ローション コンセントレート</p>
+                            <p class="content__code">DECENCIA</p>
+                            <p class="content__name">アヤナス ローション コンセントレート</p>
                             <span>1234567890123</span>
-                            <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                            <p class="product-price">4,860円</p>
+                            <p class="content__des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                            <p class="content__price">4,860円</p>
                         </div>
                     </div>
-                    <div class="card-comp09">
+                    <div class="product">
                         <div class="image">
                             <img src="./assets/images/img-product.png" alt="product">
                         </div>
                         <div class="content">
-                            <p class="product-code">DECENCIA</p>
-                            <p class="product-name">アヤナス ローション コンセントレート</p>
+                            <p class="content__code">DECENCIA</p>
+                            <p class="content__name">アヤナス ローション コンセントレート</p>
                             <span>1234567890123</span>
-                            <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                            <p class="product-price">4,860円</p>
+                            <p class="content__des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                            <p class="content__price">4,860円</p>
                         </div>
                     </div>
-                    <div class="card-comp09">
+                    <div class="product">
                         <div class="image">
                             <img src="./assets/images/img-product.png" alt="product">
                         </div>
                         <div class="content">
-                            <p class="product-code">DECENCIA</p>
-                            <p class="product-name">アヤナス ローション コンセントレート</p>
+                            <p class="content__code">DECENCIA</p>
+                            <p class="content__name">アヤナス ローション コンセントレート</p>
                             <span>1234567890123</span>
-                            <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                            <p class="product-price">4,860円</p>
+                            <p class="content__des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                            <p class="content__price">4,860円</p>
                         </div>
                     </div>
-                    <div class="card-comp09">
+                    <div class="product">
                         <div class="image">
                             <img src="./assets/images/img-product.png" alt="product">
                         </div>
                         <div class="content">
-                            <p class="product-code">DECENCIA</p>
-                            <p class="product-name">アヤナス ローション コンセントレート</p>
+                            <p class="content__code">DECENCIA</p>
+                            <p class="content__name">アヤナス ローション コンセントレート</p>
                             <span>1234567890123</span>
-                            <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                            <p class="product-price">4,860円</p>
-                        </div>
-                    </div>
-                    <div class="card-comp09">
-                        <div class="image">
-                            <img src="./assets/images/img-product.png" alt="product">
-                        </div>
-                        <div class="content">
-                            <p class="product-code">DECENCIA</p>
-                            <p class="product-name">アヤナス ローション コンセントレート</p>
-                            <span>1234567890123</span>
-                            <p class="product-des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
-                            <p class="product-price">4,860円</p>
+                            <p class="content__des">とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション</p>
+                            <p class="content__price">4,860円</p>
                         </div>
                     </div>
                 </div>
@@ -210,129 +198,135 @@
 
 
             <!--layout sidebar-->
-            <div class="sidebar sidebar-carte sidebar-recommend layout-sidebar">
+            <div class="layout__sidebar sidebar sidebar--carte sidebar--recommend ">
                 <div class="content">
-                    <div class="item-comp05">
+                    <!--sidebar action-->
+                    <div class="action">
                         限定品
-                        <a href="#" class="btn-normal btn-grey">リセット</a>
+                        <a href="#" class="btn btn--normal btn--grey">リセット</a>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <!--list-->
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
-                        <p>ミラノコレクションボディパウダー</p>
+                        ミラノコレクションボディパウダー
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
-                        <p class="text-grey">ミラノコレクションフェイスパウダー</p>
+                        ミラノコレクションフェイスパウダー
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
-                        <p class="text-grey">ミラノコレクションパルファム</p>
+                        ミラノコレクションパルファム
                     </div>
                 </div>
                 <div class="content">
-                    <div class="item-comp05">
+                    <!--sidebar action-->
+                    <div class="action">
                         肌の悩み
-                        <a href="#" class="btn-normal btn-grey">リセット</a>
+                        <a href="#" class="btn btn--normal btn--grey">リセット</a>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <!--list-->
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>敏感肌（薬使用中）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">敏感肌</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>乾燥</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>しみ、そばかす</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">くすみ</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">毛穴の目立ち（開き）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">毛穴の目立ち（たるみ）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">毛穴の目立ち（黒ずみ、ザラつき）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>ニキビ、吹き出物</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">しわ（部分）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">たるみ（全体）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">くま（茶）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">くま（青）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>化粧崩れ（皮脂、ベタつき）</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">その他</p>
                     </div>
                 </div>
                 <div class="content">
-                    <div class="item-comp05">
-                        使用アイテム
-                        <a href="#" class="btn-normal btn-grey">リセット</a>
+                    <!--sidebar action-->
+                    <div class="action">
+                        肌の悩み
+                        <a href="#" class="btn btn--normal btn--grey">リセット</a>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <!--list-->
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>メイク落とし</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">洗顔</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>化粧水</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-red.png" alt="check">
                         <p>乳液</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">クリーム</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">美容液</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">日焼け止め</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">サプリメント</p>
                     </div>
-                    <div class="item-comp02 item-comp04">
+                    <div class="item__check">
                         <img src="./assets/images/icon-check-grey.png" alt="check">
                         <p class="text-grey">その他</p>
                     </div>

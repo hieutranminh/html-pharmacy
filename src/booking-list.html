@@ -31,26 +31,42 @@
 <body>
 <!---------HEADER-------->
 <header id="header" class="header">
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
+            <!--component input select-->
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
+                    <option>美容カルテ</option>
+                    <option>育児相談</option>
+                    <option>健康指導</option>
+                </select>
+            </div>
             <!--component back (remove class d-none)-->
-            <div class="back">
+            <div class="back ">
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
+                <div class="back__content">
+                    アヤナス ローション コ…
+                </div>
             </div>
         </div>
 
 
         <!--Header right-->
-        <div class="header-content-right">
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
+                <a href="#" class="icon-setting">
+                    <img src="./assets/images/icon-setting-white.png" alt="setting">
+                </a>
                 <a href="#" class="icon icon-question-mark">
                     <img src="./assets/images/icon-question-mark.png" alt="question">
                 </a>
@@ -65,21 +81,21 @@
 <!---------BOOKING LIST ( Extend HTML from product reservation )-------->
 <section id="booking" class="booking reservation">
     <!--booking top-->
-    <div class="reservation-top">
-        <h2 class="title-black">来店予約一覧</h2>
+    <div class="reservation__top">
+        <h2 class="title title--black">来店予約一覧</h2>
         <div class="search">
-            <div class="form-search">
-                <input type="input" class="search-control" placeholder="検索">
-                <a href="#"><img src="./assets/images/icon-search.png" alt="search"></a>
+            <div class="form__search">
+                <input type="input" class="search__input" placeholder="検索">
+                <a href="#" class="search__btn"><img src="./assets/images/icon-search.png" alt="search"></a>
             </div>
             <div class="form-group">
-                <input type="text" class="control-common control-common-w100 white" placeholder="予約日を選択">
+                <input type="text" class="control__common control__common--w100" placeholder="来店予定日を選択">
             </div>
         </div>
     </div>
     <!--booking table-->
-    <div class="reservation-table">
-        <table class="table-custom table-responsive-sm">
+    <div class="reservation__table">
+        <table class="table__custom table-responsive-sm">
             <thead>
             <tr>
                 <th style="width: 250px">来店予定日</th>

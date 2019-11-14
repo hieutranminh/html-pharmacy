@@ -1,8 +1,9 @@
-.form-check {
+.form__check {
   display: flex;
   align-items: center;
   padding: 0px;
-  &__input {
+  margin-right: 44px;
+  .check__input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -23,7 +24,7 @@
     }
   }
 
-  &__label {
+  .check__label {
     width: unset;
     font-size: 1.125rem;
     margin-left: 14px;

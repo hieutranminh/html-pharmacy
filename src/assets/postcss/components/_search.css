@@ -1,8 +1,8 @@
-.form-search {
+.form__search {
   position: relative;
   width: 270px;
   height: 38px;
-  &__input {
+  .search__input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -19,7 +19,7 @@
       color: #999999;
     }
   }
-  &__btn {
+  .search__btn {
     position: absolute;
     width: 64px;
     height: 100%;

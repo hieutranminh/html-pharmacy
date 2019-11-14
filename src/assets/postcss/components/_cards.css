@@ -1,4 +1,4 @@
-/* Component card */
+/* Component list */
 .notice {
   padding: 0px 10px 20px;
   margin-bottom: 15px;
@@ -42,7 +42,7 @@
     line-height: 1;
   }
 }
-.customer-remove {
+.customer__remove {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #E0E0E0;
@@ -51,7 +51,7 @@
   a {
     line-height: 1;
   }
-  &__content {
+  .remove__content {
     margin-left: 20px;
     p {
       font-size: 1.125rem;
@@ -63,7 +63,7 @@
     }
   }
 }
-.customer-note {
+.customer__note {
   padding: 0px 10px 20px;
   margin-bottom: 15px;
   border-bottom: 1px solid #E0E0E0;
@@ -85,11 +85,11 @@
     }
   }
 }
-.product-regist {
+.product__regist {
   border-bottom: 1px solid #E0E0E0;
   padding: 0px 10px 15px;
   margin-bottom: 15px;
-  &__content {
+  .regist__content {
     display: flex;
     align-items: center;
     margin-bottom: 4px;
@@ -102,12 +102,12 @@
       color: #333333;
     }
   }
-  &__code {
+  .regist__code {
     color: #C80009;
     font-size: 0.875rem;
     margin-bottom: 3px;
   }
-  &__name {
+  .regist__name {
     font-size: 1rem;
     margin-bottom: 8px;
     color: #333333;
@@ -117,7 +117,7 @@
     color: #999999;
   }
 }
-.product-recommend {
+.product__recommend {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,10 +152,9 @@
     }
   }
 }
-.product-history {
+.product__history {
   border-bottom: 1px solid #E0E0E0;
-  padding: 0px 10px 15px;
-  margin-bottom: 15px;
+  padding: 16px 10px;
   .head {
     display: flex;
     justify-content: space-between;
@@ -261,24 +260,25 @@
     }
   }
 }
-.consultation-history {
+
+/* Component item */
+.consultation__history {
   display: flex;
   border-bottom: 1px solid #E0E0E0;
-  padding: 0px 11px 15px;
-  margin-bottom: 15px;
+  padding: 15px 10px;
   span {
     font-size: 1rem;
     color: #333333;
     margin-right: 20px;
   }
 }
-.comment-add {
+.comment__add {
   display: flex;
   align-items: center;
   margin-bottom: 18px;
   font-size: 1.125rem;
   color: #333333;
-  &__image {
+  .add__image {
     width: 22px;
     height: 22px;
     line-height: 1;
@@ -289,13 +289,13 @@
     }
   }
 }
-.comment-remove {
+.comment__remove {
   display: flex;
   align-items: center;
   margin-bottom: 18px;
   font-size: 1.125rem;
   color: #333333;
-  &__image {
+  .remove__image {
     width: 22px;
     height: 22px;
     line-height: 1;
@@ -306,60 +306,32 @@
     }
   }
 }
-.option {
+.item__check {
   display: flex;
   align-items: center;
   margin-bottom: 18px;
   font-size: 1.125rem;
   color: #333333;
-  &__image {
+  &--grey {
+    color: #999999;
+  }
+  img {
     width: 17px;
     height: 13px;
-    line-height: 1;
     margin-right: 12px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    vertical-align: unset;
   }
 }
-/* Component item */
-.item {
-  &-comp02 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 18px;
-    font-size: 1.125rem;
-    color: #333333;
-    .image {
-      width: 22px;
-      height: 22px;
-      line-height: 1;
-      margin-right: 12px;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-  &-comp04 {
-    .image {
-      width: 17px;
-      height: 13px;
-      line-height: 1;
-      img {
-        vertical-align: unset;
-      }
-    }
-  }
-  &-comp05 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.25rem;
-    color: #333333;
-    padding: 25px 10px;
-    margin-bottom: 13px;
-    border-bottom: 1px solid #E0E0E0;
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  color: #333333;
+  padding: 25px 10px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #E0E0E0;
+  &--pd {
+    padding: 25px 30px;
   }
 }

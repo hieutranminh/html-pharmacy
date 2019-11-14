@@ -32,13 +32,13 @@
 <!---------HEADER-------->
 <header id="header" class="header">
 
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
             <!--component input select-->
-            <div class="form-select arrow-white form-select-large d-none">
-                <select class="control-common red">
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
                     <option>美容カルテ</option>
                     <option>育児相談</option>
                     <option>健康指導</option>
@@ -49,7 +49,7 @@
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
-                <div class="content">
+                <div class="back__content">
                     窪田 成子
                     <span>2019/08/13 12:05:10</span>
                 </div>
@@ -58,14 +58,14 @@
 
 
         <!--Header right-->
-        <div class="header-content-right">
-            <a href="#" class="btn-normal btn-white text-red">中断する</a>
-            <a href="#" class="btn-normal btn-red">新規登録</a>
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
                 <a href="#" class="icon-setting">
                     <img src="./assets/images/icon-setting-white.png" alt="setting">
                 </a>
@@ -92,37 +92,37 @@
 
 
 <!---------CARTE-------->
-<section id="carte" class="carte ">
+<section id="carte" class="carte">
 
-    <!--Carte Counseling - remove carte-counseling-disable when edit-->
-    <div class="carte-counseling carte-counseling-disable">
+    <!--Carte Counseling - add carte__counseling--disable to disable-->
+    <div class="carte__counseling carte__counseling--disable">
         <div class="layout">
             <!--layout left-->
-            <div class="layout-left">
-                <div class="box-head">
+            <div class="layout__left">
+                <!--slide comment form-->
+                <div class="box__head">
                     <!--time top-->
                     <div class="time">
-                        <div class="time-date">
+                        <div class="time__date">
                             <a href="#">
                                 <img src="./assets/images/arrow-left-grey.png" alt="arrow">
                             </a>
                             <p>2018年8月13日</p>
                             <a href="#">
                                 <img src="./assets/images/arrow-right-grey.png" alt="arrow">
-
                             </a>
                         </div>
-                        <a href="#" class="btn-normal btn-blue pd-medium">日付を選択</a>
+                        <a href="#" class="btn btn--normal btn--blue">日付を選択</a>
                     </div>
 
                     <!--input comment-->
                     <div class="form-group">
-                        <textarea name="" id="" class="control-common">ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。</textarea>
+                        <textarea name="" id="" class="control__common">ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。ここにコメントの内容を記載します。</textarea>
                     </div>
                 </div>
 
                 <!--tabs comment-->
-                <div class="tab-comment">
+                <div class="tab__comment">
                     <p>コメントテンプレート</p>
                     <ul>
                         <li class="active">
@@ -135,128 +135,128 @@
                             <a href="#">スタッフ</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn-normal btn-blue">編集</a>
+                    <a href="#" class="btn btn--normal btn--blue">編集</a>
                     <!--remove d-none when click edit-->
-                    <a href="#" class="btn-normal btn-grey d-none">戻る</a>
+                    <a href="#" class="btn btn--normal btn--grey d-none">戻る</a>
                 </div>
 
                 <!--list-->
-                <div class="list ">
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                <div class="list">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         お客様の悩み
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         要望（こんな肌になりたい・お手入れ方法の要望）
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         現在のお手入れ
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         お客様の肌悩みや要望を考慮した上の提案内容
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         水分チェッカーの数値
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         タッチアップしたアイテム
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         デモしたアイテム
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         サンプリングした商品
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__add">
+                        <a href="#" class="add__image">
                             <img src="./assets/images/icon-add-grey.png" alt="add">
                         </a>
                         次回のご来店で必ずお伺いする質問事項
                     </div>
                     <!--form add comment-->
                     <div class="form-group">
-                        <div class="form-note">
-                            <input type="text" class="note-control" placeholder="コメント登録">
-                            <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+                        <div class="form__add">
+                            <input type="input" class="add__input" placeholder="コメント登録">
+                            <a href="#" class="add__btn"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
                         </div>
                     </div>
                 </div>
 
                 <!--list remove-->
                 <div class="list d-none">
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         お客様の悩み
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         要望（こんな肌になりたい・お手入れ方法の要望）
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         現在のお手入れ
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         お客様の肌悩みや要望を考慮した上の提案内容
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         水分チェッカーの数値
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         タッチアップしたアイテム
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         デモしたアイテム
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         サンプリングした商品
                     </div>
-                    <div class="item-comp02">
-                        <a href="#" class="image">
+                    <div class="comment__remove">
+                        <a href="#" class="remove__image">
                             <img src="./assets/images/icon-remove.png" alt="remove">
                         </a>
                         次回のご来店で必ずお伺いする質問事項
@@ -267,15 +267,18 @@
 
 
             <!--layout sidebar-->
-            <div class="sidebar sidebar-carte sidebar-counseling layout-sidebar">
-                <div class="item-comp05">
+            <div class="layout__sidebar sidebar sidebar--carte sidebar--counseling ">
+
+                <!--sidebar action-->
+                <div class="action">
                     予約商品
                 </div>
-                <!--sidebar top-->
-                <div class="card-comp06">
+
+                <!--sidebar product recommend-->
+                <div class="product__recommend">
                     <div class="content">
-                        <p class="product-code">DECENCIA</p>
-                        <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                        <p class="content__code">SK-Ⅱ</p>
+                        <p class="content__name">R.N.A.パワーエアリーミルキーローション</p>
                         <span>1234567890123</span>
                     </div>
                     <div class="image">
@@ -296,40 +299,40 @@
                 </div>
 
                 <!--sidebar list-->
-                <div class="list ">
-                    <div class="card-comp07">
-                        <div class="content-head">
-                            <div class="left">
-                                <span class="date">2018/08/03</span>
+                <div class="list">
+                    <div class="product__history">
+                        <div class="head">
+                            <div class="head__left">
+                                <span>2018/08/03</span>
                                 前畑店
                             </div>
-                            <span class="tag">お薦め</span>
+                            <span class="head__tag">お薦め</span>
                         </div>
-                        <div class="content-body">
-                            <div class="left">
+                        <div class="body">
+                            <div class="body__left">
                                 <a href="#"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
                             </div>
-                            <div class="right">
-                                <p class="product-code">SK-Ⅱ</p>
-                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <div class="body__right">
+                                <p class="body__right-code">SK-Ⅱ</p>
+                                <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                 <span>1234567890123</span>
                             </div>
                         </div>
                     </div>
-                    <div class="card-comp07">
-                        <div class="content-head">
-                            <div class="left">
-                                <span class="date">2018/08/03</span>
+                    <div class="product__history">
+                        <div class="head">
+                            <div class="head__left">
+                                <span>2018/08/03</span>
                                 前畑店
                             </div>
                         </div>
-                        <div class="content-body">
-                            <div class="left">
+                        <div class="body">
+                            <div class="body__left">
                                 <a href="#"><img src="./assets/images/icon-add-grey.png" alt="add"></a>
                             </div>
-                            <div class="right">
-                                <p class="product-code">SK-Ⅱ</p>
-                                <p class="product-name">R.N.A.パワーエアリーミルキーローション</p>
+                            <div class="body__right">
+                                <p class="body__right-code">SK-Ⅱ</p>
+                                <p class="body__right-name">R.N.A.パワーエアリーミルキーローション</p>
                                 <span>1234567890123</span>
                             </div>
                         </div>
@@ -338,35 +341,35 @@
 
                 <!--sidebar list history-->
                 <div class="list d-none">
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>
-                    <div class="item-comp01">
+                    <div class="consultation__history">
                         <span>2018/08/03</span>
                         前畑店
                     </div>

@@ -31,26 +31,43 @@
 <body>
 <!---------HEADER-------->
 <header id="header" class="header">
-    <div class="header-content">
+
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
+            <!--component input select-->
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
+                    <option>美容カルテ</option>
+                    <option>育児相談</option>
+                    <option>健康指導</option>
+                </select>
+            </div>
             <!--component back (remove class d-none)-->
-            <div class="back">
+            <div class="back ">
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
+                <div class="back__content">
+                    アヤナス ローション コ…
+                </div>
             </div>
         </div>
 
 
         <!--Header right-->
-        <div class="header-content-right">
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
+                <a href="#" class="icon-setting">
+                    <img src="./assets/images/icon-setting-white.png" alt="setting">
+                </a>
                 <a href="#" class="icon icon-question-mark">
                     <img src="./assets/images/icon-question-mark.png" alt="question">
                 </a>
@@ -63,24 +80,24 @@
 
 
 <!---------SETTINGS ( change password )-------->
-<section id="settings" class="settings layout-bg">
+<section id="settings" class="settings layout--bg">
     <!--form change password-->
-    <div class="settings-form">
+    <div class="settings__form">
         <!--Title-->
-        <h2 class="title-black">パスワードの変更</h2>
+        <h2 class="title title--black">パスワードの変更</h2>
         <!--Form-->
         <form action="#">
             <div class="form-group">
-                <input type="text" class="control-common control-common-w100 white" placeholder="現在のパスワード">
+                <input type="text" class="control__common control__common--w100" placeholder="現在のパスワード">
             </div>
             <div class="form-group">
-                <input type="text" class="control-common control-common-w100 white" placeholder="パスワード">
+                <input type="text" class="control__common control__common--w100" placeholder="パスワード">
             </div>
             <div class="form-group">
-                <input type="text" class="control-common control-common-w100 white" placeholder="パスワード確認">
+                <input type="text" class="control__common control__common--w100" placeholder="パスワード確認">
             </div>
             <div class="form-group">
-                <a href="#" class="btn-large btn-red-w100">パスワード変更</a>
+                <a href="#" class="btn btn--w100 btn--red">パスワード変更</a>
             </div>
         </form>
     </div>

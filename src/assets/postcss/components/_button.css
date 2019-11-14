@@ -48,5 +48,14 @@
   }
   &--text-red {
     color: #C80009;
+    &:hover {
+      color: #C80009;
+    }
+  }
+  &--text-black {
+    color: #333333;
+    &:hover {
+      color: #333333;
+    }
   }
 }

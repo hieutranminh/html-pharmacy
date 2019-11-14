@@ -1,5 +1,5 @@
 /* control common */
-.control-common {
+.control__common {
   border: 1px solid #E0E0E0;
   box-shadow: none;
   outline: none;
@@ -49,11 +49,11 @@
 }
 
 /* input note */
-.form-add {
+.form__add {
   position: relative;
   width: 100%;
   height: 38px;
-  &__input {
+  .add__input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -71,7 +71,7 @@
       color: #999999;
     }
   }
-  &__btn {
+  .add__btn {
     position: absolute;
     right: 7px;
     top: 50%;
@@ -80,14 +80,14 @@
 }
 
 /* Template */
-.form-item {
+.form__item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   /* form title */
-  .form-title {
+  &__title {
     font-size: 1.125rem;
-    color: var(--color-grey-medium);
+    color: #999999;
     width: 135px;
     margin-bottom: 0px;
   }
@@ -98,8 +98,14 @@
     margin-left: 18px;
     margin-bottom: 0px;
     width: calc(100% - 135px);
-    .control-common {
+
+    .form__select {
+      margin-bottom: 0px;
+    }
+
+    .control__common {
       margin-right: 20px;
+      background: #ffffff;
       &:last-child {
         margin: 0px;
       }
@@ -110,12 +116,16 @@
       display: flex;
       align-items: center;
     }
+  }
 
+  &.form-textarea {
+    align-items: start;
+    margin-bottom: 0px;
     /* textarea */
     textarea {
       width: 450px;
       height: 120px;
-      border: 1px solid var(--color-grey-light);;
+      border: 1px solid #e0e0e0;
       box-shadow: none;
       outline: none;
       resize: none;
@@ -125,10 +135,6 @@
       -moz-appearance: none;
       appearance: none;
     }
-  }
-  &.form-textarea {
-    align-items: start;
-    margin-bottom: 0px;
     p {
       padding-top: 5px;
     }

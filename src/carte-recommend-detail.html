@@ -32,13 +32,13 @@
 <!---------HEADER-------->
 <header id="header" class="header">
 
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content-left">
+        <div class="content__left">
             <!--component input select-->
-            <div class="form-select arrow-white form-select-large d-none">
-                <select class="control-common red">
+            <div class="form__select form__select--arrowwhite d-none">
+                <select class="control__common control__common--red control__common--textwhite">
                     <option>美容カルテ</option>
                     <option>育児相談</option>
                     <option>健康指導</option>
@@ -49,7 +49,7 @@
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
-                <div class="content">
+                <div class="back__content">
                     アヤナス ローション コ…
                 </div>
             </div>
@@ -57,13 +57,14 @@
 
 
         <!--Header right-->
-        <div class="header-content-right">
-            <a href="#" class="btn-normal btn-red">新規登録</a>
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
                 <a href="#" class="icon-setting">
                     <img src="./assets/images/icon-setting-white.png" alt="setting">
                 </a>
@@ -81,32 +82,32 @@
 <!---------CARTE-------->
 <section id="carte" class="carte layout-bg">
 
-    <!--Carte Recommend Detail -->
-    <div class="carte-recommend-detail carte-recommend-detail-disable">
+    <!--Carte Recommend Detail - add class carte__recommend__detail--disable to disable -->
+    <div class="carte__recommend__detail carte__recommend__detail--disable">
         <!--Detail top-->
-        <div class="detail-top">
-            <div class="left">
+        <div class="top">
+            <div class="top__left">
                 <p>DECENCIA</p>
                 <h3 class="title-black">アヤナス ローション コンセントレート</h3>
                 <span>1234567890123</span>
             </div>
-            <div class="right">
-                <a href="#" class="btn-normal btn-blue">お薦めに追加</a>
-                <a href="#" class="btn-normal btn-blue">予約する</a>
+            <div class="top__right">
+                <a href="#" class="btn btn--normal btn--blue">お薦めに追加</a>
+                <a href="#" class="btn btn--normal btn--blue">予約する</a>
             </div>
         </div>
 
         <!--Detail body-->
-        <div class="detail-body">
+        <div class="body">
 
             <!--Image-->
-            <div class="image-detail">
+            <div class="body__image">
                 <img src="./assets/images/img-product.png" alt="product">
             </div>
 
             <!--Content detail-->
-            <div class="content">
-                <ul class="list-overall">
+            <div class="body__content">
+                <ul class="list__overall">
                     <li>
                         <span>総合評価</span>
                         <div class="star">
@@ -116,34 +117,34 @@
                             <img src="./assets/images/icon-star-grey.png" alt="star">
                             <img src="./assets/images/icon-star-grey.png" alt="star">
                         </div>
-                        <a href="#" class="btn-normal">商品レビュー（10件）</a>
+                        <a href="#" class="btn btn--normal btn--text-black">商品レビュー（10件）</a>
                     </li>
                     <li>
                         <span>肌の悩み</span>
-                        <div class="item-comp02 item-comp04">
+                        <div class="item__check">
                             <img src="./assets/images/icon-check-red.png" alt="check">
                             <p>敏感肌（薬使用中）</p>
                         </div>
-                        <div class="item-comp02 item-comp04">
+                        <div class="item__check">
                             <img src="./assets/images/icon-check-red.png" alt="check">
                             <p>乾燥</p>
                         </div>
-                        <div class="item-comp02 item-comp04">
+                        <div class="item__check">
                             <img src="./assets/images/icon-check-red.png" alt="check">
                             <p>そばかす</p>
                         </div>
                     </li>
                     <li>
                         <span>使用状況</span>
-                        <div class="item-comp02 item-comp04">
+                        <div class="item__check">
                             <img src="./assets/images/icon-check-red.png" alt="check">
                             <p>敏感肌（薬使用中）</p>
                         </div>
                     </li>
                 </ul>
-                <p class="price">4,860円</p>
-                <p class="des">濃密なうるおいが、深く広がる悦びを。<br>とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション。濃密なうるおいが、肌になじんだ途端、すーっと浸透。芯からしなやかで、ふっくらとハリのある肌へ導きます。</p>
-                <ul class="list-parameter">
+                <p class="content__price">4,860円</p>
+                <p class="content__des">濃密なうるおいが、深く広がる悦びを。<br>とろみのあるエキスで、うるおいが巡る肌へ整える高保湿ローション。濃密なうるおいが、肌になじんだ途端、すーっと浸透。芯からしなやかで、ふっくらとハリのある肌へ導きます。</p>
+                <ul class="content__parameter">
                     <li>
                         <span>容量</span>
                         <p class="param-des">125mL</p>
@@ -173,15 +174,18 @@
         </div>
 
         <!--layout sidebar-->
-        <div class="sidebar detail layout-sidebar">
-            <div class="item-comp05">
-                <p>商品レビュー</p>
-                <a href="#" class="btn-normal btn-grey">閉じる</a>
+        <div class="layout__sidebar sidebar detail">
+            <!--sidebar action-->
+            <div class="action">
+                商品レビュー
+                <a href="#" class="btn btn--normal btn--grey">閉じる</a>
             </div>
-            <div class="sidebar-list">
-                <div class="card-comp01">
+
+            <!--list-->
+            <div class="list">
+                <div class="notice">
                     <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
-                    <div class="bottom">
+                    <div class="notice__bottom">
                         <div class="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
@@ -192,9 +196,9 @@
                         <span>2018/08/13</span>
                     </div>
                 </div>
-                <div class="card-comp01">
+                <div class="notice">
                     <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
-                    <div class="bottom">
+                    <div class="notice__bottom">
                         <div class="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
@@ -205,9 +209,9 @@
                         <span>2018/08/13</span>
                     </div>
                 </div>
-                <div class="card-comp01">
+                <div class="notice">
                     <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
-                    <div class="bottom">
+                    <div class="notice__bottom">
                         <div class="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
@@ -218,9 +222,9 @@
                         <span>2018/08/13</span>
                     </div>
                 </div>
-                <div class="card-comp01">
+                <div class="notice">
                     <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
-                    <div class="bottom">
+                    <div class="notice__bottom">
                         <div class="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
@@ -231,9 +235,9 @@
                         <span>2018/08/13</span>
                     </div>
                 </div>
-                <div class="card-comp01">
+                <div class="notice">
                     <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
-                    <div class="bottom">
+                    <div class="notice__bottom">
                         <div class="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
@@ -244,9 +248,9 @@
                         <span>2018/08/13</span>
                     </div>
                 </div>
-                <div class="card-comp01">
+                <div class="notice">
                     <p>ここにレビューの内容が入ります。ここにレビューの内容が入ります。</p>
-                    <div class="bottom">
+                    <div class="notice__bottom">
                         <div class="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
                             <img src="./assets/images/icon-star-red.png" alt="star">
@@ -258,17 +262,18 @@
                     </div>
                 </div>
             </div>
-            <div class="sidebar-add-rating">
-                <div class="rating">
+
+            <div class="rating">
+                <div class="rating__star">
                     <input type="radio" name="star" value="5">
                     <input type="radio" name="star" value="4">
                     <input type="radio" name="star" value="3">
                     <input type="radio" name="star" value="2">
                     <input type="radio" name="star" value="1">
                 </div>
-                <div class="form-note">
-                    <input type="input" class="note-control" placeholder="メモ…">
-                    <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+                <div class="form__add">
+                    <input type="input" class="add__input" placeholder="メモ…">
+                    <a href="#" class="add__btn"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
                 </div>
             </div>
         </div>

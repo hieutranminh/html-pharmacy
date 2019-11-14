@@ -1,16 +1,16 @@
 /* Layout common */
 .layout {
   display: flex;
-  &-left {
+  &__left {
     width: calc(100% - 368px);
   }
-  &-sidebar {
+  &__sidebar {
     background: #ffffff;
     width: 368px;
     border: 1px solid #E0E0E0;
     box-shadow: -1px 0px 6px rgba(0, 0, 0, .16);
   }
-  &-bg {
+  &--bg {
     &:before {
       content: '';
       background: url("../images/bg-illust.png") no-repeat;
@@ -26,11 +26,4 @@
 
 .clearfix {
   clear: both;
-}
-
-/* Reponsive */
-@mixin info-phone-normal {
-  .layout {
-    margin-top: 134px;
-  }
 }

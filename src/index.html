@@ -31,13 +31,13 @@
 <body>
 <!---------HEADER-------->
 <header id="header" class="header">
-    <div class="header-content">
+    <div class="header__content">
 
         <!--Header left-->
-        <div class="header-content__left">
+        <div class="content__left">
             <!--component input select-->
-            <div class="form-select arrow-white form-select-large">
-                <select class="control-common red">
+            <div class="form__select form__select--arrowwhite ">
+                <select class="control__common control__common--red control__common--textwhite">
                     <option>美容カルテ</option>
                     <option>育児相談</option>
                     <option>健康指導</option>
@@ -48,7 +48,7 @@
                 <a href="#">
                     <img src="./assets/images/icon-btn-back.png" alt="back">
                 </a>
-                <div class="content">
+                <div class="back__content">
                     窪田 成子
                     <span>2019/08/13 12:05:10</span>
                 </div>
@@ -57,13 +57,14 @@
 
 
         <!--Header right-->
-        <div class="header-content__right">
-            <a href="carte-checklist.html" class="btn-normal btn-red">新規登録</a>
+        <div class="content__right">
+            <a href="#" class="btn btn--normal btn--white btn--text-red">中断する</a>
+            <a href="carte-checklist.html" class="btn btn--normal btn--red">新規登録</a>
             <ul>
                 <li>店舗<span>前畑店</span></li>
                 <li>担当<span>鈴木 花子</span></li>
             </ul>
-            <div class="icon">
+            <div class="icon__right">
                 <a href="#" class="icon-setting">
                     <img src="./assets/images/icon-setting-white.png" alt="setting">
                 </a>
@@ -79,20 +80,20 @@
 
 
 <!---------HOME PAGE-------->
-<section id="home" class="home layout layout-bg">
+<section id="home" class="home layout layout--bg">
     <!--layout left-->
-    <div class="layout-left">
+    <div class="layout__left">
         <!--Home top-->
-        <div class="home-top">
-            <h2 class="title-black">顧客一覧</h2>
-            <div class="form-search">
-                <input type="input" class="search-control" placeholder="検索">
-                <a href="#"><img src="./assets/images/icon-search.png" alt="search"></a>
+        <div class="home__top">
+            <h2 class="title title--black">顧客一覧</h2>
+            <div class="form__search">
+                <input type="input" class="search__input" placeholder="検索">
+                <a href="#" class="search__btn"><img src="./assets/images/icon-search.png" alt="search"></a>
             </div>
         </div>
         <!--Home table-->
-        <div class="home-table">
-            <table class="table-custom table-responsive-sm">
+        <div class="home__table">
+            <table class="table__custom table-responsive-sm">
                 <thead>
                 <tr>
                     <th style="width: 180px">No</th>
@@ -264,7 +265,7 @@
 
 
     <!--layout sidebar-->
-    <div class="sidebar sidebar-home layout-sidebar ">
+    <div class="sidebar sidebar--home layout__sidebar ">
 
         <!--calendar-->
         <div class="calendar">
@@ -273,13 +274,13 @@
 
         <!--edit list-->
         <div class="edit ">
-            <div class="item-comp05">
+            <div class="action">
                 2019年8月13日の予定
-                <a href="#" class="btn-normal btn-blue">戻る</a>
+                <a href="#" class="btn btn--normal btn--blue">戻る</a>
             </div>
             <!--list add-->
-            <div class="card-comp02">
-                <div class="content">
+            <div class="customer">
+                <div class="customer__content">
                     <p>窪田 成子</p>
                     <span>クボタ セイコ</span>
                 </div>
@@ -287,8 +288,8 @@
                     <img src="./assets/images/icon-note-grey.png" alt="note">
                 </a>
             </div>
-            <div class="card-comp02">
-                <div class="content">
+            <div class="customer">
+                <div class="customer__content">
                     <p>窪田 成子</p>
                     <span>クボタ セイコ</span>
                 </div>
@@ -296,8 +297,8 @@
                     <img src="./assets/images/icon-note-grey.png" alt="note">
                 </a>
             </div>
-            <div class="card-comp02">
-                <div class="content">
+            <div class="customer">
+                <div class="customer__content">
                     <p>窪田 成子</p>
                     <span>クボタ セイコ</span>
                 </div>
@@ -305,8 +306,8 @@
                     <img src="./assets/images/icon-note-grey.png" alt="note">
                 </a>
             </div>
-            <div class="card-comp02">
-                <div class="content">
+            <div class="customer">
+                <div class="customer__content">
                     <p>窪田 成子</p>
                     <span>クボタ セイコ</span>
                 </div>
@@ -314,8 +315,17 @@
                     <img src="./assets/images/icon-note-grey.png" alt="note">
                 </a>
             </div>
-            <div class="card-comp02">
-                <div class="content">
+            <div class="customer">
+                <div class="customer__content">
+                    <p>窪田 成子</p>
+                    <span>クボタ セイコ</span>
+                </div>
+                <a href="#">
+                    <img src="./assets/images/icon-note-grey.png" alt="note">
+                </a>
+            </div>
+            <div class="customer">
+                <div class="customer__content">
                     <p>窪田 成子</p>
                     <span>クボタ セイコ</span>
                 </div>
@@ -327,45 +337,63 @@
 
         <!--remove list (remove class d-none)-->
         <div class="remove d-none">
-            <div class="item-comp05">
+            <div class="action">
                 2019年8月13日の予定
-                <a href="#" class="btn-normal btn-grey">戻る</a>
+                <a href="#" class="btn btn--normal btn--grey">戻る</a>
             </div>
             <!--list remove-->
-            <div class="card-comp03">
+            <div class="customer__remove">
                 <a href="#">
                     <img src="./assets/images/icon-remove.png" alt="remove">
                 </a>
-                <div class="content">
-                    <p>窪田 成子</p>
-                    <span>クボタ セイコ</span>
+                <div class="remove__content">
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum</span>
                 </div>
             </div>
-            <div class="card-comp03">
+            <div class="customer__remove">
                 <a href="#">
                     <img src="./assets/images/icon-remove.png" alt="remove">
                 </a>
-                <div class="content">
-                    <p>窪田 成子</p>
-                    <span>クボタ セイコ</span>
+                <div class="remove__content">
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum</span>
                 </div>
             </div>
-            <div class="card-comp03">
+            <div class="customer__remove">
                 <a href="#">
                     <img src="./assets/images/icon-remove.png" alt="remove">
                 </a>
-                <div class="content">
-                    <p>窪田 成子</p>
-                    <span>クボタ セイコ</span>
+                <div class="remove__content">
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum</span>
                 </div>
             </div>
-            <div class="card-comp03">
+            <div class="customer__remove">
                 <a href="#">
                     <img src="./assets/images/icon-remove.png" alt="remove">
                 </a>
-                <div class="content">
-                    <p>窪田 成子</p>
-                    <span>クボタ セイコ</span>
+                <div class="remove__content">
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum</span>
+                </div>
+            </div>
+            <div class="customer__remove">
+                <a href="#">
+                    <img src="./assets/images/icon-remove.png" alt="remove">
+                </a>
+                <div class="remove__content">
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum</span>
+                </div>
+            </div>
+            <div class="customer__remove">
+                <a href="#">
+                    <img src="./assets/images/icon-remove.png" alt="remove">
+                </a>
+                <div class="remove__content">
+                    <p>Lorem ipsum</p>
+                    <span>Lorem ipsum</span>
                 </div>
             </div>
         </div>
@@ -373,38 +401,53 @@
     </div>
 
 
-    <!--layout sidebar - add class show-memo to show-->
-    <div class="sidebar sidebar-home layout-sidebar memo show-memo">
+    <!--layout sidebar - add class memo__show to show-->
+    <div class="sidebar sidebar--home layout__sidebar memo ">
 
-        <div class="item-comp05 item-pd">
+        <!--action - title & button-->
+        <div class="action action--pd">
             窪田さんのメモ
-            <a href="#" class="btn-normal btn-grey">閉じる</a>
+            <a href="#" class="btn btn--normal btn--grey">閉じる</a>
         </div>
 
         <!--list note-->
         <div class="note">
-            <div class="card-comp01">
+            <div class="customer__note">
                 <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
                 <span>
                     2018/08/13
                     <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
                 </span>
             </div>
-            <div class="card-comp01">
+            <div class="customer__note">
                 <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
                 <span>
                     2018/08/13
                     <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
                 </span>
             </div>
-            <div class="card-comp01">
+            <div class="customer__note">
                 <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
                 <span>
                     2018/08/13
                     <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
                 </span>
             </div>
-            <div class="card-comp01">
+            <div class="customer__note">
+                <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
+                <span>
+                    2018/08/13
+                    <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
+                </span>
+            </div>
+            <div class="customer__note">
+                <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
+                <span>
+                    2018/08/13
+                    <a href="#"><img src="./assets/images/icon-trash.png" alt="trash"></a>
+                </span>
+            </div>
+            <div class="customer__note">
                 <p>ここにメモの内容が入ります。ここにメモの内容が入ります。</p>
                 <span>
                     2018/08/13
@@ -413,10 +456,11 @@
             </div>
         </div>
 
+        <!--input add-->
         <div class="form-group">
-            <div class="form-note">
-                <input type="input" class="note-control" placeholder="メモ…">
-                <a href="#"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
+            <div class="form__add">
+                <input type="input" class="add__input" placeholder="メモ…">
+                <a href="#" class="add__btn"><img src="./assets/images/icon-add-blue.png" alt="note"></a>
             </div>
         </div>
     </div>
@@ -424,16 +468,16 @@
 </section>
 
 
-<!---------MENU MODAL - add class modal-menu-open to fade animation-------->
-<section id="modal-menu" class="modal-menu ">
-    <div class="modal-menu-content layout-sidebar">
-        <a href="#" class="btn-normal btn-white text-blue">閉じる</a>
-        <ul class="clearfix list-menu">
-            <li class="list-menu-item">商品予約一覧</li>
-            <li class="list-menu-item">来店予約一覧</li>
-            <li class="list-menu-item">商品検索</li>
-            <li class="list-menu-item">設定</li>
-            <li class="list-menu-item">ログアウト</li>
+<!---------MENU MODAL - add class menu__open to fade animation-------->
+<section id="menu" class="menu ">
+    <div class="menu__content layout__sidebar">
+        <a href="#" class="btn btn--normal btn--white btn--text-blue">閉じる</a>
+        <ul class="clearfix">
+            <li>商品予約一覧</li>
+            <li>来店予約一覧</li>
+            <li>商品検索</li>
+            <li>設定</li>
+            <li>ログアウト</li>
         </ul>
     </div>
 </section>

@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  &-content {
+  &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,25 +14,28 @@
     height: 88px;
     box-shadow: 0px 3px 6px rgba(0,0,0,.16);
     /* Left */
-    &__left {
+    .content__left {
       width: 40%;
-      .form-select {
+      .form__select {
         width: 204px;
+        margin-bottom: 0px;
         select {
           width: 100%;
           padding: 11px 20px;
           border: 1px solid #C80009;
         }
       }
-      .back .content {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      }
       .back {
         display: flex;
         align-items: center;
-        .content {
+        a {
+          width: 30px;
+          height: 30px;
+        }
+        &__content {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
           color: #ffffff;
           margin-left: 21px;
           font-size: 1.625rem;
@@ -44,15 +47,15 @@
     }
 
     /* Right */
-    &__right {
+    .content__right {
       width: 60%;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      .btn-red {
+      .btn--red {
         margin-right: 28px;
       }
-      .btn-white {
+      .btn--white {
         margin-right: 15px;
       }
       ul {
@@ -74,12 +77,12 @@
           }
         }
       }
-      .icon a {
+      .icon__right a {
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .icon {
+      .icon__right {
         display: flex;
         a {
           width: 44px;
@@ -88,70 +91,6 @@
           margin-left: 15px;
           border-radius: 50%;
         }
-      }
-    }
-  }
-}
-
-@mixin info-ipad {
-  .header {
-    .header-content {
-      height: 88px;
-      /* Left */
-      &-left {
-        .form-select {
-          width: 160px;
-          select {
-            padding: 9px 20px;
-          }
-        }
-      }
-
-      /* Right */
-      &-right {
-        width: 70%;
-        .btn-red {
-          margin-right: 18px;
-        }
-        ul {
-          margin-right: 0px;
-        }
-        .icon {
-          a {
-            width: 40px;
-            height: 40px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@mixin info-phone-normal {
-  .header {
-    .header-content {
-      flex-direction: column;
-      height: auto;
-      padding: 20px;
-      /* Left */
-      &-left {
-        width: 100%;
-        .form-select {
-          width: 100%;
-          margin-bottom: 15px;
-          select {
-            padding: 9px 20px;
-          }
-        }
-        .back {
-          margin-bottom: 15px;
-        }
-      }
-
-      /* Right */
-      &-right {
-        width: 100%;
-        justify-content: space-between;
       }
     }
   }
