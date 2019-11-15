@@ -497,91 +497,10 @@
       }
     }
 
-    /* sidebar */
-    .sidebar {
-      position: fixed;
-      right: 0;
-      top: 88px;
-      height: calc(100% - 88px);
-      .action {
-        padding: 25px 30px;
-      }
-
-      .list {
-        padding: 0px 20px;
-        height: 400px;
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
-        overflow-scrolling: touch;
-        .notice {
-          padding-bottom: 13px;
-          p {
-            margin-bottom: 11px;
-          }
-          &__bottom {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .star {
-              img {
-                width: 16px;
-                height: 15px;
-                vertical-align: unset;
-              }
-            }
-          }
-        }
-      }
-
-      .rating {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        padding: 20px 30px;
-        border-top: 1px solid #E0E0E0;
-
-        &__star {
-          display: flex;
-          justify-content: flex-end;
-          flex-direction: row-reverse;
-          margin-bottom: 20px;
-          input {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            outline: none;
-            box-shadow: none;
-            border: none;
-            width: 20px;
-            height: 19px;
-            margin-right: 4px;
-            background: url("../images/icon-star-grey.png") no-repeat;
-            &:hover {
-              -webkit-appearance: none;
-              -moz-appearance: none;
-              appearance: none;
-              background: url("../images/icon-star-red.png") no-repeat;
-              & ~ input {
-                background: url("../images/icon-star-red.png") no-repeat;
-              }
-            }
-            &:checked {
-              background: url("../images/icon-star-red.png") no-repeat;
-              & ~ input {
-                background: url("../images/icon-star-red.png") no-repeat;
-              }
-            }
-          }
-
-        }
-      }
-    }
-
     /* Carte recommend detail disable */
-    &-disable {
-      .detail-top {
-        .right {
+    &--disable {
+      .top {
+        &__right { 
           a {
             opacity: 0.4;
           }
