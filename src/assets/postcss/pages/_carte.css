@@ -500,7 +500,7 @@
     /* Carte recommend detail disable */
     &--disable {
       .top {
-        &__right { 
+        &__right {
           a {
             opacity: 0.4;
           }
